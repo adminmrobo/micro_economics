@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>구매 가능성을 알려면 가격만 보면 될까요, 선택 묶음도 알아야 할까요? — 미시경제학 연구실 블로그</title><meta name="description" content="가격을 비교하기 전에 어떤 묶음의 비용인지 정합니다. 구매 가능성은 같은 가격 행 안에서 비교합니다. 정확한 직접 관계가 있어야 연쇄 일관성도 검사할 수 있습니다.">
+<meta property="og:title" content="구매 가능성을 알려면 가격만 보면 될까요, 선택 묶음도 알아야 할까요?"><meta property="og:description" content="가격을 비교하기 전에 어떤 묶음의 비용인지 정합니다. 구매 가능성은 같은 가격 행 안에서 비교합니다. 정확한 직접 관계가 있어야 연쇄 일관성도 검사할 수 있습니다.">
+<link rel="stylesheet" href="../../blog/blog.css"></head><body>
+<header class="top"><a class="brand" href="../../blog/index.html">미시경제학 연구실 블로그</a><nav><a href="../../index.html">처음</a><a href="../../blog/index.html">글 목차</a><a href="../../v1/index.html">버전1 연구실</a><a href="../../v2/index.html">버전2 연구실</a><a href="../../v1/practice/index.html">실전 연습장</a></nav></header>
+<main><p class="series">부록 8장 · 선택</p><h1>구매 가능성을 알려면 가격만 보면 될까요, 선택 묶음도 알아야 할까요?</h1><p class="byline">글 · 안상선 ((주)M-Robo 대표)</p><div class="summary"><b>세 줄 요약</b><ul><li>가격을 비교하기 전에 어떤 묶음의 비용인지 정합니다.</li><li>구매 가능성은 같은 가격 행 안에서 비교합니다.</li><li>정확한 직접 관계가 있어야 연쇄 일관성도 검사할 수 있습니다.</li></ul></div><article><h2>이 장의 질문</h2>
+<p>서로 다른 세 시점의 가격과 선택 묶음을 관측합니다. 각 시점의 예산은 실제 선택의 지출과 같다고 가정합니다. 초파리는 비교할 묶음의 비용을 직접 계산하고, Money-Robo는 두 가격의 합만 보고 구매 가능성을 추측합니다. 여섯 방향의 판정을 확인한 뒤 실제 지출행렬로 현시선호의 일관성을 평가합니다.</p>
+<h2>왜 이 장을 읽나</h2>
+<ul>
+<li>가격지수와 실제 장바구니 비용을 구분합니다.</li>
+<li>행별 지출행렬과 직접 현시선호를 읽습니다.</li>
+<li>구매 가능성의 판정과 GARP의 연쇄 검정을 구분합니다.</li>
+</ul>
+<h2>개념정리</h2>
+<p><strong>첫째 단계 · 같은 가격으로 다시 계산</strong> — 세 번 장을 봤을 때 과거 장바구니를 오늘 가격으로 사면 얼마인지 묻습니다. 예전 영수증 금액을 그대로 가져오면 가격 기준이 섞입니다.</p>
+<blockquote>
+<p>핵심 식: 살 수 있음 ⇔ pᶦ·xʲ≤pᶦ·xᶦ</p>
+</blockquote>
+<p>이 단계의 한계: 구매 가능했다는 사실만으로 실제 선택의 이유를 완전히 알 수는 없습니다.</p>
+<p><strong>둘째 단계 · 선택에서 약한 선호 읽기</strong> — 다른 장바구니도 살 수 있었는데 현재 묶음을 선택했다면 적어도 나쁘지 않다고 본 선택으로 해석할 수 있습니다.</p>
+<blockquote>
+<p>핵심 식: xᶦ Rᴰ xʲ ⇔ Eᵢⱼ≤Eᵢᵢ</p>
+</blockquote>
+<p>이 단계의 한계: 직접 관계만으로는 여러 관측을 거친 선호의 순환을 검사할 수 없습니다.</p>
+<p><strong>셋째 단계 · 연쇄와 엄격한 역전</strong> — A에서 B, B에서 C를 차례로 선택보다 나쁘지 않다고 읽었다면 끝의 C관측에서 A를 어떻게 취급했는지도 점검합니다.</p>
+<blockquote>
+<p>핵심 식: GARP 위반 ⇔ xᶦ R xʲ 그리고 Eⱼᵢ&lt;Eⱼⱼ</p>
+</blockquote>
+<p>이 단계의 한계: 통과는 유한 관측의 일관성이지 선호 전체의 식별이 아닙니다. 측정오차나 품질 변화는 별도로 검토해야 합니다.</p>
+<h2>이 장의 가정</h2>
+<ul>
+<li>관측 예산은 각 선택의 실제 지출과 같다고 놓습니다.</li>
+<li>가격과 수량은 양수이며 재화 품질과 선호가 관측 사이에 같다는 가정을 평가합니다.</li>
+<li>가격합 규칙은 설명용 비교대상입니다. pᶦ의 두 가격 합이 pʲ의 합 이하이면 j묶음을 살 수 있다고 추측하며, 경제학적 구매 가능성 정리가 아닙니다.</li>
+</ul>
+<p><p class="note">이 부록은 Hal R. Varian 『Microeconomic Analysis』 제3판의 장 순서를 따라 읽는 동행 노트입니다. 해당 책의 본문·문제·증명을 옮기거나 대신하지 않으며, 설명과 수치는 독자적으로 구성한 교육용 예시입니다.</p></p></article><section class="labbox"><h2>직접 실험해 보기</h2><p><b>제8장 연구실 · 가격표만 보고 살 수 있다고 할까?</b>에서 두 캐릭터의 선택을 같은 조건으로 겨뤄 볼 수 있습니다.</p><div class="say" style="--c:#c0392b"><img src="../../assets/chars/fly.webp" alt="초파리 연구원"><div><b>초파리 연구원</b><p>내 선택은 &#x27;실제 지출 Eᵢⱼ와 자기 지출 Eᵢᵢ를 비교한다&#x27;. 조건부터 확인하자.</p></div></div><div class="say" style="--c:#127c86"><img src="../../assets/chars/robo.webp" alt="Money-Robo"><div><b>Money-Robo</b><p>나는 &#x27;가격합 pₓ+pᵧ만 비교해 추측한다&#x27;(으)로 간다!</p></div></div><div class="say" style="--c:#6a3fc2"><img src="../../assets/chars/doc.webp" alt="박사"><div><b>박사</b><p>결과를 보기 전에 누가 이길지 먼저 예상해 보세요. 판정 기준은 &#x27;올바른 구매 가능성 판정 수, 총6개&#x27;입니다. 조건을 하나씩 바꾸며 결론이 언제 뒤집히는지 찾아보세요.</p></div></div><a class="go" href="../../v2/labs/lab08.html">연구실 열기 →</a></section><section class="read"><h2 style="font-size:20px;margin:0">더 읽기</h2><h3>함께 읽을 글</h3><ul><li><a href="../../blog/posts/main-2.html">본편 2편 · 같은 용돈이면 반반 나눠 쓰는 게 최선일까?</a></li><li><a href="../../v2/chapters/ch08/index.html">버전2 교과서 제8장 선택 — 이론·예제·연습문제</a></li></ul></section><nav class="pn"><a href="app-07.html">← 부록 7장</a><a href="app-09.html" style="text-align:right">부록 9장 · 수요 →</a></nav></main>
+<footer>글 · 안상선 ((주)M-Robo 대표) · <a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">저자 소개</a><br>캐릭터 이름·설정·그림 © 안상선 ((주)M-Robo). 모든 권리 보유. 무단 복제·수정·배포·상업적 이용 금지.<br>수치는 교육용 모형의 예시값입니다. 실제 추정치, 정책 효과, 투자 권고가 아닙니다.</footer>
+</body></html>

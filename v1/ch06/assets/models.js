@@ -1,0 +1,8 @@
+(function(g){'use strict';
+function efficiency(s){const {l,r,t}=s,X=l,Y=10-l,xa=r*X,ya=t*Y,xb=X-xa,yb=Y-ya,ua=Math.sqrt(xa*ya),ub=Math.sqrt(xb*yb),C=Math.sqrt(X*Y),share=ua+ub?ua/(ua+ub):.5;return{...s,X,Y,xa,ya,xb,yb,ua,ub,C,gap:C-ua-ub,grandGap:5-ua-ub,candidateA:C*share,candidateB:C*(1-share)}}
+function social(s){const {q,k,w}=s,ua=k*Math.sqrt(q),ub=Math.sqrt(100-q),qu=100*(w*k)**2/((w*k)**2+(1-w)**2),qr=100/(1+k*k);return{...s,ua,ub,sum:ua+ub,weighted:w*ua+(1-w)*ub,rawls:Math.min(ua,ub),qu,qr,uOpt:w*k*Math.sqrt(qu)+(1-w)*Math.sqrt(100-qu),rOpt:k*Math.sqrt(qr)}}
+function distribution(s){const {a,L,K}=s,Q=L**a*K**(1-a),w=a*Q/L,r=(1-a)*Q/K;return{...s,Q,w,r,labor:w*L,capital:r*K,lshare:w*L/Q,kshare:r*K/Q}}
+function policy(s){const {d,tax,c}=s,A=20,b=1,mc=4,slope=.5,qm=(A-mc)/(b+slope),qs=(A-mc)/(b+slope+d),qt=Math.max(0,(A-mc-tax)/(b+slope)),benefit=q=>A*q-b*q*q/2,cost=q=>mc*q+slope*q*q/2+d*q*q/2,welfare=q=>benefit(q)-cost(q);const mb1=q=>Math.max(0,12-q),mb2=q=>Math.max(0,8-q),total=q=>mb1(q)+mb2(q);let qg;if(c>=20)qg=0;else if(c>=4)qg=(20-c)/2;else qg=12-c;const private1=Math.max(0,12-c),private2=Math.max(0,8-c);return{...s,qm,qs,qt,welfare,loss:welfare(qs)-welfare(qt),taxOpt:d*qs,qg,private1,private2,mb1,mb2,total}}
+function votes(profile){const profiles=[[['A','B','C'],['B','C','A'],['C','A','B']],[['A','B','C'],['B','A','C'],['A','C','B']]],p=profiles[profile],pairs=[['A','B'],['B','C'],['C','A']];return{p,pairs:pairs.map(([a,b])=>({a,b,votes:p.filter(v=>v.indexOf(a)<v.indexOf(b)).length}))}}
+const m={efficiency,social,distribution,policy,votes};if(typeof module!=='undefined')module.exports=m;g.Welfare=m;
+})(typeof window==='undefined'?globalThis:window);

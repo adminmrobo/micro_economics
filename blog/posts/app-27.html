@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>미분을 0으로 만든 점이 예산 밖이면 최적해라고 부를 수 있을까요? — 미시경제학 연구실 블로그</title><meta name="description" content="불가능한 후보의 큰 목적값을 합법적인 점수처럼 비교하지 마세요. 가능하게 고쳤다고 최적이 되는 것은 아닙니다. 제약 등호와 양의 그림자가격은 같은 말이 아닙니다.">
+<meta property="og:title" content="미분을 0으로 만든 점이 예산 밖이면 최적해라고 부를 수 있을까요?"><meta property="og:description" content="불가능한 후보의 큰 목적값을 합법적인 점수처럼 비교하지 마세요. 가능하게 고쳤다고 최적이 되는 것은 아닙니다. 제약 등호와 양의 그림자가격은 같은 말이 아닙니다.">
+<link rel="stylesheet" href="../../blog/blog.css"></head><body>
+<header class="top"><a class="brand" href="../../blog/index.html">미시경제학 연구실 블로그</a><nav><a href="../../index.html">처음</a><a href="../../blog/index.html">글 목차</a><a href="../../v1/index.html">버전1 연구실</a><a href="../../v2/index.html">버전2 연구실</a><a href="../../v1/practice/index.html">실전 연습장</a></nav></header>
+<main><p class="series">부록 27장 · 최적화</p><h1>미분을 0으로 만든 점이 예산 밖이면 최적해라고 부를 수 있을까요?</h1><p class="byline">글 · 안상선 ((주)M-Robo 대표)</p><div class="summary"><b>세 줄 요약</b><ul><li>불가능한 후보의 큰 목적값을 합법적인 점수처럼 비교하지 마세요.</li><li>가능하게 고쳤다고 최적이 되는 것은 아닙니다.</li><li>제약 등호와 양의 그림자가격은 같은 말이 아닙니다.</li></ul></div><article><h2>이 장의 질문</h2>
+<p>두 활동의 순편익을 한정된 자원으로 최대화합니다. 정확한 경계 검사를 한 선택과 무제약 해를 비음수로 고친 뒤 비례 축소한 간단한 실행규칙을 비교합니다. 불가능한 원래 제안은 점수를 부여하지 않습니다.</p>
+<h2>왜 이 장을 읽나</h2>
+<ul>
+<li>필요조건·가능성·충분조건을 분리합니다.</li>
+<li>내점·경계·포화해를 하나의 문제에서 살펴봅니다.</li>
+<li>수정한 실행규칙과 정확한 최적화의 차이를 검증합니다.</li>
+</ul>
+<h2>개념정리</h2>
+<p><strong>1단계 · 목적과 가능집합</strong> — 두 실험에 시간을 나누되 남길 수도 있어요.</p>
+<blockquote>
+<p>핵심 식: x≥0, y≥0, x+y≤m; a,b,m&gt;0, |ρ|&lt;1</p>
+</blockquote>
+<p>이 단계의 한계: 순편익이 전 영역에서 증가하는 모형이 아닙니다. 포화 후에는 자원을 남깁니다.</p>
+<p><strong>2단계 · 무제약 해를 실행안으로</strong> — 희망 작업표가 자원보다 크면 실제 가능한 작업표로 고쳐야 해요.</p>
+<blockquote>
+<p>핵심 식: x₀=(a−ρb)/(1−ρ²), y₀=(b−ρa)/(1−ρ²)</p>
+</blockquote>
+<p>이 단계의 한계: 클리핑과 비례 축소는 상호작용 항이 있는 목적함수의 최적해를 보장하지 않습니다.</p>
+<p><strong>3단계 · KKT와 그림자가격</strong> — 사용하지 않은 활동과 남는 자원까지 검사해요.</p>
+<blockquote>
+<p>핵심 식: ∇f−λ(1,1)+(μx,μy)=0; λ(m−x−y)=μx·x=μy·y=0</p>
+</blockquote>
+<p>이 단계의 한계: 일반 비오목 문제에서 KKT만 만족하면 전역 최대라는 주장은 성립하지 않습니다.</p>
+<h2>이 장의 가정</h2>
+<ul>
+<li>a,b&gt;0, m&gt;0, |ρ|&lt;1입니다.</li>
+<li>활동과 자원을 연속적으로 선택합니다.</li>
+<li>목적함수는 엄격 오목하고 가능집합은 볼록합니다.</li>
+<li>점수는 실행 가능한 두 선택에만 부여합니다.</li>
+</ul>
+<p class="note">이 부록은 Hal R. Varian 『Microeconomic Analysis』 제3판의 장 순서를 따라 읽는 동행 노트입니다. 해당 책의 본문·문제·증명을 옮기거나 대신하지 않으며, 설명과 수치는 독자적으로 구성한 교육용 예시입니다.</p></article><section class="labbox"><h2>직접 실험해 보기</h2><p><b>제27장 연구실 · 가능한 선택만 비교하는 최적화</b>에서 두 캐릭터의 선택을 같은 조건으로 겨뤄 볼 수 있습니다.</p><div class="say" style="--c:#c0392b"><img src="../../assets/chars/fly.webp" alt="초파리 연구원"><div><b>초파리 연구원</b><p>내 선택은 &#x27;내점과 모든 경계를 검사한 최적해&#x27;. 조건부터 확인하자.</p></div></div><div class="say" style="--c:#127c86"><img src="../../assets/chars/robo.webp" alt="Money-Robo"><div><b>Money-Robo</b><p>나는 &#x27;무제약 해를 비음수화·비례 축소한 실행안&#x27;(으)로 간다!</p></div></div><div class="say" style="--c:#6a3fc2"><img src="../../assets/chars/doc.webp" alt="박사"><div><b>박사</b><p>결과를 보기 전에 누가 이길지 먼저 예상해 보세요. 판정 기준은 &#x27;가능한 선택의 순편익&#x27;입니다. 조건을 하나씩 바꾸며 결론이 언제 뒤집히는지 찾아보세요.</p></div></div><a class="go" href="../../v2/labs/lab27.html">연구실 열기 →</a></section><section class="read"><h2 style="font-size:20px;margin:0">더 읽기</h2><h3>함께 읽을 글</h3><ul><li><a href="../../blog/posts/main-1.html">본편 1편 · 이미 큰돈을 썼다면 끝까지 해야 할까?</a></li><li><a href="../../v2/chapters/ch27/index.html">버전2 교과서 제27장 최적화 — 이론·예제·연습문제</a></li></ul></section><nav class="pn"><a href="app-26.html">← 부록 26장</a><span></span></nav></main>
+<footer>글 · 안상선 ((주)M-Robo 대표) · <a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">저자 소개</a><br>캐릭터 이름·설정·그림 © 안상선 ((주)M-Robo). 모든 권리 보유. 무단 복제·수정·배포·상업적 이용 금지.<br>수치는 교육용 모형의 예시값입니다. 실제 추정치, 정책 효과, 투자 권고가 아닙니다.</footer>
+</body></html>

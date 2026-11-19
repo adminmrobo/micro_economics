@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>기존 최적 공정을 유지하는 이윤과 새 가격의 최대이윤은 같을까요? — 미시경제학 연구실 블로그</title><meta name="description" content="기존 계획의 이윤 직선과 재최적화한 이윤함수는 다릅니다. 기존 공정은 여전히 가능하므로 최대이윤 곡선은 접선 아래로 내려가지 않습니다. 공급은 미분 가능한 이윤함수의 산출가격 기울기입니다.">
+<meta property="og:title" content="기존 최적 공정을 유지하는 이윤과 새 가격의 최대이윤은 같을까요?"><meta property="og:description" content="기존 계획의 이윤 직선과 재최적화한 이윤함수는 다릅니다. 기존 공정은 여전히 가능하므로 최대이윤 곡선은 접선 아래로 내려가지 않습니다. 공급은 미분 가능한 이윤함수의 산출가격 기울기입니다.">
+<link rel="stylesheet" href="../../blog/blog.css"></head><body>
+<header class="top"><a class="brand" href="../../blog/index.html">미시경제학 연구실 블로그</a><nav><a href="../../index.html">처음</a><a href="../../blog/index.html">글 목차</a><a href="../../v1/index.html">버전1 연구실</a><a href="../../v2/index.html">버전2 연구실</a><a href="../../v1/practice/index.html">실전 연습장</a></nav></header>
+<main><p class="series">부록 3장 · 이윤함수</p><h1>기존 최적 공정을 유지하는 이윤과 새 가격의 최대이윤은 같을까요?</h1><p class="byline">글 · 안상선 ((주)M-Robo 대표)</p><div class="summary"><b>세 줄 요약</b><ul><li>기존 계획의 이윤 직선과 재최적화한 이윤함수는 다릅니다.</li><li>기존 공정은 여전히 가능하므로 최대이윤 곡선은 접선 아래로 내려가지 않습니다.</li><li>공급은 미분 가능한 이윤함수의 산출가격 기울기입니다.</li></ul></div><article><h2>이 장의 질문</h2>
+<p>처음 산출가격 p₀에 맞춰 정한 투입을 새 가격 p에서 그대로 사용할 수도 있고, 다시 최적화할 수도 있습니다. 이윤함수의 접선은 기존 공정을 유지한 이윤입니다. 이 실험은 최대이윤 곡선과 그 접선을 함께 그려 가격에 대한 볼록성과 공급을 읽습니다.</p>
+<h2>왜 이 장을 읽나</h2>
+<ul>
+<li>가치함수와 고정 선택의 목적함수를 구분합니다.</li>
+<li>접선의 기울기에서 공급량을 읽는 포락선 관계를 확인합니다.</li>
+<li>가격의 볼록성과 모든 가격의 일차 동차성을 구분합니다.</li>
+</ul>
+<h2>개념정리</h2>
+<p><strong>첫째 단계 · 기존 공정의 직선</strong> — 가격표만 바뀌고 사람·장비 배치는 그대로라면 산출도 그대로입니다.</p>
+<blockquote>
+<p>핵심 식: π고정(p)=π(p₀)+q₀(p−p₀)</p>
+</blockquote>
+<p>이 단계의 한계: 요소가격 w,r는 한 곡선을 읽는 동안 고정합니다. 기준가격과 화면의 저장 기준은 별개입니다.</p>
+<p><strong>둘째 단계 · 다시 선택한 최대값</strong> — 새 가격에서 다른 공정을 고르면 이전 공정도 여전히 선택할 수 있습니다. 따라서 최댓값이 기존 선택보다 작아질 수는 없습니다.</p>
+<blockquote>
+<p>핵심 식: π(p)−π고정(p)=(1/w+1/r)(p−p₀)²/4≥0</p>
+</blockquote>
+<p>이 단계의 한계: 산출가격에 대한 곡률을 설명하는 실험입니다. 생산량에 대한 이윤의 오목성과 모순되지 않습니다.</p>
+<p><strong>셋째 단계 · 기울기로 공급 읽기</strong> — 최적 선택이 가격에 반응해 움직이지만, 가치함수의 첫 미분은 최적 산출로 읽힙니다.</p>
+<blockquote>
+<p>핵심 식: ∂π/∂p=p(1/w+1/r)/2=q*</p>
+</blockquote>
+<p>이 단계의 한계: 최적 공정이 여러 개여서 가치함수에 꺾임이 있으면 단일 미분식 대신 부분기울기 관계가 필요합니다.</p>
+<h2>이 장의 가정</h2>
+<ul>
+<li>수치는 모두 명시한 교육용 모형의 계산이며 실측자료가 아닙니다.</li>
+<li>두 규칙은 같은 가격·기술·제약을 사용합니다. 다른 점은 해당 장에 명시한 계산 또는 선택 규칙입니다.</li>
+<li>슬라이더의 범위 안에서만 계산하며 장별 정의역과 중단·경계 조건을 적용합니다.</li>
+<li>기술 q=√L+√K이고 모든 가격은 양수입니다. 고정비는 포함하지 않습니다.</li>
+<li>기존 공정은 기준 산출가격 p₀에서 최적화한 투입을 새 가격에서도 그대로 사용합니다.</li>
+</ul>
+<h2>실전 연습장에서</h2>
+<p>마지막 장의 <strong>공장</strong> 시뮬레이터에서 이 장의 원리를 다른 장면으로 다시 연습할 수 있습니다.</p>
+<p class="note">이 부록은 Hal R. Varian 『Microeconomic Analysis』 제3판의 장 순서를 따라 읽는 동행 노트입니다. 해당 책의 본문·문제·증명을 옮기거나 대신하지 않으며, 설명과 수치는 독자적으로 구성한 교육용 예시입니다.</p></article><section class="labbox"><h2>직접 실험해 보기</h2><p><b>제3장 연구실 · 가격이 바뀌면 이윤함수는 왜 휘어질까요?</b>에서 두 캐릭터의 선택을 같은 조건으로 겨뤄 볼 수 있습니다.</p><div class="say" style="--c:#c0392b"><img src="../../assets/chars/fly.webp" alt="초파리 연구원"><div><b>초파리 연구원</b><p>내 선택은 &#x27;현재가격에서 다시 최적화&#x27;. 조건부터 확인하자.</p></div></div><div class="say" style="--c:#127c86"><img src="../../assets/chars/robo.webp" alt="Money-Robo"><div><b>Money-Robo</b><p>나는 &#x27;p₀에서 최적이던 투입 유지&#x27;(으)로 간다!</p></div></div><div class="say" style="--c:#6a3fc2"><img src="../../assets/chars/doc.webp" alt="박사"><div><b>박사</b><p>결과를 보기 전에 누가 이길지 먼저 예상해 보세요. 판정 기준은 &#x27;동일 현재가격에서의 이윤&#x27;입니다. 조건을 하나씩 바꾸며 결론이 언제 뒤집히는지 찾아보세요.</p></div></div><a class="go" href="../../v2/labs/lab03.html">연구실 열기 →</a><a class="go alt" href="../../v2/practice/index.html#factory">실전 연습장 →</a></section><section class="read"><h2 style="font-size:20px;margin:0">더 읽기</h2><h3>함께 읽을 글</h3><ul><li><a href="../../blog/posts/main-4.html">본편 4편 · 가장 많이 팔면 가장 많이 남을까?</a></li><li><a href="../../v2/chapters/ch03/index.html">버전2 교과서 제3장 이윤함수 — 이론·예제·연습문제</a></li></ul></section><nav class="pn"><a href="app-02.html">← 부록 2장</a><a href="app-04.html" style="text-align:right">부록 4장 · 비용최소화 →</a></nav></main>
+<footer>글 · 안상선 ((주)M-Robo 대표) · <a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">저자 소개</a><br>캐릭터 이름·설정·그림 © 안상선 ((주)M-Robo). 모든 권리 보유. 무단 복제·수정·배포·상업적 이용 금지.<br>수치는 교육용 모형의 예시값입니다. 실제 추정치, 정책 효과, 투자 권고가 아닙니다.</footer>
+</body></html>

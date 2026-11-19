@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>예보가 정확해져도 정보료까지 생각하면 늘 유리할까요? — 미시경제학 연구실 블로그</title><meta name="description" content="정확도만으로 정보의 가치를 정할 수 없어요. 무료 정보의 총가치는 음수가 아니지만 순가치는 정보료에 달려요. 구입 여부까지 선택하면 총가치가 정보료 이상일 때만 사면 돼요.">
+<meta property="og:title" content="예보가 정확해져도 정보료까지 생각하면 늘 유리할까요?"><meta property="og:description" content="정확도만으로 정보의 가치를 정할 수 없어요. 무료 정보의 총가치는 음수가 아니지만 순가치는 정보료에 달려요. 구입 여부까지 선택하면 총가치가 정보료 이상일 때만 사면 돼요.">
+<link rel="stylesheet" href="../../blog/blog.css"></head><body>
+<header class="top"><a class="brand" href="../../blog/index.html">미시경제학 연구실 블로그</a><nav><a href="../../index.html">처음</a><a href="../../blog/index.html">글 목차</a><a href="../../v1/index.html">버전1 연구실</a><a href="../../v2/index.html">버전2 연구실</a><a href="../../v1/practice/index.html">실전 연습장</a></nav></header>
+<main><p class="series">부록 25장 · 정보</p><h1>예보가 정확해져도 정보료까지 생각하면 늘 유리할까요?</h1><p class="byline">글 · 안상선 ((주)M-Robo 대표)</p><div class="summary"><b>세 줄 요약</b><ul><li>정확도만으로 정보의 가치를 정할 수 없어요.</li><li>무료 정보의 총가치는 음수가 아니지만 순가치는 정보료에 달려요.</li><li>구입 여부까지 선택하면 총가치가 정보료 이상일 때만 사면 돼요.</li></ul></div><article><h2>이 장의 질문</h2>
+<p>연구실의 장비를 야외에 둘지 보호할지 결정해야 해요. 위험이 발생하면 장비 손실이 생기고, 미리 보호하면 비용이 들지만 손실을 막을 수 있어요. 초파리는 현재의 위험확률만으로 최선의 행동을 고릅니다. Money-Robo는 비용을 내고 신호를 본 뒤 행동을 바꿉니다. 정확도 경쟁이 아니라 정보료까지 포함한 기대비용의 대결이에요.</p>
+<h2>왜 이 장을 읽나</h2>
+<ul>
+<li>신호의 정확도와 정보의 경제적 가치를 구별할 수 있어요.</li>
+<li>사전확률에서 사후확률로 갱신하고 실제 행동까지 연결해요.</li>
+<li>무료 정보의 가치가 음수가 아니라는 명제와 비싼 정보 구매의 손실을 동시에 이해해요.</li>
+</ul>
+<h2>개념정리</h2>
+<p><strong>첫째 단계 · 정보가 없어도 선택은 가능하다</strong> — 예보를 사기 전에, 장비 보호비와 예상 손실을 먼저 저울에 올려요.</p>
+<blockquote>
+<p>핵심 식: 무정보 최소 기대비용 C₀=min{c,pL}; 보호 조건 pL≥c</p>
+</blockquote>
+<p>이 단계의 한계: 금전 손실의 기대값을 최소화합니다. 위험회피, 보호의 불완전성, 시간 제약과 여러 행동은 이 실험에서 제외합니다.</p>
+<p><strong>둘째 단계 · 신호를 받으면 확률을 다시 계산한다</strong> — 위험 신호가 왔다고 해서 위험확률이 정확도와 같아지는 것은 아니에요. 원래 위험이 얼마나 흔한지도 필요해요.</p>
+<blockquote>
+<p>핵심 식: Pr(위험|위험 신호)=pt/[pt+(1−p)(1−t)]; C신호=Σₛ Pr(s)min{c,L Pr(위험|s)}</p>
+</blockquote>
+<p>이 단계의 한계: 신호 구조를 알고 있으며 보고된 정확도를 신뢰합니다. 거짓말하는 정보 판매자나 학습으로 추정해야 하는 정확도는 다른 문제입니다.</p>
+<p><strong>셋째 단계 · 총가치에서 정보료를 빼기</strong> — 예보 덕분에 아낀 금액보다 구입비가 크면 더 잘 알아도 지갑에는 손해예요.</p>
+<blockquote>
+<p>핵심 식: EVSI=C₀−C신호; EVPI=C₀−p min{c,L}; 순가치=EVSI−f</p>
+</blockquote>
+<p>이 단계의 한계: Money-Robo의 비교 정책은 신호를 반드시 구입하는 정책입니다. 실제로 구입 여부까지 최적화할 수 있다면 EVSI≥f일 때만 사면 됩니다. 비싼 신호를 억지로 사야 한다는 권고가 아닙니다.</p>
+<h2>이 장의 가정</h2>
+<ul>
+<li>위험과 안전의 두 상태, 보호와 미보호의 두 행동</li>
+<li>보호는 손실을 완전히 막고 정보와 무관하게 같은 비용을 가짐</li>
+<li>위험중립, 알려진 대칭 신호 정확도 t∈[0.5,1]</li>
+<li>정보료는 신호를 보기 전에 지불하며 신호 뒤 행동은 최적 선택</li>
+</ul>
+<h2>실전 연습장에서</h2>
+<p>마지막 장의 <strong>보험사</strong> 시뮬레이터에서 이 장의 원리를 다른 장면으로 다시 연습할 수 있습니다.</p>
+<p class="note">이 부록은 Hal R. Varian 『Microeconomic Analysis』 제3판의 장 순서를 따라 읽는 동행 노트입니다. 해당 책의 본문·문제·증명을 옮기거나 대신하지 않으며, 설명과 수치는 독자적으로 구성한 교육용 예시입니다.</p></article><section class="labbox"><h2>직접 실험해 보기</h2><p><b>제25장 연구실 · 더 정확한 정보를 돈 주고 살 가치가 있을까?</b>에서 두 캐릭터의 선택을 같은 조건으로 겨뤄 볼 수 있습니다.</p><div class="say" style="--c:#c0392b"><img src="../../assets/chars/fly.webp" alt="초파리 연구원"><div><b>초파리 연구원</b><p>내 선택은 &#x27;정보 없이 사전확률로 최적 행동&#x27;. 조건부터 확인하자.</p></div></div><div class="say" style="--c:#127c86"><img src="../../assets/chars/robo.webp" alt="Money-Robo"><div><b>Money-Robo</b><p>나는 &#x27;유료 신호 구입 뒤 Bayes 최적 행동&#x27;(으)로 간다!</p></div></div><div class="say" style="--c:#6a3fc2"><img src="../../assets/chars/doc.webp" alt="박사"><div><b>박사</b><p>결과를 보기 전에 누가 이길지 먼저 예상해 보세요. 판정 기준은 &#x27;보호·손실·정보료를 합친 기대비용&#x27;입니다. 조건을 하나씩 바꾸며 결론이 언제 뒤집히는지 찾아보세요.</p></div></div><a class="go" href="../../v2/labs/lab25.html">연구실 열기 →</a><a class="go alt" href="../../v2/practice/index.html#insurer">실전 연습장 →</a></section><section class="read"><h2 style="font-size:20px;margin:0">더 읽기</h2><h3>함께 읽을 글</h3><ul><li><a href="../../blog/posts/main-8.html">본편 8편 · 더 정확한 예보는 돈 주고 살 가치가 있을까?</a></li><li><a href="../../v2/chapters/ch25/index.html">버전2 교과서 제25장 정보 — 이론·예제·연습문제</a></li></ul></section><nav class="pn"><a href="app-24.html">← 부록 24장</a><a href="app-26.html" style="text-align:right">부록 26장 · 수학 →</a></nav></main>
+<footer>글 · 안상선 ((주)M-Robo 대표) · <a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">저자 소개</a><br>캐릭터 이름·설정·그림 © 안상선 ((주)M-Robo). 모든 권리 보유. 무단 복제·수정·배포·상업적 이용 금지.<br>수치는 교육용 모형의 예시값입니다. 실제 추정치, 정책 효과, 투자 권고가 아닙니다.</footer>
+</body></html>

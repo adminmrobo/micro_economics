@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>같은 총량인데 교환 뒤 두 사람 모두 더 만족할 수 있을까요? — 미시경제학 연구실 블로그</title><meta name="description" content="총량이 같아도 더 선호하는 조합으로 교환할 수 있습니다. 개인의 예산과 시장의 자원제약을 함께 확인해야 합니다. 효율성과 형평성, 개인별 효용을 구분하세요.">
+<meta property="og:title" content="같은 총량인데 교환 뒤 두 사람 모두 더 만족할 수 있을까요?"><meta property="og:description" content="총량이 같아도 더 선호하는 조합으로 교환할 수 있습니다. 개인의 예산과 시장의 자원제약을 함께 확인해야 합니다. 효율성과 형평성, 개인별 효용을 구분하세요.">
+<link rel="stylesheet" href="../../blog/blog.css"></head><body>
+<header class="top"><a class="brand" href="../../blog/index.html">미시경제학 연구실 블로그</a><nav><a href="../../index.html">처음</a><a href="../../blog/index.html">글 목차</a><a href="../../v1/index.html">버전1 연구실</a><a href="../../v2/index.html">버전2 연구실</a><a href="../../v1/practice/index.html">실전 연습장</a></nav></header>
+<main><p class="series">부록 17장 · 교환</p><h1>같은 총량인데 교환 뒤 두 사람 모두 더 만족할 수 있을까요?</h1><p class="byline">글 · 안상선 ((주)M-Robo 대표)</p><div class="summary"><b>세 줄 요약</b><ul><li>총량이 같아도 더 선호하는 조합으로 교환할 수 있습니다.</li><li>개인의 예산과 시장의 자원제약을 함께 확인해야 합니다.</li><li>효율성과 형평성, 개인별 효용을 구분하세요.</li></ul></div><article><h2>이 장의 질문</h2>
+<p>두 연구실이 서로 다른 종류의 준비물을 가지고 있습니다. 총량은 늘지 않아도 각자 필요한 조합으로 바꾸면 선택의 가치가 달라집니다. 초파리는 시장청산가격에서 A의 최적 교환을 계산하고 Money-Robo는 처음 가진 묶음을 그대로 유지합니다. 대결은 A 자신의 동일한 효용으로 비교하되 B의 효용과 두 예산도 함께 검산합니다.</p>
+<h2>왜 이 장을 읽나</h2>
+<ul>
+<li>부존이 시장가격에서 소득이 되는 과정을 확인합니다.</li>
+<li>개인 최적화와 전체 시장청산을 동시에 검산합니다.</li>
+<li>서로 다른 사람의 효용 숫자를 더하지 않고 교환의 이득을 비교합니다.</li>
+</ul>
+<h2>개념정리</h2>
+<p><strong>첫째 단계 · 부존도 예산이다</strong> — A에게 x 준비물과 y 준비물이 있고 B는 나머지를 가집니다.</p>
+<blockquote>
+<p>핵심 식: mA=p ex+ey, mB=p(10−ex)+(10−ey)</p>
+</blockquote>
+<p>이 단계의 한계: 가격은 상대가격입니다. 돈을 밖에서 추가하거나 생산을 넣은 모형이 아닙니다.</p>
+<p><strong>둘째 단계 · 수요와 시장청산</strong> — 각 연구실이 원하는 장바구니를 같은 가격표로 고릅니다.</p>
+<blockquote>
+<p>핵심 식: C=a ey+b(10−ey), D=(1−a)ex+(1−b)(10−ex), p*=C/D</p>
+</blockquote>
+<p>이 단계의 한계: 양의 부존과 0&lt;a,b&lt;1인 Cobb–Douglas 모형의 해입니다. 임의의 선호에 이 가격식을 쓰지 않습니다.</p>
+<p><strong>셋째 단계 · 효율성과 교환 이득</strong> — 서로 양보한 준비물보다 새로 얻은 조합이 가치 있는지 봅니다.</p>
+<blockquote>
+<p>핵심 식: MRS_A=[a/(1−a)]yA/xA=MRS_B</p>
+</blockquote>
+<p>이 단계의 한계: 대결은 A의 두 선택만 비교합니다. 효용은 개인 간 공통 화폐가 아니며 효율성은 공평함을 보장하지 않습니다.</p>
+<h2>이 장의 가정</h2>
+<ul>
+<li>총부존은 (10,10), 거래비용과 외부효과 없음</li>
+<li>두 가계는 가격수용자이며 y가격은1</li>
+<li>두 지수는0과1 사이, 모든 초기 부존은 양수</li>
+</ul>
+<h2>실전 연습장에서</h2>
+<p>마지막 장의 <strong>거래소</strong> 시뮬레이터에서 이 장의 원리를 다른 장면으로 다시 연습할 수 있습니다.</p>
+<p class="note">이 부록은 Hal R. Varian 『Microeconomic Analysis』 제3판의 장 순서를 따라 읽는 동행 노트입니다. 해당 책의 본문·문제·증명을 옮기거나 대신하지 않으며, 설명과 수치는 독자적으로 구성한 교육용 예시입니다.</p></article><section class="labbox"><h2>직접 실험해 보기</h2><p><b>제17장 연구실 · 교환하면 누가 무엇을 얻을까?</b>에서 두 캐릭터의 선택을 같은 조건으로 겨뤄 볼 수 있습니다.</p><div class="say" style="--c:#c0392b"><img src="../../assets/chars/fly.webp" alt="초파리 연구원"><div><b>초파리 연구원</b><p>내 선택은 &#x27;균형가격에서 A의 최적 교환&#x27;. 조건부터 확인하자.</p></div></div><div class="say" style="--c:#127c86"><img src="../../assets/chars/robo.webp" alt="Money-Robo"><div><b>Money-Robo</b><p>나는 &#x27;A의 부존 그대로 보유&#x27;(으)로 간다!</p></div></div><div class="say" style="--c:#6a3fc2"><img src="../../assets/chars/doc.webp" alt="박사"><div><b>박사</b><p>결과를 보기 전에 누가 이길지 먼저 예상해 보세요. 판정 기준은 &#x27;A의 Cobb–Douglas 효용&#x27;입니다. 조건을 하나씩 바꾸며 결론이 언제 뒤집히는지 찾아보세요.</p></div></div><a class="go" href="../../v2/labs/lab17.html">연구실 열기 →</a><a class="go alt" href="../../v2/practice/index.html#exchange">실전 연습장 →</a></section><section class="read"><h2 style="font-size:20px;margin:0">더 읽기</h2><h3>함께 읽을 글</h3><ul><li><a href="../../blog/posts/main-6.html">본편 6편 · 나누어 담으면 언제 덜 흔들릴까?</a></li><li><a href="../../v2/chapters/ch17/index.html">버전2 교과서 제17장 교환 — 이론·예제·연습문제</a></li></ul></section><nav class="pn"><a href="app-16.html">← 부록 16장</a><a href="app-18.html" style="text-align:right">부록 18장 · 생산 →</a></nav></main>
+<footer>글 · 안상선 ((주)M-Robo 대표) · <a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">저자 소개</a><br>캐릭터 이름·설정·그림 © 안상선 ((주)M-Robo). 모든 권리 보유. 무단 복제·수정·배포·상업적 이용 금지.<br>수치는 교육용 모형의 예시값입니다. 실제 추정치, 정책 효과, 투자 권고가 아닙니다.</footer>
+</body></html>

@@ -1,0 +1,5 @@
+(function(root){'use strict';
+function value(s,x,y){return s.a*x+s.b*y-.5*(x*x+y*y+2*s.rho*x*y);}
+function solve(s){const {a,b,rho,m}=s;let pts=[[0,0],[Math.min(m,a),0],[0,Math.min(m,b)],[m,0],[0,m]];const x=(a-rho*b)/(1-rho*rho),y=(b-rho*a)/(1-rho*rho);if(x>=0&&y>=0&&x+y<=m)pts.push([x,y]);const z=(a-b+(1-rho)*m)/(2*(1-rho));if(z>=0&&z<=m)pts.push([z,m-z]);pts.sort((u,v)=>value(s,...v)-value(s,...u));const [X,Y]=pts[0],v=value(s,X,Y),gx=a-X-rho*Y,gy=b-Y-rho*X,slack=m-X-Y,lambda=slack>1e-7?0:Math.max(0,X>1e-8?gx:gy),mux=lambda-gx,muy=lambda-gy;return {x:X,y:Y,v,lambda,mux,muy,slack,gx,gy,eigMin:1-Math.abs(rho),eigMax:1+Math.abs(rho),stationarity:Math.max(Math.abs(gx-lambda+mux),Math.abs(gy-lambda+muy)),complement:Math.max(Math.abs(lambda*slack),Math.abs(mux*X),Math.abs(muy*Y)),regime:slack>1e-7?'자원 여유·포화':X<1e-7?'x=0 경계':Y<1e-7?'y=0 경계':'두 활동·자원 결합'};}
+const api={solve,value};if(typeof module==='object')module.exports=api;root.OptimizationModel=api;
+})(typeof window==='undefined'?globalThis:window);

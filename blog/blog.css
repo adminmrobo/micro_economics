@@ -1,0 +1,28 @@
+:root{--ink:#1d2030;--muted:#545a6e;--rule:#d9dce5;--soft:#f5f6f9;--green:#137a45;--blue:#2457b8;--violet:#6a3fc2;--red:#c0392b;--teal:#127c86}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",system-ui,sans-serif;line-height:1.85;font-size:17px}
+header.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:14px 24px;border-bottom:1px solid var(--rule)}
+header.top a.brand{font-weight:800;color:var(--green);text-decoration:none}header.top nav a{margin-left:14px;font-size:14px;color:var(--blue)}
+main{max-width:760px;margin:0 auto;padding:26px 20px 60px}
+.series{font-size:13px;font-weight:700;color:var(--green);letter-spacing:.03em;margin:0}
+h1{font-size:clamp(26px,4.4vw,38px);line-height:1.3;margin:6px 0 8px}
+.byline{color:var(--muted);font-size:14px;margin:0 0 20px}
+.summary{border:1px solid var(--rule);border-left:4px solid var(--green);background:#f3f8f5;border-radius:0 12px 12px 0;padding:12px 18px;margin:0 0 26px}
+.summary b{display:block;font-size:14px;margin-bottom:4px}.summary ul{margin:0;padding-left:20px}.summary li{margin:3px 0}
+article h2{font-size:22px;margin:34px 0 8px;padding-top:6px;border-top:1px solid #eef0f4}
+article p{margin:10px 0}article ul,article ol{padding-left:22px}article li{margin:4px 0}
+article strong{color:#0e5a33}
+article table{border-collapse:collapse;width:100%;font-size:15px;margin:12px 0}article th,article td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}article th{background:var(--soft)}
+.labbox{border:1px solid var(--rule);border-radius:16px;padding:16px 18px;margin:34px 0 18px;background:var(--soft)}
+.labbox h2{border:0;margin:0 0 8px;padding:0;font-size:20px}
+.say{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--rule);border-left:4px solid var(--c);border-radius:10px;padding:8px 10px;margin:8px 0}
+.say img{width:48px;height:48px;image-rendering:pixelated;object-fit:contain;flex:none}.say b{font-size:13px;display:block}.say p{margin:0;font-size:15px}
+.go{display:inline-block;margin-top:10px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;border-radius:10px;padding:8px 14px}
+.go.alt{background:#fff;color:var(--blue);border:1px solid var(--blue);margin-left:6px}
+.read{margin:18px 0}.read h3{font-size:16px;margin:12px 0 4px}.read ul{margin:0;padding-left:20px}
+nav.pn{display:flex;justify-content:space-between;gap:12px;margin-top:34px;border-top:1px solid var(--rule);padding-top:14px;font-size:15px}
+nav.pn a{color:var(--blue);text-decoration:none;max-width:48%}
+.note{font-size:13px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:12px 0 26px}
+.card{border:1px solid var(--rule);border-radius:14px;padding:12px 14px;text-decoration:none;color:var(--ink);background:#fff}
+.card:hover{border-color:var(--blue)}.card .k{font-size:12px;font-weight:700;color:var(--green)}.card .t{font-weight:700;margin:2px 0}.card .d{font-size:14px;color:var(--muted)}
+footer{max-width:760px;margin:0 auto;padding:18px 20px 40px;color:var(--muted);font-size:12px;border-top:1px solid var(--rule)}footer a{color:var(--blue)}
