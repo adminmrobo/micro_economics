@@ -64,7 +64,7 @@ def page(prefix, title, body, desc=''):
 <footer>{AUTHOR} · <a href="https://adminmrobo.github.io/who_am_i/who_am_i.html">저자 소개</a><br>캐릭터 이름·설정·그림 © 안상선 ((주)M-Robo). 모든 권리 보유. 무단 복제·수정·배포·상업적 이용 금지.<br>수치는 교육용 모형의 예시값입니다. 실제 추정치, 정책 효과, 투자 권고가 아닙니다.</footer>
 </body></html>"""
 
-WHO = {'doc': ('박사', '#6a3fc2'), 'asst': ('조수 하루', '#c2306b'), 'fly': ('초파리 연구원', '#c0392b'), 'robo': ('Money-Robo', '#127c86')}
+WHO = {'doc': ('박사', '#6a3fc2'), 'asst': ('조수 하루', '#c2306b'), 'fly': ('초파리 연구원', '#c0392b'), 'robo': ('주판봇', '#127c86')}
 def say(prefix, who, text):
     n, c = WHO[who]
     return f'<div class="say" style="--c:{c}"><img src="{prefix}assets/chars/{who}.webp" alt="{n}"><div><b>{n}</b><p>{html.escape(text)}</p></div></div>'
