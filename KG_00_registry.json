@@ -1,0 +1,950 @@
+{
+ "version": "2.0",
+ "date": "2026-11-21",
+ "ids": {
+  "lab:concept/comparative-statics": {
+   "ko": "비교정태",
+   "en": "comparative statics",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/pareto-efficiency": {
+   "ko": "파레토 효율",
+   "en": "Pareto efficiency",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/sunk-cost": {
+   "ko": "매몰비용",
+   "en": "sunk cost",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/00-duel-fly": {
+   "ko": "한계편익 = 한계비용인 15회",
+   "en": "duel choice A 00",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/00-duel-robo": {
+   "ko": "최대 25회까지 모두",
+   "en": "duel choice B 00",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/endogenous-variable": {
+   "ko": "내생변수",
+   "en": "endogenous variable",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/exogenous-variable": {
+   "ko": "외생변수",
+   "en": "exogenous variable",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/partial-equilibrium": {
+   "ko": "부분균형",
+   "en": "partial equilibrium",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/substitutes": {
+   "ko": "대체재",
+   "en": "substitutes",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/utility-possibility-frontier": {
+   "ko": "효용가능경계",
+   "en": "utility possibility frontier",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/equity": {
+   "ko": "형평",
+   "en": "equity",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/marginal-benefit": {
+   "ko": "한계편익",
+   "en": "marginal benefit",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/marginal-cost": {
+   "ko": "한계비용",
+   "en": "marginal cost",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/corner-solution": {
+   "ko": "모서리해",
+   "en": "corner solution",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/kkt": {
+   "ko": "KKT",
+   "en": "Karush–Kuhn–Tucker conditions",
+   "page": "00_economic_models",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/marginal-rate-of-substitution": {
+   "ko": "한계대체율",
+   "en": "marginal rate of substitution",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/utility-maximization": {
+   "ko": "효용극대화",
+   "en": "utility maximization",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/compensating-variation": {
+   "ko": "보상변화(CV)",
+   "en": "compensating variation",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/01-duel-fly": {
+   "ko": "선호에 맞춰 x에 80% (20, 10)",
+   "en": "duel choice A 01",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/01-duel-robo": {
+   "ko": "반반 지출 (12.5, 25)",
+   "en": "duel choice B 01",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/budget-line": {
+   "ko": "예산선",
+   "en": "budget line",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/indifference-curve": {
+   "ko": "무차별곡선",
+   "en": "indifference curve",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/utility": {
+   "ko": "효용",
+   "en": "utility",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:model/cobb-douglas-utility": {
+   "ko": "코브-더글러스",
+   "en": "Cobb–Douglas utility",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/marshallian-demand": {
+   "ko": "마셜 수요",
+   "en": "Marshallian demand",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/monotonic-transformation": {
+   "ko": "단조증가 변환",
+   "en": "monotonic transformation",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/substitution-effect": {
+   "ko": "대체효과",
+   "en": "substitution effect",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/income-effect": {
+   "ko": "소득효과",
+   "en": "income effect",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/equivalent-variation": {
+   "ko": "동등변화",
+   "en": "equivalent variation",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/consumer-surplus": {
+   "ko": "소비자잉여",
+   "en": "consumer surplus",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/hicksian-demand": {
+   "ko": "힉스 수요",
+   "en": "Hicksian demand",
+   "page": "01_consumer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/production-function": {
+   "ko": "생산함수",
+   "en": "production function",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/cost-minimization": {
+   "ko": "비용최소화",
+   "en": "cost minimization",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/shutdown-condition": {
+   "ko": "조업중단 조건",
+   "en": "shutdown condition",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/02-duel-fly": {
+   "ko": "MPₗ/MPₖ = w/r인 (5, 20)",
+   "en": "duel choice A 02",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/02-duel-robo": {
+   "ko": "사람·장비 같은 숫자 (10, 10)",
+   "en": "duel choice B 02",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/isoquant": {
+   "ko": "등량곡선",
+   "en": "isoquant",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/marginal-product": {
+   "ko": "한계생산",
+   "en": "marginal product",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/returns-to-scale": {
+   "ko": "규모수익",
+   "en": "returns to scale",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/output-elasticity": {
+   "ko": "산출탄력성",
+   "en": "output elasticity",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/isocost-line": {
+   "ko": "등비용선",
+   "en": "isocost line",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/conditional-factor-demand": {
+   "ko": "조건부 요소수요",
+   "en": "conditional factor demand",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/cost-function": {
+   "ko": "비용함수",
+   "en": "cost function",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/average-variable-cost": {
+   "ko": "평균가변비용",
+   "en": "average variable cost",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/contribution-margin": {
+   "ko": "공헌이익",
+   "en": "contribution margin",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/economic-rent": {
+   "ko": "경제적 지대",
+   "en": "economic rent",
+   "page": "02_producer_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/marginal-revenue": {
+   "ko": "한계수입",
+   "en": "marginal revenue",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/deadweight-loss": {
+   "ko": "사중손실",
+   "en": "deadweight loss",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/price-discrimination": {
+   "ko": "가격차별",
+   "en": "price discrimination",
+   "page": "03m_midterm_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/03-duel-fly": {
+   "ko": "MR = MC인 26.7개",
+   "en": "duel choice A 03",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/03-duel-robo": {
+   "ko": "매출이 가장 큰 50개",
+   "en": "duel choice B 03",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/monopoly": {
+   "ko": "독점",
+   "en": "monopoly",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/producer-surplus": {
+   "ko": "생산자잉여",
+   "en": "producer surplus",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:policy/price-ceiling": {
+   "ko": "가격상한",
+   "en": "price ceiling",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/natural-monopoly": {
+   "ko": "자연독점",
+   "en": "natural monopoly",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/price-elasticity": {
+   "ko": "가격탄력성",
+   "en": "price elasticity",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/inverse-elasticity-rule": {
+   "ko": "역탄력성 규칙",
+   "en": "inverse elasticity rule",
+   "page": "03_market_power",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/screening": {
+   "ko": "선별",
+   "en": "screening",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/nash-equilibrium": {
+   "ko": "내시균형",
+   "en": "Nash equilibrium",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:model/cournot": {
+   "ko": "쿠르노 과점",
+   "en": "Cournot oligopoly",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/repeated-game-cooperation": {
+   "ko": "반복게임의 협조 조건",
+   "en": "cooperation in repeated games",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/04-duel-fly": {
+   "ko": "계속 협조",
+   "en": "duel choice A 04",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/04-duel-robo": {
+   "ko": "지금 한 번 일탈 후 처벌",
+   "en": "duel choice B 04",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/payoff-matrix": {
+   "ko": "보수표",
+   "en": "payoff matrix",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/best-response": {
+   "ko": "최선의 대응",
+   "en": "best response",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/dominant-strategy": {
+   "ko": "우월전략",
+   "en": "dominant strategy",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:model/prisoners-dilemma": {
+   "ko": "죄수의 딜레마",
+   "en": "prisoner's dilemma",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/oligopoly": {
+   "ko": "과점",
+   "en": "oligopoly",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/reaction-function": {
+   "ko": "반응함수",
+   "en": "reaction function",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/collusion": {
+   "ko": "담합",
+   "en": "collusion",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/discount-factor": {
+   "ko": "할인인자",
+   "en": "discount factor",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/stage-game": {
+   "ko": "단계게임",
+   "en": "stage game",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/credible-threat": {
+   "ko": "신뢰 가능한 위협",
+   "en": "credible threat",
+   "page": "04_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/walrasian-equilibrium": {
+   "ko": "왈라스 균형(경쟁균형)",
+   "en": "Walrasian equilibrium",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/present-value": {
+   "ko": "현재가치",
+   "en": "present value",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/portfolio-variance": {
+   "ko": "포트폴리오 분산",
+   "en": "portfolio variance",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/05-duel-fly": {
+   "ko": "반반 섞기 (w = 0.5)",
+   "en": "duel choice A 05",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/05-duel-robo": {
+   "ko": "자산 1에 전부 (w = 1)",
+   "en": "duel choice B 05",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/endowment": {
+   "ko": "부존",
+   "en": "endowment",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/relative-price": {
+   "ko": "상대가격",
+   "en": "relative price",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/excess-demand": {
+   "ko": "초과수요",
+   "en": "excess demand",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/walras-law": {
+   "ko": "왈라스 법칙",
+   "en": "Walras' law",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/edgeworth-box": {
+   "ko": "에지워스 상자",
+   "en": "Edgeworth box",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/general-equilibrium": {
+   "ko": "일반균형",
+   "en": "general equilibrium",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/interest-rate": {
+   "ko": "이자율",
+   "en": "interest rate",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/state-price": {
+   "ko": "상태가격",
+   "en": "state price",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/variance": {
+   "ko": "분산",
+   "en": "variance",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/correlation": {
+   "ko": "상관계수",
+   "en": "correlation coefficient",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/covariance": {
+   "ko": "공분산",
+   "en": "covariance",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/short-selling": {
+   "ko": "공매도",
+   "en": "short selling",
+   "page": "05_general_equilibrium",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:theory/first-welfare-theorem": {
+   "ko": "후생경제학 제1정리",
+   "en": "first welfare theorem",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/tax-incidence": {
+   "ko": "조세의 경제적 귀착",
+   "en": "tax incidence",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/externality": {
+   "ko": "외부성",
+   "en": "externality",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/06-duel-fly": {
+   "ko": "기울기로 균형의 부담 몫 계산",
+   "en": "duel choice A 06",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/06-duel-robo": {
+   "ko": "법적 납부자가 전부 부담",
+   "en": "duel choice B 06",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/total-surplus": {
+   "ko": "총잉여",
+   "en": "total surplus",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:theory/second-welfare-theorem": {
+   "ko": "후생경제학 제2정리",
+   "en": "second welfare theorem",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/social-welfare-function": {
+   "ko": "사회후생함수",
+   "en": "social welfare function",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/statutory-payer": {
+   "ko": "법적 납부자",
+   "en": "statutory payer",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/tax-revenue": {
+   "ko": "세수",
+   "en": "tax revenue",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:policy/pigouvian-tax": {
+   "ko": "피구세",
+   "en": "Pigouvian tax",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/public-good": {
+   "ko": "공공재",
+   "en": "public good",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/free-riding": {
+   "ko": "무임승차",
+   "en": "free riding",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:theory/coase-theorem": {
+   "ko": "코즈 정리",
+   "en": "Coase theorem",
+   "page": "06_welfare_policy",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/value-of-information": {
+   "ko": "정보의 가치",
+   "en": "value of information",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/adverse-selection": {
+   "ko": "역선택",
+   "en": "adverse selection",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/principal-agent": {
+   "ko": "주인-대리인 문제",
+   "en": "principal–agent problem",
+   "page": "07f_final_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/07-duel-fly": {
+   "ko": "정보 없이 사전확률로 최선",
+   "en": "duel choice A 07",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/07-duel-robo": {
+   "ko": "유료 예보 구입 뒤 베이즈 최선",
+   "en": "duel choice B 07",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/bayesian-updating": {
+   "ko": "베이즈 갱신",
+   "en": "Bayesian updating",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/evsi": {
+   "ko": "EVSI",
+   "en": "expected value of sample information",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/evpi": {
+   "ko": "EVPI",
+   "en": "expected value of perfect information",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/search": {
+   "ko": "탐색",
+   "en": "search",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/asymmetric-information": {
+   "ko": "정보 비대칭",
+   "en": "asymmetric information",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/signaling": {
+   "ko": "신호",
+   "en": "signaling",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/moral-hazard": {
+   "ko": "도덕적 해이",
+   "en": "moral hazard",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/risk-premium": {
+   "ko": "위험 프리미엄",
+   "en": "risk premium",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/performance-pay": {
+   "ko": "성과급",
+   "en": "performance pay",
+   "page": "07_information",
+   "domain": [
+    "econ"
+   ]
+  }
+ }
+}
