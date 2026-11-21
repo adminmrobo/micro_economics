@@ -243,9 +243,9 @@
    ]
   },
   "lab:concept/envelope-theorem": {
-   "ko": "포락선 정리",
+   "ko": "포락정리",
    "en": "envelope theorem",
-   "page": "05_cost_function",
+   "page": "27_optimization",
    "domain": [
     "econ"
    ]
@@ -1726,6 +1726,470 @@
    "ko": "선형화",
    "en": "linearization",
    "page": "21_equilibrium_analysis",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/social-welfare-function": {
+   "ko": "사회후생함수",
+   "en": "social welfare function",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/maximin": {
+   "ko": "최소극대 기준",
+   "en": "maximin (Rawlsian) criterion",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/welfare-theorems": {
+   "ko": "후생정리",
+   "en": "fundamental welfare theorems",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/22-duel-fly": {
+   "ko": "최소극대 (q = 20)",
+   "en": "duel choice A 22",
+   "page": "22_welfare",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/22-duel-robo": {
+   "ko": "합계 최대 (q = 80)",
+   "en": "duel choice B 22",
+   "page": "22_welfare",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/pareto-improvement": {
+   "ko": "파레토 개선",
+   "en": "Pareto improvement",
+   "page": "22_welfare",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/upf": {
+   "ko": "효용가능경계",
+   "en": "utility possibility frontier",
+   "page": "22_welfare",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/utilitarianism": {
+   "ko": "공리주의",
+   "en": "utilitarianism",
+   "page": "22_welfare",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/second-welfare": {
+   "ko": "제2후생정리",
+   "en": "second welfare theorem",
+   "page": "22_welfare",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/arrow": {
+   "ko": "애로 불가능성 정리",
+   "en": "Arrow's impossibility theorem",
+   "page": "22_welfare",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/samuelson-condition": {
+   "ko": "사무엘슨 조건",
+   "en": "Samuelson condition",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/free-riding": {
+   "ko": "무임승차",
+   "en": "free riding",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/vcg-mechanism": {
+   "ko": "VCG 메커니즘",
+   "en": "VCG (Clarke) mechanism",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/23-duel-fly": {
+   "ko": "사무엘슨 조건 G* = 5",
+   "en": "duel choice A 23",
+   "page": "23_public_goods",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/23-duel-robo": {
+   "ko": "자발 기여 G_N = 2",
+   "en": "duel choice B 23",
+   "page": "23_public_goods",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/public-good": {
+   "ko": "공공재",
+   "en": "public good",
+   "page": "23_public_goods",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/non-rivalry": {
+   "ko": "비경합성",
+   "en": "non-rivalry",
+   "page": "23_public_goods",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/non-excludability": {
+   "ko": "비배제성",
+   "en": "non-excludability",
+   "page": "23_public_goods",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/lindahl": {
+   "ko": "린달 가격",
+   "en": "Lindahl price",
+   "page": "23_public_goods",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/incentive-compatibility": {
+   "ko": "유인적합 조건",
+   "en": "incentive compatibility constraint",
+   "page": "25_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/externality": {
+   "ko": "외부성",
+   "en": "externality",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/pigouvian-tax": {
+   "ko": "피구세",
+   "en": "Pigouvian tax",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/coase-theorem": {
+   "ko": "코즈 정리",
+   "en": "Coase theorem",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/24-duel-fly": {
+   "ko": "효율 수량 6.4",
+   "en": "duel choice A 24",
+   "page": "24_externalities",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/24-duel-robo": {
+   "ko": "시장 수량 10.67",
+   "en": "duel choice B 24",
+   "page": "24_externalities",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/pecuniary-externality": {
+   "ko": "금전적 외부성",
+   "en": "pecuniary externality",
+   "page": "24_externalities",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/msc": {
+   "ko": "사회적 한계비용",
+   "en": "marginal social cost",
+   "page": "24_externalities",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/internalization": {
+   "ko": "내부화",
+   "en": "internalization",
+   "page": "24_externalities",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/permits": {
+   "ko": "거래 가능한 허가권",
+   "en": "tradable permits",
+   "page": "24_externalities",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/transaction-cost": {
+   "ko": "거래비용",
+   "en": "transaction cost",
+   "page": "24_externalities",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/value-of-information": {
+   "ko": "정보의 가치",
+   "en": "value of information",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/search": {
+   "ko": "탐색 이론",
+   "en": "search theory",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/moral-hazard": {
+   "ko": "도덕적 해이",
+   "en": "moral hazard",
+   "page": "r5_welfare_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/25-duel-fly": {
+   "ko": "정보 없이 늘 예방",
+   "en": "duel choice A 25",
+   "page": "25_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/25-duel-robo": {
+   "ko": "예보를 사서 결정",
+   "en": "duel choice B 25",
+   "page": "25_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/bayes": {
+   "ko": "베이즈 갱신",
+   "en": "Bayesian updating",
+   "page": "25_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/evpi": {
+   "ko": "EVPI",
+   "en": "expected value of perfect information",
+   "page": "25_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/adverse-selection": {
+   "ko": "역선택",
+   "en": "adverse selection",
+   "page": "25_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/signaling": {
+   "ko": "신호",
+   "en": "signaling",
+   "page": "25_information",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/gradient": {
+   "ko": "기울기",
+   "en": "gradient",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/hessian-definiteness": {
+   "ko": "헤시안의 정부호성",
+   "en": "definiteness of the Hessian",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/implicit-function-theorem": {
+   "ko": "암묵함수 정리",
+   "en": "implicit function theorem",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/26-duel-fly": {
+   "ko": "모든 방향을 돌려 최소",
+   "en": "duel choice A 26",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/26-duel-robo": {
+   "ko": "x축 방향 하나",
+   "en": "duel choice B 26",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/directional-derivative": {
+   "ko": "방향 미분",
+   "en": "directional derivative",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/euler-theorem": {
+   "ko": "오일러 정리",
+   "en": "Euler's homogeneous function theorem",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/eigenvalue": {
+   "ko": "고유값",
+   "en": "eigenvalue",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/saddle-point": {
+   "ko": "안장점",
+   "en": "saddle point",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/quasiconcave": {
+   "ko": "준오목",
+   "en": "quasiconcave",
+   "page": "26_mathematics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/constrained-optimization": {
+   "ko": "제약 최적화",
+   "en": "constrained optimization",
+   "page": "27_optimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/kkt": {
+   "ko": "KKT 조건",
+   "en": "Karush-Kuhn-Tucker conditions",
+   "page": "27_optimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/envelope-shadow-price": {
+   "ko": "그림자가격",
+   "en": "shadow price",
+   "page": "27_optimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/27-duel-fly": {
+   "ko": "KKT로 다시 풀기",
+   "en": "duel choice A 27",
+   "page": "27_optimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/27-duel-robo": {
+   "ko": "무제약 해를 비례 축소",
+   "en": "duel choice B 27",
+   "page": "27_optimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/feasible-set": {
+   "ko": "가능집합",
+   "en": "feasible set",
+   "page": "27_optimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/lagrangian": {
+   "ko": "라그랑지안",
+   "en": "Lagrangian",
+   "page": "27_optimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/complementary-slackness": {
+   "ko": "상보성",
+   "en": "complementary slackness",
+   "page": "27_optimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/constraint-qualification": {
+   "ko": "제약자격조건",
+   "en": "constraint qualification",
+   "page": "27_optimization",
    "domain": [
     "econ"
    ]
