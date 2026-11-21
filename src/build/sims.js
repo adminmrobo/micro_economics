@@ -16,7 +16,7 @@ function plot(c,H,o){var W=fit(c,H),ctx=c.getContext('2d');ctx.clearRect(0,0,W,H
   P.dot=function(x,y,col,r,lab,dx,dy){ctx.fillStyle=col;ctx.beginPath();ctx.arc(X(x),Y(y),r||5,0,7);ctx.fill();ctx.strokeStyle='#fff';ctx.lineWidth=1.5;ctx.stroke();if(lab)txt(ctx,lab,X(x)+(dx==null?8:dx),Y(y)+(dy==null?-8:dy),col,12,(dx||8)<0?'right':'left',true)};
   P.poly=function(pts,col,alpha){ctx.save();ctx.globalAlpha=alpha==null?.18:alpha;ctx.fillStyle=col;ctx.beginPath();pts.forEach(function(p,i){i?ctx.lineTo(X(p[0]),Y(p[1])):ctx.moveTo(X(p[0]),Y(p[1]))});ctx.closePath();ctx.fill();ctx.restore()};
   P.lab=function(s,x,y,col,al,b){txt(ctx,s,X(x),Y(y),col||COL.text,11,al||'left',b)};
-  P.key=function(items){var x=L+8;items.forEach(function(it){txt(ctx,'● '+it[0],x,T+12,it[1],11,'left',true);ctx.save();ctx.font='700 11px "IBM Plex Sans KR",system-ui,sans-serif';x+=ctx.measureText('● '+it[0]).width+14;ctx.restore()})};
+  P.key=function(items){var x=L+8,ky=T>40?T-10:T+12;items.forEach(function(it){txt(ctx,'● '+it[0],x,ky,it[1],11,'left',true);ctx.save();ctx.font='700 11px "IBM Plex Sans KR",system-ui,sans-serif';x+=ctx.measureText('● '+it[0]).width+14;ctx.restore()})};
   return P}
 function rows(el){return ctrlRow(el)}
 function S(row,l,a,b,st,v,fmt,on){return slider(row,l,a,b,st,v,fmt||function(x){return String(x)},on)}
@@ -220,19 +220,20 @@ SIMS.pricedisc=function(el,cfg){var c=S0(el,cfg,260,'두 손님 집단: 같은 �
   addMod(c,function(dt){if(!dt)draw()});draw()};
 
 /* ===== CH04 게임이론 ===== */
-SIMS.pd=function(el,cfg){var c=S0(el,cfg,250,'두 연구원의 보수표와 최선의 대응'),row=rows(el),K=kpis(el,3),I=insight(el);
+SIMS.pd=function(el,cfg){var row=rows(el),K=kpis(el,4),g0=h('div',{class:'dgrid'});el.appendChild(g0);var c=mkCanvas(g0,250,'두 연구원의 보수표'),c2=mkCanvas(g0,250,'상대 행동별 A의 보수 비교'),I=insight(el);
   var g=cfg.g||5,h0=cfg.h||5,Pp=cfg.P||5;
   S(row,'일탈의 추가 보수 g',0,10,1,g,null,function(v){g=v;draw()});S(row,'협조의 추가 보수 h',1,10,1,h0,null,function(v){h0=v;draw()});
   function draw(){var C=Pp+h0,D=C+g,Sx=0,W=fit(c,250),ctx=c.getContext('2d');ctx.clearRect(0,0,W,250);grid(ctx,W,250);
-    var cx=W/2,x0=cx-150,y0=40,cw=150,ch=80,M=[[[C,C],[Sx,D]],[[D,Sx],[Pp,Pp]]];
-    txt(ctx,'B: 협조',x0+cw*.5,y0-10,COL.fly,12,'center',true);txt(ctx,'B: 일탈',x0+cw*1.5,y0-10,COL.robo,12,'center',true);
-    txt(ctx,'A: 협조',x0-10,y0+ch*.5+4,COL.fly,12,'right',true);txt(ctx,'A: 일탈',x0-10,y0+ch*1.5+4,COL.robo,12,'right',true);
-    for(var i=0;i<2;i++)for(var j=0;j<2;j++){var nash=(i===1&&j===1&&g>=0)||(g<0);var X0=x0+j*cw,Y0=y0+i*ch;ctx.fillStyle=(i===1&&j===1)?'rgba(210,63,44,.10)':(i===0&&j===0?'rgba(19,138,82,.08)':'#fff');ctx.fillRect(X0,Y0,cw,ch);ctx.strokeStyle=COL.rule;ctx.strokeRect(X0,Y0,cw,ch);
-      txt(ctx,'A '+M[i][j][0]+'  ·  B '+M[i][j][1],X0+cw/2,Y0+ch/2+5,COL.text,14,'center',true);}
-    txt(ctx,'빨강 = 서로 일탈(내시균형) · 초록 = 서로 협조',cx,y0+2*ch+26,COL.muted,11,'center');
-    stamp(ctx,W,'가상 보수');
-    K([[C+' / '+D,'협조 C / 일탈 D (상대 협조 시)','g'],[Pp+' / '+Sx,'일탈 P / 혼자 협조 S (상대 일탈 시)','r'],[g>0?'일탈':'무차별','상대가 무엇을 하든 유리한 선택','a']]);
-    I([[g>0?'r':'g',g>0?'상대가 협조하면 일탈이 '+g+' 더 받고, 상대가 일탈해도 일탈이 '+Pp+' 더 받아요. 그래서 둘 다 일탈합니다(내시균형).':'g가 0이면 상대가 협조할 때 일탈해도 더 얻는 게 없어요.'],['a','둘 다 협조하면 '+C+'씩으로 더 좋은데도, 한 번만 하는 게임에서는 그 결과가 지켜지지 않아요. 이것이 죄수의 딜레마입니다.']])}
+    var cw=Math.min(150,(W-90)/2),ch=78,x0=Math.max(80,W/2-cw+20),y0=46,M=[[[C,C],[Sx,D]],[[D,Sx],[Pp,Pp]]];
+    txt(ctx,'보수표 (A의 보수 · B의 보수)',12,18,COL.text,13,'left',true);
+    txt(ctx,'B: 협조',x0+cw*.5,y0-8,COL.fly,12,'center',true);txt(ctx,'B: 일탈',x0+cw*1.5,y0-8,COL.robo,12,'center',true);
+    txt(ctx,'A: 협조',x0-8,y0+ch*.5+4,COL.fly,12,'right',true);txt(ctx,'A: 일탈',x0-8,y0+ch*1.5+4,COL.robo,12,'right',true);
+    for(var i=0;i<2;i++)for(var j=0;j<2;j++){var X0=x0+j*cw,Y0=y0+i*ch;ctx.fillStyle=(i===1&&j===1&&g>0)?'rgba(210,63,44,.12)':(i===0&&j===0?'rgba(19,138,82,.10)':'#fff');ctx.fillRect(X0,Y0,cw,ch);ctx.strokeStyle=COL.rule;ctx.strokeRect(X0,Y0,cw,ch);
+      txt(ctx,M[i][j][0]+'  ·  '+M[i][j][1],X0+cw/2,Y0+ch/2+5,COL.text,14,'center',true);}
+    txt(ctx,'빨강 = 서로 일탈(내시균형) · 초록 = 서로 협조',x0+cw,y0+2*ch+24,COL.muted,11,'center');stamp(ctx,W,'가상 보수');
+    dChart(c2,{t:'bar',title:'A의 보수 — 상대가 협조할 때 / 일탈할 때',vals:[C,D,Sx,Pp],labels:['B협조·A협조','B협조·A일탈','B일탈·A협조','B일탈·A일탈'],cols:[COL.fly,COL.robo,COL.fly,COL.robo],ymax:Math.max(D,1)*1.25},250);
+    K([[C+' / '+D,'상대 협조 시: 보상 C / 유혹 D','g'],[Sx+' / '+Pp,'상대 일탈 시: 속은 쪽 S / 처벌 P','r'],[g>0?'일탈':'무차별','상대가 무엇을 하든 유리한 행동','a'],[(2*C)+' vs '+(2*Pp),'두 사람 합: 서로 협조 vs 서로 일탈','i']]);
+    I([[g>0?'r':'g',g>0?'막대를 짝지어 보세요. 상대가 협조하면 일탈이 '+g+' 더 받고, 상대가 일탈해도 일탈이 '+Pp+' 더 받아요. 그래서 둘 다 일탈합니다(내시균형).':'g가 0이면 상대가 협조할 때 일탈해도 더 얻는 게 없어요.'],['a','둘 다 협조하면 합이 '+(2*C)+'로 서로 일탈('+(2*Pp)+')보다 큰데도, 한 번만 하는 게임에서는 지켜지지 않아요. 이것이 죄수의 딜레마입니다.']])}
   addMod(c,function(dt){if(!dt)draw()});draw()};
 
 SIMS.cournot=function(el,cfg){var c=S0(el,cfg,260,'기업 수에 따른 가격과 생산량'),row=rows(el),K=kpis(el,4),E=eqline(el),I=insight(el);

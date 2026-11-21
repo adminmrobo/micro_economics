@@ -126,25 +126,15 @@ def css():
     return '<style>' + CSS.replace('url(%s)', 'url(' + tower_svg_uri() + ')', 1) + '</style>'
 
 # ---------- 미시경제학이란 ----------
-LAB_JS = r"""<script>(function(){
-var B=document.getElementById('mclab');if(!B)return;
-var q=function(s){return B.querySelector(s)},dI=q('#mcD'),sI=q('#mcS'),tI=q('#mcT'),out=q('.mcout'),hist=q('.byhist:not(.mcout)');
-function f(x){return (Math.round(x*10)/10).toString()}
-function show(){var a=+dI.value,c=+sI.value,t=+tI.value;q('#mcDv').value=a;q('#mcSv').value=c;q('#mcTv').value=t;
- var Q=Math.max(0,(a-c-t)/2),Pb=a-Q,Ps=c+Q,W=Q>0?(a-c)*Q-Q*Q-0:0,W0=Math.max(0,(a-c))*Math.max(0,(a-c))/4;
- out.innerHTML='<span>거래량 <b>'+f(Q)+'</b></span><span>사는 사람 가격 <b>'+(Q>0?f(Pb):'—')+'</b></span><span>파는 사람 몫 <b>'+(Q>0?f(Ps):'—')+'</b></span><span>세금 때문에 사라진 잉여 <b>'+f(Math.max(0,W0-W))+'</b></span>';
- var m=[];if(a>100)m.push('수요가 늘면(곡선 이동) 가격과 거래량이 함께 올라요.');if(a<100)m.push('수요가 줄면 가격과 거래량이 함께 내려가요.');if(c>20)m.push('원가가 오르면(공급 감소) 가격은 오르고 거래량은 줄어요.');if(c<20)m.push('원가가 내리면 가격은 내리고 거래량은 늘어요.');if(t>0)m.push('세금은 사는 사람 가격과 파는 사람 몫 사이에 쐐기를 박아요. 부담은 둘이 나눠요(CH06).');if(!m.length)m.push('처음 상태: 수요 P = 100 − Q, 공급 P = 20 + Q가 만나는 거래량 40, 가격 60이에요.');
- hist.innerHTML=m.map(function(x){return '<span>'+x+'</span>'}).join('')}
-[dI,sI,tI].forEach(function(el){el.addEventListener('input',show)});q('#mcReset').addEventListener('click',function(){dI.value=100;sI.value=20;tI.value=0;show()});show();
-})();</script>"""
+LAB_JS = ""
 
 def micro_section(say):
     """say(who, mood, text) -> html (캐릭터 대사)."""
     talk = (say('doc', 'front', '미시경제학의 질문은 늘 같아요. "누가, 무엇을 목적으로, 어떤 제약 안에서 고르나? 그 선택들이 만나면 가격은 어디서 멈추나?"')
             + say('fly', 'point', '그러니까 숫자 하나를 들으면 "무엇을 고정했나, 한 단위 더 하면 무엇이 늘고 주나"부터 묻는 거지.')
             + say('robo', 'coin', '난 크고 높은 숫자가 좋은데… 아래 실험부터 돌려 볼게.')
-            + say('sia', 'explain', '인턴 시아예요. 수요·원가·세금 슬라이더를 하나씩만 움직여 보세요. 무엇이 바뀌는지 보여요.')
-            + say('x1', 'wow', '방청석 X1이에요. 세금을 올리니까 사는 가격과 파는 몫이 벌어져요!'))
+            + say('sia', 'explain', '인턴 시아예요. 아래 대시보드에서 수요·원가·세금 슬라이더를 하나씩만 움직여 보세요. 그림의 면적과 막대가 함께 바뀌어요.')
+            + say('x1', 'wow', '방청석 X1이에요. ▶ 재생을 누르니 세금이 오르면서 빨간 삼각형이 점점 커져요!'))
     rows = [('다루는 대상', '한 사람·한 기업·한 시장의 선택과 가격', '나라 전체의 생산·물가·실업·금리'),
             ('대표 질문', '이 가격에 몇 개를 살까·만들까? 세금은 누가 낼까?', '경기는 왜 오르내릴까? 물가는 왜 오를까?'),
             ('핵심 도구', '최적화(목적·제약)와 균형(수요 = 공급)', '총수요·총공급, 국민소득 항등식'),
@@ -160,18 +150,7 @@ def micro_section(say):
 <div class="byfx" aria-label="미시경제학을 말로 쓴 식"><span class="p">목적</span><i>×</i><span class="l">제약</span><i>→</i><span class="q">선택</span><i>→</i><span class="p">균형(가격·거래량)</span></div>
 <details class="more"><summary>수식으로 보면 (펼쳐 보기)</summary><p style="margin:10px 0 0">선택: max 목적(x) 제약 g(x) ≤ 0 → 내부해면 한계편익 = 한계비용, 아니면 경계(모서리해). 균형: 수요 D(p) = 공급 S(p)를 만족하는 가격 p*. 자세한 풀이는 <a href="00_economic_models.html">CH0 경제모형과 수학적 사고</a>에 있어요.</p></details>
 <div class="talk">{talk}</div>
-<div class="bylab" id="mclab" aria-label="직접 해 보기: 수요·원가·세금을 바꿔 시장 균형 보기">
-<h3 style="margin:0">직접 해 보기 — 수요·원가·세금을 바꾸면 시장은 어디서 멈출까</h3>
-<div class="row">
-<label>수요 크기(최대 지불의사) <input type="range" id="mcD" min="60" max="140" value="100"><output id="mcDv"></output></label>
-<label>원가(공급 시작 가격) <input type="range" id="mcS" min="0" max="60" value="20"><output id="mcSv"></output></label>
-<label>단위당 세금 <input type="range" id="mcT" min="0" max="60" value="0"><output id="mcTv"></output></label>
-</div>
-<div class="byhist mcout" style="font-size:15px"></div>
-<div class="ctrl"><button class="bt" type="button" id="mcReset">처음으로</button></div>
-<div class="byhist" aria-live="polite"></div>
-<p class="muted" style="font-size:14px;margin:0">수요 P = (수요 크기) − Q, 공급 P = (원가) + Q인 설명용 시장이에요. 숫자는 가상 단위입니다.</p>
-</div>
+<div class="dash panel" data-dash="mk" id="mclab" aria-label="직접 해 보기: 수요·원가·세금을 바꿔 시장 균형 보기 대시보드"></div>
 <h3>거시경제학과 무엇이 다를까</h3>
 <div class="tw"><table class="tb"><tr><th></th><th>미시경제학</th><th>거시경제학</th></tr>{tb}</table></div>
 <p class="muted" style="font-size:14px">둘은 같은 경제를 다른 배율로 보는 두 렌즈예요. 이 시리즈는 미시경제학을 다루며, 버전2(교과서 27장)와 블로그는 <a href="archive/index.html">보관함</a>에서 그대로 볼 수 있어요.</p>
