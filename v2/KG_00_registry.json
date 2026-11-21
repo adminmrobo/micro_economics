@@ -77,7 +77,7 @@
   "lab:concept/mrts": {
    "ko": "MRTS",
    "en": "marginal rate of technical substitution",
-   "page": "01_technology",
+   "page": "18_production",
    "domain": [
     "econ"
    ]
@@ -1334,6 +1334,398 @@
    "ko": "방아쇠 전략",
    "en": "grim trigger strategy",
    "page": "16_oligopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/endowment-demand": {
+   "ko": "부존 수요",
+   "en": "demand with endowments",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/walras-law": {
+   "ko": "왈라스 법칙",
+   "en": "Walras' law",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/contract-curve": {
+   "ko": "계약곡선",
+   "en": "contract curve",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/17-duel-fly": {
+   "ko": "청산가격에서 교환",
+   "en": "duel choice A 17",
+   "page": "17_exchange",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/17-duel-robo": {
+   "ko": "교환 없이 부존 사용",
+   "en": "duel choice B 17",
+   "page": "17_exchange",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/endowment": {
+   "ko": "부존",
+   "en": "endowment",
+   "page": "17_exchange",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/exchange-economy": {
+   "ko": "순수교환경제",
+   "en": "pure exchange economy",
+   "page": "17_exchange",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/edgeworth-box": {
+   "ko": "에지워스 상자",
+   "en": "Edgeworth box",
+   "page": "17_exchange",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/excess-demand": {
+   "ko": "총초과수요",
+   "en": "aggregate excess demand",
+   "page": "21_equilibrium_analysis",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/general-equilibrium": {
+   "ko": "일반균형",
+   "en": "general equilibrium",
+   "page": "17_exchange",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/pareto-efficiency": {
+   "ko": "파레토 효율",
+   "en": "Pareto efficiency",
+   "page": "17_exchange",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/production-efficiency": {
+   "ko": "생산효율",
+   "en": "production efficiency",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/ppf": {
+   "ko": "생산가능경계",
+   "en": "production possibility frontier",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/mrs-mrt": {
+   "ko": "산출 구성의 효율",
+   "en": "product-mix efficiency",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/18-duel-fly": {
+   "ko": "자본을 같은 비율로 재배분",
+   "en": "duel choice A 18",
+   "page": "18_production",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/18-duel-robo": {
+   "ko": "지금 배분 유지",
+   "en": "duel choice B 18",
+   "page": "18_production",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/factor-box": {
+   "ko": "요소상자",
+   "en": "factor box",
+   "page": "18_production",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/mrt": {
+   "ko": "한계변환율",
+   "en": "marginal rate of transformation",
+   "page": "18_production",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/cauchy-schwarz": {
+   "ko": "코시-슈바르츠 부등식",
+   "en": "Cauchy-Schwarz inequality",
+   "page": "18_production",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/crs": {
+   "ko": "규모수익불변",
+   "en": "constant returns to scale",
+   "page": "18_production",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/npv": {
+   "ko": "순현재가치",
+   "en": "net present value",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/fisher-separation": {
+   "ko": "피셔 분리",
+   "en": "Fisher separation",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/euler-bellman": {
+   "ko": "오일러·벨만 방정식",
+   "en": "Euler and Bellman equations",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/19-duel-fly": {
+   "ko": "NPV 최대 (할인)",
+   "en": "duel choice A 19",
+   "page": "19_time",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/19-duel-robo": {
+   "ko": "f(I) − I 최대 (할인 없음)",
+   "en": "duel choice B 19",
+   "page": "19_time",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/present-value": {
+   "ko": "현재가치",
+   "en": "present value",
+   "page": "19_time",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/discounting": {
+   "ko": "할인",
+   "en": "discounting",
+   "page": "19_time",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/time-preference": {
+   "ko": "시간선호",
+   "en": "time preference",
+   "page": "19_time",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/perfect-capital-market": {
+   "ko": "완전자본시장",
+   "en": "perfect capital market",
+   "page": "19_time",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/bellman": {
+   "ko": "벨만 방정식",
+   "en": "Bellman equation",
+   "page": "19_time",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/state-prices": {
+   "ko": "상태가격",
+   "en": "state prices",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/replication": {
+   "ko": "복제 포트폴리오",
+   "en": "replicating portfolio",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/diversification": {
+   "ko": "분산투자",
+   "en": "diversification",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/20-duel-fly": {
+   "ko": "복제 비용",
+   "en": "duel choice A 20",
+   "page": "20_asset_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/20-duel-robo": {
+   "ko": "실제확률 기대값",
+   "en": "duel choice B 20",
+   "page": "20_asset_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/no-arbitrage": {
+   "ko": "무차익",
+   "en": "no arbitrage",
+   "page": "20_asset_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/complete-market": {
+   "ko": "완비시장",
+   "en": "complete market",
+   "page": "20_asset_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/risk-neutral": {
+   "ko": "위험중립 확률",
+   "en": "risk-neutral probability",
+   "page": "20_asset_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/incomplete-market": {
+   "ko": "불완비시장",
+   "en": "incomplete market",
+   "page": "20_asset_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/capm": {
+   "ko": "CAPM",
+   "en": "capital asset pricing model",
+   "page": "20_asset_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/existence-uniqueness": {
+   "ko": "균형의 존재와 유일성",
+   "en": "existence and uniqueness of equilibrium",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/comparative-statics": {
+   "ko": "비교정학",
+   "en": "comparative statics",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/tatonnement-stability": {
+   "ko": "가격조정의 안정성",
+   "en": "tâtonnement stability",
+   "page": "r4_equilibrium_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/21-duel-fly": {
+   "ko": "λ = 0.5 유지",
+   "en": "duel choice A 21",
+   "page": "21_equilibrium_analysis",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/21-duel-robo": {
+   "ko": "빠른 λ",
+   "en": "duel choice B 21",
+   "page": "21_equilibrium_analysis",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/fixed-point": {
+   "ko": "고정점 정리",
+   "en": "fixed point theorem",
+   "page": "21_equilibrium_analysis",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/implicit-function": {
+   "ko": "암묵함수정리",
+   "en": "implicit function theorem",
+   "page": "21_equilibrium_analysis",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/local-stability": {
+   "ko": "국소 안정성",
+   "en": "local stability",
+   "page": "21_equilibrium_analysis",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/linearization": {
+   "ko": "선형화",
+   "en": "linearization",
+   "page": "21_equilibrium_analysis",
    "domain": [
     "econ"
    ]
