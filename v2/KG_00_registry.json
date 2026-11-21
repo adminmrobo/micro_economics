@@ -139,9 +139,9 @@
    ]
   },
   "lab:concept/price-taking": {
-   "ko": "가격수용",
-   "en": "price taking",
-   "page": "02_profit_maximization",
+   "ko": "가격수용자",
+   "en": "price taker",
+   "page": "13_competitive_markets",
    "domain": [
     "econ"
    ]
@@ -998,6 +998,342 @@
    "ko": "약한 도구",
    "en": "weak instrument",
    "page": "12_econometrics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/firm-supply": {
+   "ko": "기업 공급곡선",
+   "en": "firm supply curve",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/market-equilibrium": {
+   "ko": "경쟁시장 균형",
+   "en": "competitive equilibrium",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/long-run-equilibrium": {
+   "ko": "장기 경쟁균형",
+   "en": "long-run competitive equilibrium",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/13-duel-fly": {
+   "ko": "P = MC 생산 (7.5)",
+   "en": "duel choice A 13",
+   "page": "13_competitive_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/13-duel-robo": {
+   "ko": "효율적 규모 생산 (10)",
+   "en": "duel choice B 13",
+   "page": "13_competitive_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/avc": {
+   "ko": "평균가변비용",
+   "en": "average variable cost",
+   "page": "13_competitive_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/producer-surplus": {
+   "ko": "생산자잉여",
+   "en": "producer surplus",
+   "page": "13_competitive_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/market-supply": {
+   "ko": "시장 공급",
+   "en": "market supply",
+   "page": "13_competitive_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/free-entry": {
+   "ko": "자유진입",
+   "en": "free entry",
+   "page": "13_competitive_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/efficient-scale": {
+   "ko": "효율적 규모",
+   "en": "efficient scale",
+   "page": "13_competitive_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/constant-cost": {
+   "ko": "일정비용 산업",
+   "en": "constant-cost industry",
+   "page": "13_competitive_markets",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/monopoly-pricing": {
+   "ko": "독점 가격 결정",
+   "en": "monopoly pricing",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/price-ceiling-monopoly": {
+   "ko": "독점과 가격상한",
+   "en": "price ceiling under monopoly",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/price-discrimination": {
+   "ko": "가격차별",
+   "en": "price discrimination",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/14-duel-fly": {
+   "ko": "MR = MC 수량",
+   "en": "duel choice A 14",
+   "page": "14_monopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/14-duel-robo": {
+   "ko": "P = MC 수량",
+   "en": "duel choice B 14",
+   "page": "14_monopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/marginal-revenue": {
+   "ko": "한계수입",
+   "en": "marginal revenue",
+   "page": "14_monopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/lerner-index": {
+   "ko": "러너 지수",
+   "en": "Lerner index",
+   "page": "14_monopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/price-elasticity": {
+   "ko": "수요 탄력성",
+   "en": "price elasticity of demand",
+   "page": "14_monopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/deadweight-loss": {
+   "ko": "사중손실",
+   "en": "deadweight loss",
+   "page": "14_monopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/total-surplus": {
+   "ko": "총잉여",
+   "en": "total surplus",
+   "page": "14_monopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/arbitrage": {
+   "ko": "재판매",
+   "en": "resale (arbitrage)",
+   "page": "14_monopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/best-response": {
+   "ko": "최적반응",
+   "en": "best response",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/mixed-strategy": {
+   "ko": "혼합전략 균형",
+   "en": "mixed strategy equilibrium",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/subgame-perfection": {
+   "ko": "부분게임완전성",
+   "en": "subgame perfection",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/15-duel-fly": {
+   "ko": "최적반응 (순수 \"위\")",
+   "en": "duel choice A 15",
+   "page": "15_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/15-duel-robo": {
+   "ko": "반반 무작위",
+   "en": "duel choice B 15",
+   "page": "15_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/strategy": {
+   "ko": "전략",
+   "en": "strategy",
+   "page": "15_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/nash-equilibrium": {
+   "ko": "내시균형",
+   "en": "Nash equilibrium",
+   "page": "15_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/dominant-strategy": {
+   "ko": "지배전략",
+   "en": "dominant strategy",
+   "page": "15_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/indifference-principle": {
+   "ko": "무차별 원리",
+   "en": "indifference principle",
+   "page": "15_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/backward-induction": {
+   "ko": "역진귀납",
+   "en": "backward induction",
+   "page": "15_game_theory",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/cournot": {
+   "ko": "쿠르노 균형",
+   "en": "Cournot equilibrium",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/stackelberg": {
+   "ko": "슈타켈베르크 균형",
+   "en": "Stackelberg equilibrium",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/repeated-game-collusion": {
+   "ko": "반복게임과 담합",
+   "en": "collusion in repeated games",
+   "page": "r3_market_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/16-duel-fly": {
+   "ko": "계속 협조",
+   "en": "duel choice A 16",
+   "page": "16_oligopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/16-duel-robo": {
+   "ko": "한 번 일탈",
+   "en": "duel choice B 16",
+   "page": "16_oligopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/oligopoly": {
+   "ko": "과점",
+   "en": "oligopoly",
+   "page": "16_oligopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/bertrand": {
+   "ko": "베르트랑 경쟁",
+   "en": "Bertrand competition",
+   "page": "16_oligopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/cartel": {
+   "ko": "카르텔",
+   "en": "cartel",
+   "page": "16_oligopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/discount-factor": {
+   "ko": "할인인자",
+   "en": "discount factor",
+   "page": "16_oligopoly",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/grim-trigger": {
+   "ko": "방아쇠 전략",
+   "en": "grim trigger strategy",
+   "page": "16_oligopoly",
    "domain": [
     "econ"
    ]
