@@ -443,7 +443,7 @@
    ]
   },
   "lab:concept/convex-hull": {
-   "ko": "볼록 껍질",
+   "ko": "볼록포",
    "en": "convex hull",
    "page": "r1_producer_review",
    "domain": [
@@ -474,9 +474,9 @@
     "econ"
    ]
   },
-  "lab:term/supporting-line": {
-   "ko": "지지선",
-   "en": "supporting line",
+  "lab:term/isoprofit-line": {
+   "ko": "등이윤선",
+   "en": "isoprofit line (supporting line)",
    "page": "06_duality",
    "domain": [
     "econ"
@@ -491,7 +491,7 @@
    ]
   },
   "lab:term/divisibility": {
-   "ko": "가분성",
+   "ko": "분할 가능성",
    "en": "divisibility",
    "page": "06_duality",
    "domain": [
