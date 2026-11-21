@@ -137,7 +137,7 @@ def index(P, B):
     o.append(f'<section class="level" id="how"><div class="wrap stack"><div class="lvhead"><h2>연구실 식구와 사용법</h2></div>{cast}<div class="steps four">{how}</div></div></section>')
     ab = ''.join(f'<li>{x}</li>' for x in P['about'])
     o.append(f'<section class="level" id="about"><div class="wrap stack"><div class="lvhead"><h2>자료와 원칙</h2></div><ul style="margin:0;padding-left:20px">{ab}</ul>{B.say("doc","front","좋은 연구실에는 의심하는 쪽과 확신하는 쪽이 둘 다 필요해요. 판정은 늘 숫자가 내립니다.",M)}</div></section>')
-    o.append(B.footer(P, '<p><a href="KG_00_registry.json">시리즈 지식 그래프 등록부(JSON) 내려받기</a> · <a href="docs/AUDIT_REPORT.md">감사보고서</a> · <a href="archive/index.html">이전 판(버전1·버전2·블로그) 보관함</a> · <a href="https://github.com/adminmrobo/micro_economics" target="_blank" rel="noopener">GitHub 저장소</a></p>'))
+    o.append(B.footer(P, '<p><a href="KG_00_registry.json">시리즈 지식 그래프 등록부(JSON) 내려받기</a> · <a href="docs/AUDIT_REPORT.md">감사보고서</a> · <a href="v2/index.html">2권(Varian 강의노트 27장)</a> · <a href="archive/index.html">이전 판(버전1·버전2·블로그) 보관함</a> · <a href="https://github.com/adminmrobo/micro_economics" target="_blank" rel="noopener">GitHub 저장소</a></p>'))
     G = {'version': '1.0', 'page': 'index', 'nodes': [], 'edges': []}
     P.setdefault('levels', []); P['quiz'] = {}
     o.append(B.sprites(M)); o.append(B.tail(P, G, {'gloss': {}, 'core': [], 'quiz': {}}))

@@ -153,7 +153,7 @@ def micro_section(say):
 <div class="dash panel" data-dash="mk" id="mclab" aria-label="직접 해 보기: 수요·원가·세금을 바꿔 시장 균형 보기 대시보드"></div>
 <h3>거시경제학과 무엇이 다를까</h3>
 <div class="tw"><table class="tb"><tr><th></th><th>미시경제학</th><th>거시경제학</th></tr>{tb}</table></div>
-<p class="muted" style="font-size:14px">둘은 같은 경제를 다른 배율로 보는 두 렌즈예요. 이 시리즈는 미시경제학을 다루며, 버전2(교과서 27장)와 블로그는 <a href="archive/index.html">보관함</a>에서 그대로 볼 수 있어요.</p>
+<p class="muted" style="font-size:14px">둘은 같은 경제를 다른 배율로 보는 두 렌즈예요. 이 시리즈는 미시경제학을 다뤄요. 더 깊이 보려면 <a href="v2/index.html">2권 — Varian 『Microeconomic Analysis』 강의노트 27장</a>으로 이어지고, 이전 판과 블로그는 <a href="archive/index.html">보관함</a>에서 그대로 볼 수 있어요.</p>
 </div></section>
 {LAB_JS}"""
 
