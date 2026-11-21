@@ -1,0 +1,1006 @@
+{
+ "version": "2.0",
+ "date": "2026-11-21",
+ "ids": {
+  "lab:concept/marginal-product": {
+   "ko": "한계생산",
+   "en": "marginal product",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/returns-to-scale": {
+   "ko": "규모수익",
+   "en": "returns to scale",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/isoquant": {
+   "ko": "등량곡선",
+   "en": "isoquant",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/01-duel-fly": {
+   "ko": "지수로 계산 ×2<sup>1.6</sup>",
+   "en": "duel choice A 01",
+   "page": "01_technology",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/01-duel-robo": {
+   "ko": "비례 예측 ×2",
+   "en": "duel choice B 01",
+   "page": "01_technology",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/production-function": {
+   "ko": "생산함수",
+   "en": "production function",
+   "page": "01_technology",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/diminishing-returns": {
+   "ko": "수확 체감",
+   "en": "diminishing returns",
+   "page": "01_technology",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/output-elasticity": {
+   "ko": "산출탄력성",
+   "en": "output elasticity",
+   "page": "01_technology",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/homogeneous-function": {
+   "ko": "동차함수",
+   "en": "homogeneous function",
+   "page": "01_technology",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/mrts": {
+   "ko": "MRTS",
+   "en": "marginal rate of technical substitution",
+   "page": "01_technology",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/production-possibility-set": {
+   "ko": "생산가능집합",
+   "en": "production possibility set",
+   "page": "01_technology",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/free-disposal": {
+   "ko": "자유처분",
+   "en": "free disposal",
+   "page": "01_technology",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/profit-maximization": {
+   "ko": "이윤극대화",
+   "en": "profit maximization",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/value-of-marginal-product": {
+   "ko": "한계생산가치",
+   "en": "value of marginal product",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/shutdown-decision": {
+   "ko": "조업중단 판단",
+   "en": "shutdown decision",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/02-duel-fly": {
+   "ko": "가격에 맞춘 최적 투입",
+   "en": "duel choice A 02",
+   "page": "02_profit_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/02-duel-robo": {
+   "ko": "익숙한 공정 L = K = 1",
+   "en": "duel choice B 02",
+   "page": "02_profit_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/price-taking": {
+   "ko": "가격수용",
+   "en": "price taking",
+   "page": "02_profit_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/marginal-cost": {
+   "ko": "한계비용",
+   "en": "marginal cost",
+   "page": "04_cost_minimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/contribution-margin": {
+   "ko": "공헌이익",
+   "en": "contribution margin",
+   "page": "02_profit_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/interior-solution": {
+   "ko": "내부해",
+   "en": "interior solution",
+   "page": "02_profit_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/sunk-cost": {
+   "ko": "매몰비용",
+   "en": "sunk cost",
+   "page": "02_profit_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/avoidable-fixed-cost": {
+   "ko": "회피 가능한 고정비",
+   "en": "avoidable fixed cost",
+   "page": "02_profit_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/profit-function": {
+   "ko": "이윤함수",
+   "en": "profit function",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/hotelling-lemma": {
+   "ko": "호텔링 보조정리",
+   "en": "Hotelling's lemma",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/homogeneity-of-profit": {
+   "ko": "이윤함수의 1차 동차성",
+   "en": "homogeneity of degree one",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/03-duel-fly": {
+   "ko": "새 가격에서 다시 최적화",
+   "en": "duel choice A 03",
+   "page": "03_profit_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/03-duel-robo": {
+   "ko": "옛 공정 L = K = 1 유지",
+   "en": "duel choice B 03",
+   "page": "03_profit_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/value-function": {
+   "ko": "가치함수",
+   "en": "value function",
+   "page": "03_profit_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/supply-function": {
+   "ko": "공급함수",
+   "en": "supply function",
+   "page": "03_profit_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/envelope-theorem": {
+   "ko": "포락선 정리",
+   "en": "envelope theorem",
+   "page": "05_cost_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/factor-demand": {
+   "ko": "요소수요",
+   "en": "factor demand",
+   "page": "03_profit_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/convex-function": {
+   "ko": "볼록함수",
+   "en": "convex function",
+   "page": "03_profit_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/homogeneity": {
+   "ko": "동차성",
+   "en": "homogeneity",
+   "page": "03_profit_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/relative-price": {
+   "ko": "상대가격",
+   "en": "relative price",
+   "page": "03_profit_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/cost-minimization": {
+   "ko": "비용최소화",
+   "en": "cost minimization",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/conditional-factor-demand": {
+   "ko": "조건부 요소수요",
+   "en": "conditional factor demand",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/cost-function": {
+   "ko": "비용함수",
+   "en": "cost function",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/04-duel-fly": {
+   "ko": "θ* = 0.6 배합",
+   "en": "duel choice A 04",
+   "page": "04_cost_minimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/04-duel-robo": {
+   "ko": "반반 θ = 0.5",
+   "en": "duel choice B 04",
+   "page": "04_cost_minimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/isocost": {
+   "ko": "등비용선",
+   "en": "isocost line",
+   "page": "04_cost_minimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/lagrange-multiplier": {
+   "ko": "라그랑주 승수",
+   "en": "Lagrange multiplier",
+   "page": "04_cost_minimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/labor-share-theta": {
+   "ko": "노동 몫 비율",
+   "en": "labor share of output",
+   "page": "04_cost_minimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/average-cost": {
+   "ko": "평균비용",
+   "en": "average cost",
+   "page": "04_cost_minimization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/cost-function-properties": {
+   "ko": "비용함수의 성질",
+   "en": "properties of the cost function",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/shephard-lemma": {
+   "ko": "셰퍼드 보조정리",
+   "en": "Shephard's lemma",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/short-run-cost": {
+   "ko": "단기비용",
+   "en": "short-run cost",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/05-duel-fly": {
+   "ko": "새 임금에서 다시 고르기",
+   "en": "duel choice A 05",
+   "page": "05_cost_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/05-duel-robo": {
+   "ko": "옛 배합 유지",
+   "en": "duel choice B 05",
+   "page": "05_cost_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/homogeneous-degree-one": {
+   "ko": "1차 동차",
+   "en": "homogeneous of degree one",
+   "page": "05_cost_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/concave-function": {
+   "ko": "오목함수",
+   "en": "concave function",
+   "page": "05_cost_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/long-run-cost": {
+   "ko": "장기비용",
+   "en": "long-run cost",
+   "page": "05_cost_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/le-chatelier": {
+   "ko": "르 샤틀리에 원리",
+   "en": "Le Chatelier principle",
+   "page": "05_cost_function",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/discrete-processes": {
+   "ko": "이산 공정 기술",
+   "en": "activity analysis",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/duality-production": {
+   "ko": "생산의 쌍대성",
+   "en": "duality in production",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/convex-hull": {
+   "ko": "볼록 껍질",
+   "en": "convex hull",
+   "page": "r1_producer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/06-duel-fly": {
+   "ko": "이윤이 가장 큰 공정",
+   "en": "duel choice A 06",
+   "page": "06_duality",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/06-duel-robo": {
+   "ko": "산출이 가장 많은 C (6, 5)",
+   "en": "duel choice B 06",
+   "page": "06_duality",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/switching-price": {
+   "ko": "전환 가격",
+   "en": "switching price",
+   "page": "06_duality",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/supporting-line": {
+   "ko": "지지선",
+   "en": "supporting line",
+   "page": "06_duality",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/real-wage": {
+   "ko": "실질임금",
+   "en": "real wage",
+   "page": "06_duality",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/divisibility": {
+   "ko": "가분성",
+   "en": "divisibility",
+   "page": "06_duality",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/utility-maximization": {
+   "ko": "효용극대화",
+   "en": "utility maximization",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/mrs": {
+   "ko": "한계대체율",
+   "en": "marginal rate of substitution",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/expenditure-function": {
+   "ko": "지출함수",
+   "en": "expenditure function",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/07-duel-fly": {
+   "ko": "반반 지출 (15, 20)",
+   "en": "duel choice A 07",
+   "page": "07_utility_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/07-duel-robo": {
+   "ko": "α대로 지출 (12, 24)",
+   "en": "duel choice B 07",
+   "page": "07_utility_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/budget-set": {
+   "ko": "예산집합",
+   "en": "budget set",
+   "page": "07_utility_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/utility-function": {
+   "ko": "효용함수",
+   "en": "utility function",
+   "page": "07_utility_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/ordinal-utility": {
+   "ko": "서수적 효용",
+   "en": "ordinal utility",
+   "page": "07_utility_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/corner-solution": {
+   "ko": "경계해",
+   "en": "corner solution",
+   "page": "07_utility_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/indirect-utility": {
+   "ko": "간접효용함수",
+   "en": "indirect utility function",
+   "page": "07_utility_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/hicksian-demand": {
+   "ko": "보상수요",
+   "en": "Hicksian demand",
+   "page": "07_utility_maximization",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/expenditure-matrix": {
+   "ko": "지출행렬",
+   "en": "expenditure matrix",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/garp": {
+   "ko": "GARP",
+   "en": "generalized axiom of revealed preference",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/revealed-preference-limits": {
+   "ko": "현시선호의 식별 한계",
+   "en": "limits of revealed preference",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/08-duel-fly": {
+   "ko": "묶음 값을 그 가격으로 계산",
+   "en": "duel choice A 08",
+   "page": "08_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/08-duel-robo": {
+   "ko": "가격 합으로 판단",
+   "en": "duel choice B 08",
+   "page": "08_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/completeness": {
+   "ko": "완비성",
+   "en": "completeness",
+   "page": "08_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/transitivity": {
+   "ko": "이행성",
+   "en": "transitivity",
+   "page": "08_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/direct-revealed-preference": {
+   "ko": "직접 현시선호",
+   "en": "directly revealed preferred",
+   "page": "08_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/local-nonsatiation": {
+   "ko": "국소 비포화",
+   "en": "local nonsatiation",
+   "page": "08_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/afriat": {
+   "ko": "아프리아트 정리",
+   "en": "Afriat's theorem",
+   "page": "08_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/identification": {
+   "ko": "식별",
+   "en": "identification",
+   "page": "08_choice",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/stone-geary": {
+   "ko": "스톤-기어리 수요",
+   "en": "Stone-Geary demand",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/income-elasticity": {
+   "ko": "소득탄력성",
+   "en": "income elasticity",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/slutsky-matrix": {
+   "ko": "슬러츠키 행렬",
+   "en": "Slutsky matrix",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/09-duel-fly": {
+   "ko": "로이 항등식 −W_p/W_m",
+   "en": "duel choice A 09",
+   "page": "09_demand",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/09-duel-robo": {
+   "ko": "가격미분 크기 |W_p|",
+   "en": "duel choice B 09",
+   "page": "09_demand",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/subsistence": {
+   "ko": "생계 소비",
+   "en": "subsistence quantity",
+   "page": "09_demand",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/supernumerary-income": {
+   "ko": "여유소득",
+   "en": "supernumerary income",
+   "page": "09_demand",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/engel-curve": {
+   "ko": "엥겔 곡선",
+   "en": "Engel curve",
+   "page": "09_demand",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/non-homothetic": {
+   "ko": "비동조성",
+   "en": "non-homotheticity",
+   "page": "09_demand",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/roy-identity": {
+   "ko": "로이 항등식",
+   "en": "Roy's identity",
+   "page": "09_demand",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/nsd": {
+   "ko": "음의 준정부호",
+   "en": "negative semidefinite",
+   "page": "09_demand",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/compensating-variation": {
+   "ko": "보상변화",
+   "en": "compensating variation",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/consumer-surplus": {
+   "ko": "소비자잉여",
+   "en": "consumer surplus",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/hicks-decomposition": {
+   "ko": "힉스 분해",
+   "en": "Hicksian decomposition",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/10-duel-fly": {
+   "ko": "지출함수로 CV 계산",
+   "en": "duel choice A 10",
+   "page": "10_consumer_surplus",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/10-duel-robo": {
+   "ko": "수요곡선 면적",
+   "en": "duel choice B 10",
+   "page": "10_consumer_surplus",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/equivalent-variation": {
+   "ko": "동등변화",
+   "en": "equivalent variation",
+   "page": "10_consumer_surplus",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/quasilinear": {
+   "ko": "준선형 선호",
+   "en": "quasilinear preferences",
+   "page": "10_consumer_surplus",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/substitution-effect": {
+   "ko": "대체효과",
+   "en": "substitution effect",
+   "page": "10_consumer_surplus",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/income-effect": {
+   "ko": "소득효과",
+   "en": "income effect",
+   "page": "10_consumer_surplus",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/compensated-bundle": {
+   "ko": "보상선택",
+   "en": "compensated bundle",
+   "page": "10_consumer_surplus",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/certainty-equivalent": {
+   "ko": "확실성등가",
+   "en": "certainty equivalent",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/risk-aversion": {
+   "ko": "위험회피",
+   "en": "risk aversion",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/insurance-demand": {
+   "ko": "보험 수요",
+   "en": "insurance demand",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/11-duel-fly": {
+   "ko": "효용 평균 후 되돌리기",
+   "en": "duel choice A 11",
+   "page": "11_uncertainty",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/11-duel-robo": {
+   "ko": "돈의 평균 E[W]",
+   "en": "duel choice B 11",
+   "page": "11_uncertainty",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/expected-utility": {
+   "ko": "기대효용",
+   "en": "expected utility",
+   "page": "11_uncertainty",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/jensen": {
+   "ko": "젠센 부등식",
+   "en": "Jensen's inequality",
+   "page": "11_uncertainty",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/risk-premium": {
+   "ko": "위험프리미엄",
+   "en": "risk premium",
+   "page": "11_uncertainty",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/fair-premium": {
+   "ko": "공정 보험료",
+   "en": "actuarially fair premium",
+   "page": "11_uncertainty",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/loading": {
+   "ko": "부하율",
+   "en": "loading factor",
+   "page": "11_uncertainty",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/simultaneity": {
+   "ko": "동시성",
+   "en": "simultaneity",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/simultaneity-bias": {
+   "ko": "동시성 편의",
+   "en": "simultaneity bias",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:concept/instrumental-variables": {
+   "ko": "도구변수",
+   "en": "instrumental variable",
+   "page": "r2_consumer_review",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/12-duel-fly": {
+   "ko": "OLS(가장 잘 맞는 직선)",
+   "en": "duel choice A 12",
+   "page": "12_econometrics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:method/12-duel-robo": {
+   "ko": "IV(도구 z)",
+   "en": "duel choice B 12",
+   "page": "12_econometrics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/endogenous": {
+   "ko": "내생변수",
+   "en": "endogenous variable",
+   "page": "12_econometrics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/ols": {
+   "ko": "최소제곱",
+   "en": "ordinary least squares",
+   "page": "12_econometrics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/plim": {
+   "ko": "확률극한",
+   "en": "probability limit",
+   "page": "12_econometrics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/exclusion-restriction": {
+   "ko": "배제조건",
+   "en": "exclusion restriction",
+   "page": "12_econometrics",
+   "domain": [
+    "econ"
+   ]
+  },
+  "lab:term/weak-instrument": {
+   "ko": "약한 도구",
+   "en": "weak instrument",
+   "page": "12_econometrics",
+   "domain": [
+    "econ"
+   ]
+  }
+ }
+}

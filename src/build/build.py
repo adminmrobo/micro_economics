@@ -3,17 +3,28 @@
 import json, re, sys, html, importlib.util, os, datetime, base64
 B = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(B)
-OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, 'out')
-SITE = 'https://adminmrobo.github.io/micro_economics/'
-SERIES = '미시경제학 연구실 — 질문하고 실험하고 계산으로 확인하는 미시경제학'
-SERIES_SHORT = '미시경제학 연구실'
+V2 = '--v2' in sys.argv
+ARGS = [a for a in sys.argv[1:] if not a.startswith('--')]
+OUT = ARGS[0] if ARGS else os.path.join(ROOT, 'out')
+SITE = 'https://adminmrobo.github.io/micro_economics/' + ('v2/' if V2 else '')
+SERIES = ('미시경제학 연구실 2 — 교과서판 강의노트(Varian)' if V2 else '미시경제학 연구실 — 질문하고 실험하고 계산으로 확인하는 미시경제학')
+SERIES_SHORT = '미시경제학 연구실 2' if V2 else '미시경제학 연구실'
+PAGES = os.path.join(ROOT, 'pages_v2' if V2 else 'pages')
 AUTHOR = '안상선'; AFFIL = '(주)M-Robo 대표'; WHO = 'https://www.ahnboat.xyz'; WHO_OLD = 'https://adminmrobo.github.io/who_am_i/who_am_i.html'
 TODAY = '2026-11-21'; VER = '2.0'
 sys.path.insert(0, B)
-import tower  # 3D 마켓 스퀘어 타워 첫 화면 (tower.py · tower.js · tower.css)
+sys.path.insert(0, B)
+if V2:
+    import tower_v2 as tower  # 3D Market 건물 (2권)
+    sys.modules['tower'] = tower
+    import home_v2 as home_mod
+else:
+    import tower  # 3D 마켓 스퀘어 타워 첫 화면 (tower.py · tower.js · tower.css)
+    import home as home_mod
+sys.modules['tower'] = tower; sys.modules['home'] = home_mod
 SP = json.load(open(os.path.join(B, 'sprites.json'), encoding='utf-8'))
 CSS = open(os.path.join(B, 'base.css'), encoding='utf-8').read() + '\n' + open(os.path.join(B, 'plain.css'), encoding='utf-8').read()
-JS = open(os.path.join(B, 'lab.js'), encoding='utf-8').read() + '\n' + open(os.path.join(B, 'sims.js'), encoding='utf-8').read() + '\n' + open(os.path.join(B, 'dash.js'), encoding='utf-8').read()
+JS = '\n'.join(open(os.path.join(B, f), encoding='utf-8').read() for f in (['lab.js', 'sims.js', 'sims_v2.js', 'dash_core.js', 'dash_v2.js'] if V2 else ['lab.js', 'sims.js', 'dash_core.js', 'dash_v1.js']))
 NAMES = {'doc': '박사', 'asst': '조수(하루)', 'fly': '초파리 연구원', 'robo': '주판봇', 'sia': '시아(인턴1)', 'moa': '모아(인턴2)', 'x1': 'X1', 'x2': 'X2', 'x3': 'X3'}
 DEFM = {'doc': 'front', 'asst': 'smile', 'fly': 'clip', 'robo': 'smile', 'sia': 'start', 'moa': 'judge', 'x1': 'watch', 'x2': 'watch', 'x3': 'watch'}
 e = html.escape
@@ -64,7 +75,7 @@ def sprites(M):
 
 def cover(P, M, key):
     chip = f'{SERIES_SHORT} · {P["num"]}'
-    f = os.path.join(B, 'covers', ('cover_idx' if key == 'cover_index' else key) + '.webp')
+    f = os.path.join(B, 'covers_v2' if V2 else 'covers', ('cover_idx' if key == 'cover_index' else key) + '.webp')
     if os.path.exists(f):
         b64 = base64.b64encode(open(f, 'rb').read()).decode()
         t = re.sub('<[^>]+>', '', P['title'])
@@ -257,6 +268,9 @@ def level_html(l, i, M, P):
             tr = ''.join(f'<span>{x}</span>' for x in m['try'])
             o.append(f'<details class="more mathmore"><summary>수식이 궁금하면 펼쳐 보기 — 수학 수식을 어려워하는 조수가 대신 물어봅니다</summary><div class="mathbox"><div class="who">{img("asst","shock",M)}<p>{m["q"]}</p></div><p class="school"><b>학교 수학으로 보면</b> {m["school"]}</p><div class="fx">{m["fx"]}</div><table>{parts}</table><div class="try"><b>숫자로 한 번 해 보기</b>{tr}</div><div class="who">{img("asst","spark",M)}<p>{m["comment"]}</p></div></div></details>')
         o.append('</div>')
+    if l.get('verify'):
+        v = l['verify']
+        o.append(f'<section class="panel verify" aria-label="그래프로 검증: {e(v["title"])}"><h3>그래프로 검증 — {v["title"]}</h3><p class="muted" style="margin:0 0 6px">{v.get("lead", "위 수식 풀이에서 구한 답을 그래프에서 직접 찾아 같은지 확인해요. 조절기를 바꾸면 수식 답과 그래프 답이 함께 다시 계산됩니다.")}</p><div class="sim" data-sim="verify" data-cfg="{e(json.dumps(v, ensure_ascii=False))}"></div></section>')
     pr = l['pair']
     o.append(f'<div class="pair"><div><div class="tag fly">일상으로 치면</div><p>{pr["left"]}</p></div><div><div class="tag nn">경제학으로는</div><p>{pr["right"]}</p></div></div>')
     o.append('<div class="talk">' + ''.join(say(w_, m_, t_, M) for w_, m_, t_ in l['talk']) + '</div>')
@@ -327,6 +341,11 @@ def apply_plainer(P):
         assert ks[-1] in d, (n, path)
         d[ks[-1]] = v
 
+def prompt_sec(P, M):
+    cards = ''.join(f'<div class="pcard"><div class="phead"><b>{i+1}. {e(t)}</b><button class="bt pcopy" type="button">복사</button></div><pre>{e(x)}</pre></div>' for i, (t, x) in enumerate(P['prompts']))
+    talk = ''.join(say(*t, M) for t in P.get('prompt_talk', [('sia', 'explain', '인턴 시아예요. 아래 프롬프트를 생성 AI(ChatGPT·Claude·Gemini 등)에 그대로 붙여 넣으면, 이 장의 핵심 개념을 파이썬 코드로 짜 줘요.'), ('x2', 'think', '방청석 X2예요. 코드를 받으면 실행해서 본문 숫자와 같은지 꼭 확인할게요!')]))
+    return f'<section class="level" id="prompt"><div class="wrap stack"><div class="lvhead"><h2>파이썬으로 짜 보기 — 생성 AI 프롬프트</h2><p class="lead">이 장의 주요 개념을 파이썬 코드로 만들어 보는 프롬프트예요. 각 프롬프트는 본문 예시값으로 결과를 검산하도록 요청해요. AI가 만든 코드는 틀릴 수 있으니 실행 결과를 본문 숫자와 비교하세요.</p></div>{talk}<div class="pgrid">{cards}</div></div></section><script>document.addEventListener("click",function(ev){{var b=ev.target.closest&&ev.target.closest(".pcopy");if(!b)return;var t=b.closest(".pcard").querySelector("pre").textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){{b.textContent="복사됨 ✓";setTimeout(function(){{b.textContent="복사"}},1500)}},function(){{var r=document.createRange();r.selectNodeContents(b.closest(".pcard").querySelector("pre"));var sel=getSelection();sel.removeAllRanges();sel.addRange(r);b.textContent="선택됨 — Ctrl+C"}})}});</script>'
+
 def page(P):
     apply_plainer(P)
     M = Moods(); L = P['levels']; num = P['num']
@@ -334,7 +353,8 @@ def page(P):
     P['duels_js'] = [{'el': '#duelBox', 'fn': P['duel']['fn'], 'cfg': P['duel'].get('cfg', {}), 'metric': P['duel']['metric'], 'lesson': P['duel']['lesson'], 'condLesson': P['duel'].get('cond_lesson', ''), 'higherIsBetter': P['duel']['hib'], 'drawMargin': P['duel'].get('margin', 0), 'fmt': P['duel'].get('fmt', ''), 'unit': P['duel'].get('unit', ''), 'dec': P['duel'].get('dec', 1)}]
     P['flow'] = []
     for l in L: P['flow'] += [[l['node'][2], 0], [l['limit_short'], 1]]
-    links = [('three', '3줄 요약'), ('cast', '연구실 식구')] + [(l['id'], f'{i+1} {l["short"]}') for i, l in enumerate(L)] + [('dash', '대시보드'), ('duel', '대결'), ('sum', '정리'), ('kg', '색인'), ('export', '꾸러미')]
+    if V2: links = [('three', '3줄 요약'), ('cast', '식구')] + [(l['id'], f'{i+1} {l["short"]}') for i, l in enumerate(L)] + [('duel', '대결'), ('sum', '정리'), ('prompt', 'AI 프롬프트'), ('dash', '복습 대시보드'), ('kg', '색인')]
+    else: links = [('three', '3줄 요약'), ('cast', '연구실 식구')] + [(l['id'], f'{i+1} {l["short"]}') for i, l in enumerate(L)] + [('dash', '대시보드'), ('duel', '대결'), ('sum', '정리'), ('kg', '색인'), ('export', '꾸러미')]
     o = [head(P, P['title'], P['desc'], P['file']), nav(links, f'{SERIES_SHORT} {num}'), tower.tower_html(num), cover(P, M, f'cover_{num}')]
     kp = ''.join(f'<div class="kpi {c}"><b>{v}</b><span>{t}</span></div>' for v, t, c in P['kpis'])
     hero_talk = ''.join(say(*t, M) for t in P['hero_talk'])
@@ -348,25 +368,30 @@ def page(P):
     o.append('<section class="level" id="why"><div class="wrap stack"><div class="lvhead"><h2>왜 이 주제인가</h2></div><div class="steps">' + ''.join(f'<div><b>{a}</b><p>{b}</p></div>' for a, b in W) + '</div>'
              + '<details class="more"><summary>큰 그림 — 이 장이 흘러가는 4단계 (펼쳐 보기)</summary>' + (f'<p class="lead">{P["big_lead"]}</p>' if P.get('big_lead') else '') + '<div class="steps four">' + ''.join(f'<div><b>{a}</b><p>{b}</p></div>' for a, b in Bg) + '</div></details></div></section>')
     for i, l in enumerate(L): o.append(level_html(l, i, M, P))
-    o.append(f'<section class="level" id="dash"><div class="wrap stack"><div class="lvhead"><h2>한눈에 보는 대시보드</h2><p class="lead">단계 ①②③에서 본 것을 한 화면에 모았어요. ▶ 재생을 누르면 숫자 카드와 그림이 함께 바뀝니다. 처음 값은 본문 예시와 같아요.</p></div><div class="dash panel" data-dash="{num}"></div></div></section>')
+    DASHSEC = f'<section class="level" id="dash"><div class="wrap stack"><div class="lvhead"><h2>한눈에 보는 대시보드</h2><p class="lead">단계 ①②③에서 본 것을 한 화면에 모았어요. ▶ 재생을 누르면 숫자 카드와 그림이 함께 바뀝니다. 처음 값은 본문 예시와 같아요.</p></div><div class="dash panel" data-dash="{num}"></div></div></section>'
+    if not V2: o.append(DASHSEC)
     o.append(duel_html(P, M))
     S = P['summary']
     rows = ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td></tr>' for a, b, c in S['table'])
     terms = ''.join(f'<div><b>{a}</b><p>{b}</p></div>' for a, b in S['terms'])
     lims = ''.join(f'<li>{x}</li>' for x in S['analogy_limits'])
     o.append(f'''<section class="level" id="sum"><div class="wrap stack"><div class="lvhead"><h2>정리</h2></div><div class="tw"><table class="tb"><tr><th>단계</th><th>새로 생긴 능력</th><th>남은 한계</th></tr>{rows}</table></div><div class="steps">{terms}</div><div class="explain"><h4>비유의 한계</h4><ul>{lims}</ul></div>{say("doc","magic",S["doc_line"],M)}</div></section>''')
+    if V2:
+        o.append(prompt_sec(P, M))
+        o.append(f'<section class="level" id="dash"><div class="wrap stack"><div class="lvhead"><h2>복습 대시보드 — 이 장에서 배운 내용을 한 화면에서</h2><p class="lead">단계 ①②③의 핵심 모형을 한 화면에 모았어요. 조절기를 움직이거나 ▶ 재생을 눌러 숫자 카드·그림·해석이 함께 바뀌는 것을 보며 복습하세요. 처음 값은 본문 예시와 같아요.</p></div>{say(*P.get("dash_say", ("moa", "guide", "인턴 모아예요. 복습은 여기서! 슬라이더 하나씩만 움직이며 본문에서 배운 결론이 맞는지 확인해 보세요.")), M)}<div class="dash panel" data-dash="{num}"></div></div></section>')
     o.append('<section class="level" id="outro"><div class="wrap stack"><div class="lvhead"><h2>아웃트로</h2></div>' + ''.join(say(*t, M) for t in P['outro']) + '</div></section>')
     o.append(KG_SEC); o.append(export_sec(M)); o.append(footer(P))
     G = kg_build(P)
-    o.append(sprites(M)); o.append(tail(P, G))
+    o.append(sprites(M)); o.append(tail(P, G, {'dashes': {num: P['dash']}} if V2 and P.get('dash') else None))
     return ''.join(o), G
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
     reg = {}
-    for f in sorted(os.listdir(os.path.join(ROOT, 'pages'))):
+    sys.path.insert(0, PAGES)
+    for f in sorted(os.listdir(PAGES)):
         if not f.endswith('.py') or f.startswith('_'): continue
-        P = load(os.path.join(ROOT, 'pages', f))
+        P = load(os.path.join(PAGES, f))
         kind = P.get('kind', 'lesson')
         if kind == 'lesson':
             htm, G = page(P)

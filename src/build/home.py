@@ -40,9 +40,9 @@ def tower_svg(w=192, h=108):
     # 타워 본체: 아래(로비)에서 위(옥상)로
     X, W = 72, 48
     hgt = {'lobby': 8, '03m': 3, '07f': 4, 'roof': 3}
-    y = 100
+    y = 100; base = max(2, min(5, 80 // len(tower.FLOORS)))
     for f in tower.FLOORS:
-        fh = hgt.get(f['key'], 5)
+        fh = hgt.get(f['key'], base)
         y -= fh
         R(X, y, W, fh, f['color'])
         R(X, y, W, 1, '#00000022')
@@ -57,7 +57,7 @@ def tower_svg(w=192, h=108):
     R(X - 2, top - 2, W + 4, 2, '#5d6278')                  # 옥상 난간
     R(X + 22, top - 12, 2, 10, '#5d6278'); R(X + 21, top - 14, 4, 2, '#d23f2c')  # 안테나
     R(X + 6, top - 9, 14, 7, '#ffffff'); R(X + 6, top - 9, 14, 1, '#3f5fa8')
-    r.append(f'<text x="{X + 13}" y="{top - 3.6}" font-size="5" font-family="monospace" font-weight="700" text-anchor="middle" fill="#3f5fa8">C&amp;C</text>')
+    r.append(f'<text x="{X + 13}" y="{top - 3.6}" font-size="5" font-family="monospace" font-weight="700" text-anchor="middle" fill="#3f5fa8">{e(tower.COMPANY.get("svg", "C&C"))}</text>')
     # 오른쪽 그림자 기둥(입체감)
     R(X + W, top, 3, 100 - top, '#00000018')
     # 나무 · 사람
@@ -66,7 +66,7 @@ def tower_svg(w=192, h=108):
     for px, c in ((40, '#d0457f'), (152, '#3f5fa8')):
         R(px, 95, 2, 2, '#f1c9a5'); R(px, 97, 2, 3, c)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 108" width="{w}" height="{h}" shape-rendering="crispEdges" '
-            f'role="img" aria-label="픽셀 그림: 로비부터 옥상까지 12개 층이 층마다 다른 색으로 쌓인 C&amp;C 마켓 타워">' + ''.join(r) + '</svg>')
+            f'role="img" aria-label="픽셀 그림: 로비부터 옥상까지 {len(tower.FLOORS)}개 층이 층마다 다른 색으로 쌓인 {e(tower.COMPANY["ko"])} 건물">' + ''.join(r) + '</svg>')
 
 def tower_svg_uri():
     return 'data:image/svg+xml;base64,' + base64.b64encode(tower_svg().encode('utf-8')).decode()
@@ -192,6 +192,8 @@ def mosaic_tile():
 
 def practice_tile():
     return '<a class="mt th-prac" href="practice/index.html" title="마지막 장 · 실전 연습장"><span>실전</span><i class="sr">마지막 장 · 실전 연습장</i></a>'
+
+THUMB_KEYS = [f'{i:02d}' for i in range(0, 8)] + ['03m', '07f', 'idx', 'prac']
 
 NAV = [('micro', '미시경제학이란'), ('map', '목차'), ('building', '건물 보기'), ('keys', '한 줄 핵심'), ('dash', '종합 대시보드'), ('path', '개념 흐름'), ('how', '식구·사용법'), ('about', '자료와 원칙')]
 

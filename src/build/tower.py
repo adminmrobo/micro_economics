@@ -17,6 +17,7 @@ THREE_VER = '0.170.0'
 
 COMPANY = dict(ko='C&C 경제연구원', en='Choice & Constraint Institute', hq='마켓 타워',
                motto='선택(Choice)과 제약(Constraint)으로 시장을 읽는 연구원',
+               sign=['C&C MARKET', 'Choice & Constraint'], plate='C&C 마켓 타워  ·  서울',
                note='가상의 경제연구원입니다. 층마다 한 연구실이 있고, 연구실마다 그 장의 미시경제학 도구로 일합니다.')
 
 CLOCKS = [('서울', 'Asia/Seoul'), ('런던', 'Europe/London'), ('뉴욕', 'America/New_York'), ('싱가포르', 'Asia/Singapore')]

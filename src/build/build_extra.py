@@ -4,7 +4,7 @@ e = html.escape
 
 def lessons(B):
     out = {}
-    d = os.path.join(B.ROOT, 'pages')
+    d = B.PAGES
     for f in sorted(os.listdir(d)):
         if re.match(r'p\d\d\.py$', f):
             P = B.load(os.path.join(d, f))
@@ -19,14 +19,15 @@ def thumbs_css(B):
     """표지 WebP에서 320x180 썸네일을 만들어 CSS 배경으로 한 번만 넣는다(목차 머리 모자이크·장 카드 공용)."""
     import base64, io
     from PIL import Image
-    cdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'covers')
-    tdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'thumbs'); os.makedirs(tdir, exist_ok=True)
-    keys = [f'{i:02d}' for i in range(0, 8)] + ['03m', '07f', 'idx', 'prac']
+    sfx = '_v2' if B.V2 else ''
+    cdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'covers' + sfx)
+    tdir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'thumbs' + sfx); os.makedirs(tdir, exist_ok=True)
+    keys = B.home_mod.THUMB_KEYS
     css = []
     for k in keys:
         src = os.path.join(cdir, f'cover_{k}.webp'); dst = os.path.join(tdir, f'thumb_{k}.webp')
         if not os.path.exists(src):
-            ph = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'thumbs_ph', f'thumb_{k}.webp')
+            ph = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'thumbs_ph' + sfx, f'thumb_{k}.webp')
             if os.path.exists(ph): css.append(f'.th-{k}{{background-image:url(data:image/webp;base64,{base64.b64encode(open(ph, "rb").read()).decode()})}}')
             continue
         if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
@@ -108,6 +109,7 @@ def review(P, B):
 
 # ---------- 목차 ----------
 def index(P, B):
+    if hasattr(B.home_mod, 'index_page'): return B.home_mod.index_page(P, B)
     M = B.Moods(); L = lessons(B)
     for k, v in B.DEFM.items(): M.add(k, v)
     import home

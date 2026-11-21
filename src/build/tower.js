@@ -101,7 +101,7 @@ async function build() {
       const globe = new THREE.Mesh(new THREE.IcosahedronGeometry(0.9, 2), new THREE.MeshBasicMaterial({ color: 0x3f5fa8, wireframe: true, transparent: true, opacity: 0.7 }));
       globe.position.set(2.4, 1.35, -0.6); g.add(globe); o.globe = globe; o.deco = [globe];
       const stand = box(0.12, 0.6, 0.12, pm); stand.position.set(2.4, 0.4, -0.6); g.add(stand); o.deco.push(stand);
-      const sign = new THREE.Mesh(new THREE.PlaneGeometry(4.2, 1.05), new THREE.MeshBasicMaterial({ map: signTex(['C&C MARKET', 'Choice & Constraint']), side: THREE.DoubleSide }));
+      const sign = new THREE.Mesh(new THREE.PlaneGeometry(4.2, 1.05), new THREE.MeshBasicMaterial({ map: signTex(TD.company.sign || ['C&C MARKET', 'Choice & Constraint']), side: THREE.DoubleSide }));
       sign.position.set(-1.4, 1.25, -DP / 2 + 0.25); g.add(sign); o.deco.push(sign);
       const sl = box(0.08, 0.7, 0.08, pm); sl.position.set(-2.8, 0.45, -DP / 2 + 0.25); g.add(sl);
       const sr = sl.clone(); sr.position.x = 0; g.add(sr); o.deco.push(sl, sr);
@@ -121,7 +121,7 @@ async function build() {
       if (f.key === 'lobby') {
         const can = box(3.6, 0.1, 1.6, M(0xdfe5ee)); can.position.set(0, 1.25, DP / 2 + 0.8); g.add(can);
         [-1.6, 1.6].forEach(x => { const p = box(0.1, 1.2, 0.1, M(0xb8c2d3)); p.position.set(x, 0.62, DP / 2 + 1.5); g.add(p); });
-        const sign = new THREE.Mesh(new THREE.PlaneGeometry(3.4, 0.42), new THREE.MeshBasicMaterial({ map: signTex(['C&C 마켓 타워  ·  서울'], 1024, 128) }));
+        const sign = new THREE.Mesh(new THREE.PlaneGeometry(3.4, 0.42), new THREE.MeshBasicMaterial({ map: signTex([TD.company.plate || 'C&C 마켓 타워  ·  서울'], 1024, 128) }));
         sign.position.set(0, 1.45, DP / 2 + 1.61); g.add(sign);
       }
     }

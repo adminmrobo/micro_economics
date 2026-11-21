@@ -177,3 +177,9 @@ details.mathmore .mathbox{border:0;padding:4px 0 0;background:transparent}
 /* 썸네일이 없을 때의 자리 */
 .mosaic .mt:not([class*=th-]),.mosaic .mt{background-color:#eef2f8}
 .chapx a .ct{background-color:#eef2f8}
+/* 그래프로 검증 · 생성 AI 프롬프트 */
+.panel.verify{border-left:4px solid var(--c-g,#138a52)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.pcard{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.pcard .phead{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pcard pre{white-space:pre-wrap;word-break:keep-all;font-size:13.5px;line-height:1.55;background:#f6f8fb;border-radius:8px;padding:10px 12px;margin:0;max-height:300px;overflow:auto}
