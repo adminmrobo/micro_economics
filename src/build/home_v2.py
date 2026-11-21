@@ -82,7 +82,7 @@ def tower_page(base_css, site):
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>건물 보기 — 더 마켓(THE MARKET) · 미시경제학 연구실 2</title>
 <meta name="description" content="미시경제학 2권 27장을 가상의 종합 시장 빌딩 '더 마켓'의 층으로 둘러보는 3D 건물 안내.">
-<meta property="og:title" content="건물 보기 — 더 마켓"><meta property="og:image" content="{site}../assets/og/v2_cover_idx.jpg"><meta property="og:url" content="{site}tower.html">
+<meta property="og:title" content="건물 보기 — 더 마켓"><meta property="og:image" content="{site}assets/og/cover_idx.jpg"><meta property="og:url" content="{site}tower.html">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
 <style>
 {base_css}

@@ -341,8 +341,14 @@ def apply_plainer(P):
         assert ks[-1] in d, (n, path)
         d[ks[-1]] = v
 
+def norm_prompt(x):
+    """따로 복사해도 혼자 서는 프롬프트: 파이썬을 명시하고, 예시값 확인 요청이 없으면 덧붙인다(2권)."""
+    if not V2: return x
+    if not re.search('파이썬|[Pp]ython', x): x = '파이썬으로 ' + x
+    if not re.search('assert|확인|검사|비교', x): x = x.rstrip() + ' 마지막에 결과가 본문 예시값과 맞는지 assert 로 확인해 줘.'
+    return x
 def prompt_sec(P, M):
-    cards = ''.join(f'<div class="pcard"><div class="phead"><b>{i+1}. {e(t)}</b><button class="bt pcopy" type="button">복사</button></div><pre>{e(x)}</pre></div>' for i, (t, x) in enumerate(P['prompts']))
+    cards = ''.join(f'<div class="pcard"><div class="phead"><b>{i+1}. {e(t)}</b><button class="bt pcopy" type="button">복사</button></div><pre>{e(norm_prompt(x))}</pre></div>' for i, (t, x) in enumerate(P['prompts']))
     talk = ''.join(say(*t, M) for t in P.get('prompt_talk', [('sia', 'explain', '인턴 시아예요. 아래 프롬프트를 생성 AI(ChatGPT·Claude·Gemini 등)에 그대로 붙여 넣으면, 이 장의 핵심 개념을 파이썬 코드로 짜 줘요.'), ('x2', 'think', '방청석 X2예요. 코드를 받으면 실행해서 본문 숫자와 같은지 꼭 확인할게요!')]))
     return f'<section class="level" id="prompt"><div class="wrap stack"><div class="lvhead"><h2>파이썬으로 짜 보기 — 생성 AI 프롬프트</h2><p class="lead">이 장의 주요 개념을 파이썬 코드로 만들어 보는 프롬프트예요. 각 프롬프트는 본문 예시값으로 결과를 검산하도록 요청해요. AI가 만든 코드는 틀릴 수 있으니 실행 결과를 본문 숫자와 비교하세요.</p></div>{talk}<div class="pgrid">{cards}</div></div></section><script>document.addEventListener("click",function(ev){{var b=ev.target.closest&&ev.target.closest(".pcopy");if(!b)return;var t=b.closest(".pcard").querySelector("pre").textContent;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){{b.textContent="복사됨 ✓";setTimeout(function(){{b.textContent="복사"}},1500)}},function(){{var r=document.createRange();r.selectNodeContents(b.closest(".pcard").querySelector("pre"));var sel=getSelection();sel.removeAllRanges();sel.addRange(r);b.textContent="선택됨 — Ctrl+C"}})}});</script>'
 

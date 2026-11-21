@@ -67,7 +67,33 @@ docs/COVER_PROMPTS_series.md       표지 12장만 모은 지시문
 docs/PROMPT_AUDIT_table.md         프롬프트 감사 자동 점검표
 src/pages/*.py                     페이지 데이터
 src/build/                         빌드 도구 (sims.js 실험 24개, dash.js 대시보드 8개, tower.* 3D 건물)
+v2/                                2권(Varian 강의노트 27장) — 아래 "2권" 참고
 archive/                           이전 판 원본 — 버전1(8장)·버전2(교과서 27장)·블로그 35편
+```
+
+## 2권 — Varian 『Microeconomic Analysis』 강의노트 (27장)
+
+- **바로 보기:** https://adminmrobo.github.io/micro_economics/v2/
+- 저자가 Hal R. Varian 『Microeconomic Analysis』로 진행한 강의의 강의노트입니다. 노트는 2005·2008·2011년 세 번 업데이트했고, 실제 강의에는 2014·2015년에 사용했습니다.
+- 장마다: 3단계 설명 → **수식 풀이를 그래프로 다시 검증**(단계마다 1개, 모두 81개) → 대결 → **복습용 동적 대시보드**(장 끝) → **파이썬 코드 생성 AI 프롬프트 3개**.
+- 박사·조수(하루)·초파리 연구원·주판봇과 인턴1 시아·인턴2 모아, 방청석 X1·X2·X3가 모든 장에 나옵니다.
+- 건물 콘셉트: **The Market(더 마켓)** — 생산자(01~06)·소비자(07~12)·시장(13~16)·일반균형(17~21)·후생·정보(22~25) 구역과 구역 점검 r1~r5, 수학 부록(26·27), 옥상 실전 연습장.
+
+```
+v2/index.html · v2/tower.html      2권 목차 · 3D 건물 보기
+v2/01_…html ~ v2/27_…html          장 해설
+v2/r1_…html ~ v2/r5_…html          구역 점검(요약·원자료 문제·업무 계산)
+v2/practice/index.html             실전 연습장
+v2/assets/og/cover_*.jpg           2권 공유 미리보기(대체 이미지)
+docs/AUDIT_REPORT_v2.md            2권 감사보고서
+docs/COVER_PROMPTS_v2.md           2권 표지 지시문 34장(16비트 RPG 픽셀아트, 흰 배경)
+src/pages_v2/*.py                  2권 페이지 데이터
+```
+
+```bash
+cd src
+python3 build/build.py ../v2 --v2        # 2권 34쪽 + KG 등록부
+python3 build/make_placeholders_v2.py    # (선택) 2권 대체 썸네일·공유 미리보기
 ```
 
 ## 다시 빌드하기
@@ -85,4 +111,4 @@ python3 build/make_docs.py               # (선택) 그림 지시문과 프롬�
 
 캐릭터 이름·설정·그림 © 안상선 ((주)M-Robo). 모든 권리 보유. 무단 복제·수정·배포·상업적 이용 금지.
 교육 구성 참고: ahnboat_lab_explainer, 안상선 ((주)M-Robo), 저작자표시-비영리 4.0 국제. 이 고지는 캐릭터에 별도 이용권을 부여하지 않습니다.
-버전2의 장 배열은 Hal R. Varian 『Microeconomic Analysis』 제3판을 따르지만, 해당 책의 본문·문제·증명을 옮기거나 대신하지 않습니다.
+2권(버전2)의 장 배열은 Hal R. Varian 『Microeconomic Analysis』 제3판을 따르지만, 해당 책의 본문·문제·증명을 옮기거나 대신하지 않습니다.

@@ -1639,15 +1639,15 @@ SIMS.verify=function(el,cfg){var H=cfg.h||250,c=S0(el,cfg,H,cfg.title),row=rows(
   function solve(lo,hi){var N=1600,best=null,bx=lo;if(cfg.mode==='cross'){var A=cs[cfg.pair[0]].f,Bf=cs[cfg.pair[1]].f,prev=null;for(var i=0;i<=N;i++){var x=lo+(hi-lo)*i/N,d=A(x,p)-Bf(x,p);if(!isFinite(d)){prev=null;continue}if(prev!=null&&prev.d*d<=0){var a=prev.x,b=x;for(var k=0;k<60;k++){var m=(a+b)/2,dm=A(m,p)-Bf(m,p);if((A(a,p)-Bf(a,p))*dm<=0)b=m;else a=m}return (a+b)/2}prev={x:x,d:d}}return NaN}
     var f=cs[cfg.t||0].f,sg=cfg.mode==='min'?-1:1;for(var j=0;j<=N;j++){var x2=lo+(hi-lo)*j/N,v=sg*f(x2,p);if(isFinite(v)&&(best===null||v>best)){best=v;bx=x2}}
     var a2=Math.max(lo,bx-(hi-lo)/N),b2=Math.min(hi,bx+(hi-lo)/N),g=(Math.sqrt(5)-1)/2;for(var t=0;t<80;t++){var x1=b2-g*(b2-a2),x3=a2+g*(b2-a2);if(sg*f(x1,p)>sg*f(x3,p))b2=x3;else a2=x1}return (a2+b2)/2}
-  function draw(){if(cfg.pre)runPre(cfg.pre,p);var xlo=lim('xlo'),xhi=lim('xhi'),ylo=lim('ylo'),yhi=lim('yhi');var P=plot(c,H,{xlo:xlo,xhi:xhi,ylo:ylo,yhi:yhi,xl:cfg.xl,yl:cfg.yl,title:cfg.title,T:cfg.curves.length>1?46:30});
+  function draw(){if(cfg.pre)runPre(cfg.pre,p);var xlo=lim('xlo'),xhi=lim('xhi'),ylo=lim('ylo'),yhi=lim('yhi'),xa0=ax(0,p),wid=false;if(isFinite(xa0)&&(xa0<xlo||xa0>xhi)){var sp=xhi-xlo;if(xa0>xhi)xhi=xa0+0.25*(xa0-xlo);else xlo=(xlo>=0&&xa0>0)?xa0*0.5:xa0-0.25*(xhi-xa0);wid=true}var P=plot(c,H,{xlo:xlo,xhi:xhi,ylo:ylo,yhi:yhi,xl:cfg.xl,yl:cfg.yl,title:cfg.title,T:cfg.curves.length>1?46:30});
     cs.forEach(function(k){P.fn(function(x){return k.f(x,p)},k.c,2.4,k.d?[5,4]:null,xlo,xhi)});if(cs.length>1)P.key(cs.map(function(k){return [k.n,k.c]}));
-    var xa=ax(0,p),xg=solve(xlo,xhi),yv=function(x){return cfg.mode==='cross'?cs[cfg.pair[0]].f(x,p):cs[cfg.t||0].f(x,p)},ya=ayf?ayf(0,p):yv(xa),yg=yv(xg),ok=isFinite(xg)&&Math.abs(xa-xg)<=Math.max(1e-3,Math.abs(xa)*0.005)+(xhi-xlo)/1600;
+    var xa=ax(0,p),xg=solve(xlo,xhi),yv=function(x){return cfg.mode==='cross'?cs[cfg.pair[0]].f(x,p):cs[cfg.t||0].f(x,p)},ya=ayf?ayf(0,p):yv(xa),yg=yv(xg),none=!isFinite(xa)&&!isFinite(xg),ok=none||(isFinite(xg)&&Math.abs(xa-xg)<=Math.max(1e-3,Math.abs(xa)*0.005)+(xhi-xlo)/1600);
     if(isFinite(xg)){P.seg(xg,ylo,xg,yg,COL.a,1.2,[3,3]);P.dot(xg,yg,COL.a,7,'')}if(isFinite(xa))P.dot(xa,ya,ok?COL.g:COL.r,4,'수식 답',8,-10);
     stamp(P.ctx,P.W,'수치 탐색 1,600점 + 정밀화');
     var nm=cfg.xname||'x*';
-    K([[f1(xa,dg),'수식으로 구한 '+nm,'g'],[isFinite(xg)?f1(xg,dg):'—','그래프에서 찾은 '+nm,'a'],[isFinite(xg)?f1(Math.abs(xa-xg),4):'—','두 답의 차이','i'],[ok?'일치 ✓':'불일치 ✗','판정',ok?'g':'r']]);
+    K([[isFinite(xa)?f1(xa,dg):'해 없음','수식으로 구한 '+nm,'g'],[isFinite(xg)?f1(xg,dg):(none?'해 없음':'—'),'그래프에서 찾은 '+nm,'a'],[isFinite(xg)?f1(Math.abs(xa-xg),4):(none?'0':'—'),'두 답의 차이','i'],[ok?'일치 ✓':'불일치 ✗','판정',ok?'g':'r']]);
     E((cfg.eq||'')+(cfg.eq?' · ':'')+'그래프: '+(cfg.mode==='cross'?'두 곡선이 만나는 점':cfg.mode==='min'?'곡선의 가장 낮은 점':'곡선의 가장 높은 점')+'을 1,600개 점으로 훑은 뒤 좁혀 찾음');
-    I([[ok?'g':'r',ok?'수식 답(초록 점)과 그래프 답(주황 점)이 겹쳐요. 계산이 맞았다는 그림 증거예요.':'두 답이 달라요. 조건(범위·경계)을 다시 확인하세요. 경계에 걸린 모서리해일 수 있어요.'],['i',cfg.note||'조절기를 바꿔도 두 답이 계속 겹치는지 보세요. 한 숫자에서만이 아니라 공식 자체가 맞는지 확인하는 방법이에요.']])}
+    I((wid?[['a','수식 답이 기본 그래프 범위 밖이라 범위를 넓혀 다시 훑었어요. 그래프 탐색은 수식 답을 쓰지 않아요.']]:[]).concat([[ok?'g':'r',ok?'수식 답(초록 점)과 그래프 답(주황 점)이 겹쳐요. 계산이 맞았다는 그림 증거예요.':'두 답이 달라요. 조건(범위·경계)을 다시 확인하세요. 경계에 걸린 모서리해일 수 있어요.'],['i',cfg.note||'조절기를 바꿔도 두 답이 계속 겹치는지 보세요. 한 숫자에서만이 아니라 공식 자체가 맞는지 확인하는 방법이에요.']]))}
   addMod(c,function(dt){if(!dt)draw()});draw()};
 
 /* ===== 데이터로 쓰는 실험·대시보드·대결 (페이지 데이터의 식 문자열을 그대로 계산) ===== */
