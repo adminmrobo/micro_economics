@@ -143,6 +143,13 @@ def footer(P, extra=''):
 def slug(s):
     s = re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-'); return s or 'x'
 
+def rehang(G):
+    """kg/rehang.json(분야 뼈대 주제에 다시 걸기)이 있으면 지식 그래프에 적용한다."""
+    kd = os.path.join(os.path.dirname(ROOT), 'kg')
+    if not os.path.exists(os.path.join(kd, 'rehang.json')): return G
+    sys.path.insert(0, kd); from rehang import apply_overlay
+    return apply_overlay(G, json.load(open(os.path.join(kd, 'rehang.json'), encoding='utf-8')))
+
 def kg_build(P):
     num = P['num']; page = P['file'][:-5]; dom = P.get('domain', ['econ']); fam = P.get('family', 'micro')
     nodes = []; edges = []; ids = set()
@@ -388,6 +395,7 @@ def page(P):
     o.append('<section class="level" id="outro"><div class="wrap stack"><div class="lvhead"><h2>아웃트로</h2></div>' + ''.join(say(*t, M) for t in P['outro']) + '</div></section>')
     o.append(KG_SEC); o.append(export_sec(M)); o.append(footer(P))
     G = kg_build(P)
+    G = rehang(G)   # 분야 뼈대에 다시 걸기 (kg/rehang.json, ai-lab-retrofit 15장)
     o.append(sprites(M)); o.append(tail(P, G, {'dashes': {num: P['dash']}} if V2 and P.get('dash') else None))
     return ''.join(o), G
 

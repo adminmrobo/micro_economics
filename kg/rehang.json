@@ -1,0 +1,350 @@
+{
+ "version": "1.0",
+ "made": "2026-11-24",
+ "via": "rehang-2026-11-24",
+ "domains": [
+  "econ",
+  "math"
+ ],
+ "note": "분야 뼈대 주제에 다시 걸기(ai-lab-retrofit 15장). links는 자동 후보이며 틀린 줄은 지우면 된다. 빌드 스크립트가 있는 저장소는 빌드 끝에 rehang.apply_overlay()가 이 파일을 적용한다.",
+ "topics": {
+  "lab:topic/deadweight-loss": {
+   "ko": "사중손실",
+   "en": "Deadweight loss",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/duality-optimization": {
+   "ko": "쌍대성",
+   "en": "Duality",
+   "domain": [
+    "math"
+   ],
+   "level": 2
+  },
+  "lab:topic/elasticity": {
+   "ko": "탄력성",
+   "en": "Elasticity",
+   "domain": [
+    "econ"
+   ],
+   "level": 1
+  },
+  "lab:topic/externality": {
+   "ko": "외부효과",
+   "en": "Externality",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/factor-demand": {
+   "ko": "요소 수요(조건부 노동수요)",
+   "en": "Factor demand (conditional labor demand)",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/gradient": {
+   "ko": "그래디언트(∇)",
+   "en": "Gradient (nabla)",
+   "domain": [
+    "math"
+   ],
+   "level": 2
+  },
+  "lab:topic/income-substitution-effects": {
+   "ko": "소득·대체 효과(슬러츠키)",
+   "en": "Income and substitution effects (Slutsky)",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/indifference-curves": {
+   "ko": "무차별곡선",
+   "en": "Indifference curves",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/information-asymmetry": {
+   "ko": "정보 비대칭",
+   "en": "Information asymmetry",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/kkt-conditions": {
+   "ko": "KKT 조건",
+   "en": "KKT conditions",
+   "domain": [
+    "math"
+   ],
+   "level": 2
+  },
+  "lab:topic/lagrange-multipliers": {
+   "ko": "라그랑주 승수",
+   "en": "Lagrange multipliers",
+   "domain": [
+    "math"
+   ],
+   "level": 2
+  },
+  "lab:topic/market-equilibrium": {
+   "ko": "시장 균형",
+   "en": "Market equilibrium",
+   "domain": [
+    "econ"
+   ],
+   "level": 1
+  },
+  "lab:topic/monopoly": {
+   "ko": "독점",
+   "en": "Monopoly",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/nash-equilibrium": {
+   "ko": "내쉬균형",
+   "en": "Nash equilibrium",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/oligopoly": {
+   "ko": "과점",
+   "en": "Oligopoly",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/payoff-matrix": {
+   "ko": "보수행렬",
+   "en": "Payoff matrix",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/price-discrimination": {
+   "ko": "가격 차별",
+   "en": "Price discrimination",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/production-function": {
+   "ko": "생산함수",
+   "en": "Production function",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/public-goods": {
+   "ko": "공공재",
+   "en": "Public goods",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/repeated-games": {
+   "ko": "반복 게임",
+   "en": "Repeated games",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  },
+  "lab:topic/utility": {
+   "ko": "효용",
+   "en": "Utility",
+   "domain": [
+    "econ"
+   ],
+   "level": 2
+  }
+ },
+ "links": {
+  "lab:concept/asymmetric-information": {
+   "topic": "lab:topic/information-asymmetry",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "정보 비대칭"
+  },
+  "lab:concept/conditional-factor-demand": {
+   "topic": "lab:topic/factor-demand",
+   "score": 2,
+   "why": "주제 이름이 개념 이름에 들어 있음",
+   "ko": "조건부 요소수요"
+  },
+  "lab:concept/deadweight-loss": {
+   "topic": "lab:topic/deadweight-loss",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "사중손실"
+  },
+  "lab:concept/duality-production": {
+   "topic": "lab:topic/duality-optimization",
+   "score": 2,
+   "why": "주제 이름이 개념 이름에 들어 있음",
+   "ko": "생산의 쌍대성"
+  },
+  "lab:concept/externality": {
+   "topic": "lab:topic/externality",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "외부성"
+  },
+  "lab:concept/factor-demand": {
+   "topic": "lab:topic/factor-demand",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "요소수요"
+  },
+  "lab:concept/gradient": {
+   "topic": "lab:topic/gradient",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "기울기"
+  },
+  "lab:concept/income-elasticity": {
+   "topic": "lab:topic/elasticity",
+   "score": 2,
+   "why": "주제 이름이 개념 이름에 들어 있음",
+   "ko": "소득탄력성"
+  },
+  "lab:concept/indifference-curve": {
+   "topic": "lab:topic/indifference-curves",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "무차별곡선"
+  },
+  "lab:concept/inverse-elasticity-rule": {
+   "topic": "lab:topic/elasticity",
+   "score": 2,
+   "why": "주제 이름이 개념 이름에 들어 있음",
+   "ko": "역탄력성 규칙"
+  },
+  "lab:concept/kkt": {
+   "topic": "lab:topic/kkt-conditions",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "KKT 조건"
+  },
+  "lab:concept/market-equilibrium": {
+   "topic": "lab:topic/market-equilibrium",
+   "score": 2,
+   "why": "주제 이름이 개념 이름에 들어 있음",
+   "ko": "경쟁시장 균형"
+  },
+  "lab:concept/monopoly": {
+   "topic": "lab:topic/monopoly",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "독점"
+  },
+  "lab:concept/nash-equilibrium": {
+   "topic": "lab:topic/nash-equilibrium",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "내시균형"
+  },
+  "lab:concept/oligopoly": {
+   "topic": "lab:topic/oligopoly",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "과점"
+  },
+  "lab:concept/price-discrimination": {
+   "topic": "lab:topic/price-discrimination",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "가격차별"
+  },
+  "lab:concept/price-elasticity": {
+   "topic": "lab:topic/elasticity",
+   "score": 2,
+   "why": "주제 이름이 개념 이름에 들어 있음",
+   "ko": "가격탄력성"
+  },
+  "lab:concept/production-function": {
+   "topic": "lab:topic/production-function",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "생산함수"
+  },
+  "lab:concept/public-good": {
+   "topic": "lab:topic/public-goods",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "공공재"
+  },
+  "lab:concept/repeated-game-collusion": {
+   "topic": "lab:topic/repeated-games",
+   "score": 2,
+   "why": "주제 이름이 개념 이름에 들어 있음",
+   "ko": "반복게임과 담합"
+  },
+  "lab:concept/repeated-game-cooperation": {
+   "topic": "lab:topic/repeated-games",
+   "score": 2,
+   "why": "영어 이름 낱말이 모두 겹침",
+   "ko": "반복게임의 협조 조건"
+  },
+  "lab:concept/substitution-effect": {
+   "topic": "lab:topic/income-substitution-effects",
+   "score": 2,
+   "why": "개념 이름이 주제 이름에 들어 있음",
+   "ko": "대체효과"
+  },
+  "lab:concept/utility": {
+   "topic": "lab:topic/utility",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "효용"
+  },
+  "lab:method/kkt": {
+   "topic": "lab:topic/kkt-conditions",
+   "score": 2,
+   "why": "개념 이름이 주제 이름에 들어 있음",
+   "ko": "KKT"
+  },
+  "lab:term/lagrange-multiplier": {
+   "topic": "lab:topic/lagrange-multipliers",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "라그랑주 승수"
+  },
+  "lab:term/lagrangian": {
+   "topic": "lab:topic/lagrange-multipliers",
+   "score": 2,
+   "why": "사람이 고침: 최적화의 라그랑지안",
+   "ko": "라그랑지안"
+  },
+  "lab:term/output-elasticity": {
+   "topic": "lab:topic/elasticity",
+   "score": 2,
+   "why": "주제 이름이 개념 이름에 들어 있음",
+   "ko": "산출탄력성"
+  },
+  "lab:term/payoff-matrix": {
+   "topic": "lab:topic/payoff-matrix",
+   "score": 3,
+   "why": "이름 같음",
+   "ko": "보수표"
+  }
+ }
+}
