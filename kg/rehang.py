@@ -113,7 +113,7 @@ def plan(a):
           'topics': dict(sorted(topics.items())), 'links': dict(sorted(links.items()))}
     if a.retag:
         f, t = a.retag.split(':')
-        ov['retag'] = {'from': f.split(','), 'to': t.split(',')}
+        ov['retag'] = {'from': [x for x in f.split(',') if x], 'to': [x for x in t.split(',') if x]}
     os.makedirs(os.path.join(a.repo, 'kg'), exist_ok=True)
     out = os.path.join(a.repo, 'kg', 'rehang.json')
     json.dump(ov, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -128,6 +128,9 @@ def apply_overlay(G, ov):
     G['edges'] = [e for e in G.get('edges', []) if e.get('via') != VIA]
     G['nodes'] = [n for n in G.get('nodes', []) if n.get('via') != VIA]
     nodes = {n['id']: n for n in G['nodes']}
+    for n in G['nodes']:                      # 옛 페이지: domain이 문자열("ai")인 경우 배열로
+        if isinstance(n.get('domain'), str):
+            n['domain'] = [n['domain']]
     rt = ov.get('retag')
     if rt:
         for n in G['nodes']:
