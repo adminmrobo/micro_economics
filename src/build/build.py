@@ -233,10 +233,11 @@ def kg_ld(G):
     ctx = {'skos': 'http://www.w3.org/2004/02/skos/core#', 'schema': 'https://schema.org/', 'dct': 'http://purl.org/dc/terms/', 'prov': 'http://www.w3.org/ns/prov#', 'rdfs': 'http://www.w3.org/2000/01/rdf-schema#', 'lab': 'urn:lab:'}
     graph = []
     for n in G['nodes']:
+        if n.get('via'): continue  # 덧씌우기(kg/rehang) 항목은 rehang.patch_ld가 싣는다
         o = {'@id': n['id'], '@type': TYMAP.get(n['type'], []) + ['lab:' + n['type']], 'skos:prefLabel': [{'@value': n['label']['ko'], '@language': 'ko'}, {'@value': n['label']['en'], '@language': 'en'}]}
         if n.get('definition'): o['skos:definition'] = {'@value': n['definition']['ko'], '@language': 'ko'}
         for ed in G['edges']:
-            if ed['s'] == n['id']:
+            if ed['s'] == n['id'] and not ed.get('via'):
                 p = {'lab:broader': 'skos:broader', 'lab:partOf': 'schema:isPartOf', 'lab:relatedTo': 'skos:related', 'lab:assertedIn': 'schema:citation'}.get(ed['p'], ed['p'])
                 o.setdefault(p, []).append({'@id': ed['o']})
         if n.get('jel'): o['dct:subject'] = {'@id': 'lab:jel/' + n['jel']}
@@ -255,6 +256,9 @@ def jdump(o):
     return json.dumps(o, ensure_ascii=False).replace('</', '<\\/')
 
 def tail(P, G, extra_pd=None):
+    if G is not None:  # 점검·목차 쪽에도 분야 뼈대 다시 걸기 적용(여러 번 불러도 같은 결과)
+        G2 = rehang(G)
+        if G2 is not G: G.clear(); G.update(G2)
     jel_enrich(P, G)
     meta = {'title': P['title'], 'series': SERIES, 'number': P['num'], 'creator': [{'name': AUTHOR, 'role': 'author', 'affiliation': AFFIL, 'url': WHO, 'sameAs': [WHO_OLD]}], 'contributor': [{'name': 'AI 보조 제작', 'role': 'assistant'}],
             'date': TODAY, 'version': VER, 'language': ['ko'], 'license': '', 'url': SITE + P['file'], 'about': [l['node'][0] for l in P['levels']] if P.get('levels') else [],
@@ -463,3 +467,6 @@ if __name__ == '__main__':
         REGD['pages'] = pages_jel
         import terms_v2; terms_v2.write(OUT, REGD, sys.modules[__name__])
     json.dump(REGD, open(os.path.join(OUT, 'KG_00_registry.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    _rk = os.path.join(os.path.dirname(ROOT), 'kg', 'rehang.py')
+    if os.path.exists(_rk):  # 분야 뼈대 다시 걸기의 kg-ld 덧씌우기까지 마무리(여러 번 돌려도 같은 결과)
+        import subprocess; subprocess.run([sys.executable, _rk, 'apply', os.path.dirname(ROOT)], check=True)
