@@ -17,7 +17,7 @@ LEAD = ('교과서 순서를 따른 미시경제학 2권입니다. 생산자(CH0
 def nav_html(label):
     NAV = [('micro', '이 강의노트는'), ('map', '목차'), ('building', '건물 보기'), ('keys', '한 줄 핵심'), ('dash', '종합 대시보드'), ('path', '개념 흐름'), ('how', '식구·사용법'), ('about', '자료와 원칙')]
     a = ''.join(f'<a href="{"tower.html" if i == "building" else "#" + i}">{e(t)}</a>' for i, t in NAV)
-    return f'<nav class="top" aria-label="섹션 바로가기"><div class="wrap"><a class="logo" href="index.html"><i></i>{e(label)}</a><div class="links">{a}<a href="../index.html">1권 →</a></div></div></nav>\n'
+    return f'<nav class="top" aria-label="섹션 바로가기"><div class="wrap"><a class="logo" href="index.html"><i></i>{e(label)}</a><div class="links">{a}<a href="terms.html">색인어(JEL)</a><a href="../index.html">1권 →</a></div></div></nav>\n'
 
 def index_page(P, B):
     import build_extra as X
@@ -70,7 +70,7 @@ def index_page(P, B):
     o.append(f'<section class="level" id="how"><div class="wrap stack"><div class="lvhead"><h2>연구실 식구와 사용법</h2></div>{B.crew_html(M)}<div class="steps four">{how}</div></div></section>')
     ab = ''.join(f'<li>{x}</li>' for x in P['about'])
     o.append(f'<section class="level" id="about"><div class="wrap stack"><div class="lvhead"><h2>자료와 원칙</h2></div><ul style="margin:0;padding-left:20px">{ab}</ul>{B.say("doc","front","수식으로 풀었으면 그래프로 한 번 더. 두 답이 겹치면 그때 믿어요.",M)}</div></section>')
-    o.append(B.footer(P, '<p><a href="KG_00_registry.json">2권 지식 그래프 등록부(JSON)</a> · <a href="../docs/AUDIT_REPORT_v2.md">2권 감사보고서</a> · <a href="../index.html">1권(강의 노트 8장)</a> · <a href="../archive/v2/index.html">2권 원본(버전2_강화판) 보관함</a></p>'))
+    o.append(B.footer(P, '<p><a href="KG_00_registry.json">2권 지식 그래프 등록부(JSON)</a> · <a href="terms.html">경제학 색인어(JEL)</a> · <a href="../docs/AUDIT_REPORT_v2.md">2권 감사보고서</a> · <a href="../index.html">1권(강의 노트 8장)</a> · <a href="../archive/v2/index.html">2권 원본(버전2_강화판) 보관함</a></p>'))
     G = {'version': '1.0', 'page': 'index', 'nodes': [], 'edges': []}
     P.setdefault('levels', []); P['quiz'] = {}
     o.append(B.sprites(M)); o.append(B.tail(P, G, {'gloss': {}, 'core': [], 'quiz': {}, 'dashes': {n: L[n]['dash'] for n in have if L[n].get('dash')}}))

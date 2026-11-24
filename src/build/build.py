@@ -203,9 +203,34 @@ def kg_build(P):
         if w: edge(fid, 'assertedIn', w, '#footer')
     return {'version': '1.0', 'page': page, 'nodes': nodes, 'edges': edges}
 
+EXT_MATCH = None
+def jel_enrich(P, G):
+    """2권: 개념·용어에 JEL 대표 코드, 쪽에 JEL 분류 목록을 붙이고, 확인된 외부 연결(ext_match.json)만 매핑으로 싣는다."""
+    global EXT_MATCH
+    if not V2 or not G or 'subject' in G: return
+    import jel_v2 as J
+    if EXT_MATCH is None:
+        f = os.path.join(PAGES, 'ext_match.json')
+        EXT_MATCH = json.load(open(f, encoding='utf-8')) if os.path.exists(f) else {}
+    codes = list(J.page_codes(P['num'])); G['subject'] = codes; used = set(codes)
+    for n in G['nodes']:
+        if n['type'] in ('Concept', 'Term'):
+            c = J.CONCEPT.get(n['label']['en'])
+            m = []
+            if c:
+                n['jel'] = c; used.add(c)
+                m.append({'scheme': 'jel', 'id': c, 'rel': 'broadMatch', 'verified': True, 'source': J.JEL_SRC})
+            for x in EXT_MATCH.get(n['id'], []):
+                if x.get('verified'): m.append(x)
+            n['match'] = m
+        elif n['type'] == 'Method':
+            n.pop('match', None)
+    G['jel'] = {c: {'en': J.JEL[c][0], 'ko': J.JEL[c][1]} for c in sorted(used)}
+    G['jelSource'] = J.JEL_SRC
+
 TYMAP = {'Concept': ['skos:Concept', 'schema:DefinedTerm'], 'Method': ['skos:Concept', 'schema:DefinedTerm'], 'Term': ['skos:Concept', 'schema:DefinedTerm'], 'Distribution': ['skos:Concept', 'schema:DefinedTerm'], 'Theory': ['skos:Concept', 'schema:DefinedTerm'], 'Work': ['schema:CreativeWork'], 'Claim': ['schema:Claim'], 'QuizItem': ['schema:Question'], 'Metric': ['skos:Concept'], 'Question': ['schema:Question']}
 def kg_ld(G):
-    ctx = {'skos': 'http://www.w3.org/2004/02/skos/core#', 'schema': 'https://schema.org/', 'dct': 'http://purl.org/dc/terms/', 'prov': 'http://www.w3.org/ns/prov#', 'lab': 'urn:lab:'}
+    ctx = {'skos': 'http://www.w3.org/2004/02/skos/core#', 'schema': 'https://schema.org/', 'dct': 'http://purl.org/dc/terms/', 'prov': 'http://www.w3.org/ns/prov#', 'rdfs': 'http://www.w3.org/2000/01/rdf-schema#', 'lab': 'urn:lab:'}
     graph = []
     for n in G['nodes']:
         o = {'@id': n['id'], '@type': TYMAP.get(n['type'], []) + ['lab:' + n['type']], 'skos:prefLabel': [{'@value': n['label']['ko'], '@language': 'ko'}, {'@value': n['label']['en'], '@language': 'en'}]}
@@ -214,17 +239,27 @@ def kg_ld(G):
             if ed['s'] == n['id']:
                 p = {'lab:broader': 'skos:broader', 'lab:partOf': 'schema:isPartOf', 'lab:relatedTo': 'skos:related', 'lab:assertedIn': 'schema:citation'}.get(ed['p'], ed['p'])
                 o.setdefault(p, []).append({'@id': ed['o']})
+        if n.get('jel'): o['dct:subject'] = {'@id': 'lab:jel/' + n['jel']}
+        for x in n.get('match', []):
+            if x.get('verified') and x.get('scheme') != 'jel' and x.get('uri'):
+                o.setdefault('skos:' + x.get('rel', 'closeMatch'), []).append({'@id': x['uri']})
         graph.append(o)
+    if G.get('jel'):
+        graph.append({'@id': 'lab:jel', '@type': ['skos:ConceptScheme'], 'skos:prefLabel': [{'@value': 'JEL Classification System', '@language': 'en'}, {'@value': 'JEL 경제학 분류', '@language': 'ko'}], 'rdfs:seeAlso': {'@id': G['jelSource']}})
+        for c, v in G['jel'].items():
+            graph.append({'@id': 'lab:jel/' + c, '@type': ['skos:Concept'], 'skos:notation': c, 'skos:inScheme': {'@id': 'lab:jel'}, 'skos:prefLabel': [{'@value': v['en'], '@language': 'en'}, {'@value': v['ko'], '@language': 'ko'}]})
+        graph.append({'@id': 'lab:page/' + G['page'], '@type': ['schema:LearningResource'], 'dct:subject': [{'@id': 'lab:jel/' + c} for c in G.get('subject', [])]})
     return {'@context': ctx, '@graph': graph}
 
 def jdump(o):
     return json.dumps(o, ensure_ascii=False).replace('</', '<\\/')
 
 def tail(P, G, extra_pd=None):
+    jel_enrich(P, G)
     meta = {'title': P['title'], 'series': SERIES, 'number': P['num'], 'creator': [{'name': AUTHOR, 'role': 'author', 'affiliation': AFFIL, 'url': WHO, 'sameAs': [WHO_OLD]}], 'contributor': [{'name': 'AI 보조 제작', 'role': 'assistant'}],
             'date': TODAY, 'version': VER, 'language': ['ko'], 'license': '', 'url': SITE + P['file'], 'about': [l['node'][0] for l in P['levels']] if P.get('levels') else [],
             'educationalLevel': '입문', 'learningResourceType': 'interactive explainer', 'basedOn': [r['id'] for r in P['refs'] if r['lab'].get('role') == 'primary'],
-            'suggestedCitation': f'{AUTHOR} ({TODAY[:4]}). {P["title"]}. {SERIES} {P["num"]}, v{VER}. {SITE}{P["file"]}'}
+            'subject': ([{'scheme': 'JEL', 'code': c, 'label': G['jel'][c]['en']} for c in G.get('subject', [])] if G else []), 'suggestedCitation': f'{AUTHOR} ({TODAY[:4]}). {P["title"]}. {SERIES} {P["num"]}, v{VER}. {SITE}{P["file"]}'}
     pd = {'num': P['num'], 'gloss': {k: v[:3] for k, v in P.get('gloss', {}).items()}, 'core': P.get('core', list(P.get('gloss', {}).keys())[:12]), 'quiz': P.get('quiz', {}), 'duels': P.get('duels_js', []), 'flow': P.get('flow', [])}
     if extra_pd: pd.update(extra_pd)
     return (f'<script type="application/json" id="kg-raw">{jdump(G)}</script>\n<script type="application/ld+json" id="kg-ld">{jdump(kg_ld(G))}</script>\n'
@@ -233,6 +268,7 @@ def tail(P, G, extra_pd=None):
 
 KG_SEC = '''<section class="level noglos" id="kg"><div class="wrap stack">
 <div class="lvhead"><h2>지식 색인 — 이 페이지에서 찾아보기</h2><p class="lead">이 페이지의 개념·방법·용어·주장·질문을 찾아보고, 설명이 있는 자리로 바로 갑니다. 같은 데이터가 아래 꾸러미의 온톨로지가 됩니다.</p></div>
+<p id="kgJel" hidden></p>
 <div class="searchrow"><input class="search" id="kgQ" type="search" placeholder="예: 한계비용, marginal cost" aria-label="지식 색인 검색"></div>
 <div class="group" id="kgChips"></div>
 <div class="kgl" id="kgList"></div>
@@ -401,7 +437,7 @@ def page(P):
 
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
-    reg = {}
+    reg = {}; pages_jel = {}
     sys.path.insert(0, PAGES)
     for f in sorted(os.listdir(PAGES)):
         if not f.endswith('.py') or f.startswith('_'): continue
@@ -418,6 +454,12 @@ if __name__ == '__main__':
             open(os.path.join(OUT, 'tower.html'), 'w', encoding='utf-8').write(home.tower_page(CSS, SITE))
         if G:
             for n in G['nodes']:
-                if n['type'] in ('Concept', 'Method', 'Term', 'Distribution', 'Theory'): reg[n['id']] = {'ko': n['label']['ko'], 'en': n['label']['en'], 'page': n['page'], 'domain': n['domain']}
+                if n['type'] in ('Concept', 'Method', 'Term', 'Distribution', 'Theory'): reg[n['id']] = {'ko': n['label']['ko'], 'en': n['label']['en'], 'page': n['page'], 'domain': n['domain'], **({'jel': n['jel']} if n.get('jel') else {}), **({'match': [x for x in n.get('match', []) if x.get('scheme') != 'jel']} if V2 and n['type'] in ('Concept', 'Term') else {})}; pages_jel[n['page']] = G.get('subject', [])
         print(f, len(htm.encode()) // 1024, 'KB')
-    json.dump({'version': VER, 'date': TODAY, 'ids': reg}, open(os.path.join(OUT, 'KG_00_registry.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    REGD = {'version': VER, 'date': TODAY, 'ids': reg}
+    if V2:
+        import jel_v2 as J
+        REGD['schemes'] = {'jel': {'name': 'JEL Classification System (American Economic Association)', 'source': J.JEL_SRC, 'codes': {c: {'en': v[0], 'ko': v[1]} for c, v in sorted(J.JEL.items())}}}
+        REGD['pages'] = pages_jel
+        import terms_v2; terms_v2.write(OUT, REGD, sys.modules[__name__])
+    json.dump(REGD, open(os.path.join(OUT, 'KG_00_registry.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

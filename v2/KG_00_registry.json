@@ -8,7 +8,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/returns-to-scale": {
    "ko": "규모수익",
@@ -16,7 +18,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/isoquant": {
    "ko": "등량곡선",
@@ -24,7 +28,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:method/01-duel-fly": {
    "ko": "지수로 계산 ×2<sup>1.6</sup>",
@@ -48,7 +54,9 @@
    "page": "01_technology",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/diminishing-returns": {
    "ko": "수확 체감",
@@ -56,7 +64,9 @@
    "page": "01_technology",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/output-elasticity": {
    "ko": "산출탄력성",
@@ -64,7 +74,9 @@
    "page": "01_technology",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/homogeneous-function": {
    "ko": "동차함수",
@@ -72,7 +84,9 @@
    "page": "01_technology",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:concept/mrts": {
    "ko": "MRTS",
@@ -80,7 +94,9 @@
    "page": "18_production",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/production-possibility-set": {
    "ko": "생산가능집합",
@@ -88,7 +104,9 @@
    "page": "01_technology",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/free-disposal": {
    "ko": "자유처분",
@@ -96,7 +114,9 @@
    "page": "01_technology",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/profit-maximization": {
    "ko": "이윤극대화",
@@ -104,7 +124,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:concept/value-of-marginal-product": {
    "ko": "한계생산가치",
@@ -112,7 +134,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:concept/shutdown-decision": {
    "ko": "조업중단 판단",
@@ -120,7 +144,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:method/02-duel-fly": {
    "ko": "가격에 맞춘 최적 투입",
@@ -144,7 +170,9 @@
    "page": "13_competitive_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D41",
+   "match": []
   },
   "lab:concept/marginal-cost": {
    "ko": "한계비용",
@@ -152,7 +180,9 @@
    "page": "04_cost_minimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/contribution-margin": {
    "ko": "공헌이익",
@@ -160,7 +190,9 @@
    "page": "02_profit_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:term/interior-solution": {
    "ko": "내부해",
@@ -168,7 +200,9 @@
    "page": "02_profit_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:concept/sunk-cost": {
    "ko": "매몰비용",
@@ -176,7 +210,9 @@
    "page": "02_profit_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:term/avoidable-fixed-cost": {
    "ko": "회피 가능한 고정비",
@@ -184,7 +220,9 @@
    "page": "02_profit_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:concept/profit-function": {
    "ko": "이윤함수",
@@ -192,7 +230,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:concept/hotelling-lemma": {
    "ko": "호텔링 보조정리",
@@ -200,7 +240,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:concept/homogeneity-of-profit": {
    "ko": "이윤함수의 1차 동차성",
@@ -208,7 +250,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:method/03-duel-fly": {
    "ko": "새 가격에서 다시 최적화",
@@ -232,7 +276,9 @@
    "page": "03_profit_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:concept/supply-function": {
    "ko": "공급함수",
@@ -240,7 +286,9 @@
    "page": "03_profit_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:concept/envelope-theorem": {
    "ko": "포락정리",
@@ -248,7 +296,9 @@
    "page": "27_optimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:concept/factor-demand": {
    "ko": "요소수요",
@@ -256,7 +306,9 @@
    "page": "03_profit_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:term/convex-function": {
    "ko": "볼록함수",
@@ -264,7 +316,9 @@
    "page": "03_profit_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:term/homogeneity": {
    "ko": "동차성",
@@ -272,7 +326,9 @@
    "page": "03_profit_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:concept/relative-price": {
    "ko": "상대가격",
@@ -280,7 +336,9 @@
    "page": "03_profit_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D21",
+   "match": []
   },
   "lab:concept/cost-minimization": {
    "ko": "비용최소화",
@@ -288,7 +346,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/conditional-factor-demand": {
    "ko": "조건부 요소수요",
@@ -296,7 +356,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/cost-function": {
    "ko": "비용함수",
@@ -304,7 +366,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:method/04-duel-fly": {
    "ko": "θ* = 0.6 배합",
@@ -328,15 +392,20 @@
    "page": "04_cost_minimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/lagrange-multiplier": {
    "ko": "라그랑주 승수",
    "en": "Lagrange multiplier",
    "page": "04_cost_minimization",
    "domain": [
-    "econ"
-   ]
+    "econ",
+    "math"
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:term/labor-share-theta": {
    "ko": "노동 몫 비율",
@@ -344,7 +413,9 @@
    "page": "04_cost_minimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D33",
+   "match": []
   },
   "lab:concept/average-cost": {
    "ko": "평균비용",
@@ -352,7 +423,9 @@
    "page": "04_cost_minimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/cost-function-properties": {
    "ko": "비용함수의 성질",
@@ -360,7 +433,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/shephard-lemma": {
    "ko": "셰퍼드 보조정리",
@@ -368,7 +443,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/short-run-cost": {
    "ko": "단기비용",
@@ -376,7 +453,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:method/05-duel-fly": {
    "ko": "새 임금에서 다시 고르기",
@@ -400,7 +479,9 @@
    "page": "05_cost_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/concave-function": {
    "ko": "오목함수",
@@ -408,7 +489,9 @@
    "page": "05_cost_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:concept/long-run-cost": {
    "ko": "장기비용",
@@ -416,7 +499,9 @@
    "page": "05_cost_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/le-chatelier": {
    "ko": "르 샤틀리에 원리",
@@ -424,7 +509,9 @@
    "page": "05_cost_function",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/discrete-processes": {
    "ko": "이산 공정 기술",
@@ -432,7 +519,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/duality-production": {
    "ko": "생산의 쌍대성",
@@ -440,7 +529,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/convex-hull": {
    "ko": "볼록포",
@@ -448,7 +539,9 @@
    "page": "r1_producer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:method/06-duel-fly": {
    "ko": "이윤이 가장 큰 공정",
@@ -472,7 +565,9 @@
    "page": "06_duality",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/isoprofit-line": {
    "ko": "등이윤선",
@@ -480,7 +575,9 @@
    "page": "06_duality",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/real-wage": {
    "ko": "실질임금",
@@ -488,7 +585,9 @@
    "page": "06_duality",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/divisibility": {
    "ko": "분할 가능성",
@@ -496,7 +595,9 @@
    "page": "06_duality",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/utility-maximization": {
    "ko": "효용극대화",
@@ -504,7 +605,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/mrs": {
    "ko": "한계대체율",
@@ -512,7 +615,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/expenditure-function": {
    "ko": "지출함수",
@@ -520,7 +625,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:method/07-duel-fly": {
    "ko": "반반 지출 (15, 20)",
@@ -544,7 +651,9 @@
    "page": "07_utility_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/utility-function": {
    "ko": "효용함수",
@@ -552,7 +661,9 @@
    "page": "07_utility_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/ordinal-utility": {
    "ko": "서수적 효용",
@@ -560,7 +671,9 @@
    "page": "07_utility_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/corner-solution": {
    "ko": "경계해",
@@ -568,7 +681,9 @@
    "page": "07_utility_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/indirect-utility": {
    "ko": "간접효용함수",
@@ -576,7 +691,9 @@
    "page": "07_utility_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/hicksian-demand": {
    "ko": "보상수요",
@@ -584,7 +701,9 @@
    "page": "07_utility_maximization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/expenditure-matrix": {
    "ko": "지출행렬",
@@ -592,7 +711,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/garp": {
    "ko": "GARP",
@@ -600,7 +721,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/revealed-preference-limits": {
    "ko": "현시선호의 식별 한계",
@@ -608,7 +731,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:method/08-duel-fly": {
    "ko": "묶음 값을 그 가격으로 계산",
@@ -632,7 +757,9 @@
    "page": "08_choice",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/transitivity": {
    "ko": "이행성",
@@ -640,7 +767,9 @@
    "page": "08_choice",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/direct-revealed-preference": {
    "ko": "직접 현시선호",
@@ -648,7 +777,9 @@
    "page": "08_choice",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/local-nonsatiation": {
    "ko": "국소 비포화",
@@ -656,7 +787,9 @@
    "page": "08_choice",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/afriat": {
    "ko": "아프리아트 정리",
@@ -664,7 +797,9 @@
    "page": "08_choice",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/identification": {
    "ko": "식별",
@@ -672,7 +807,9 @@
    "page": "08_choice",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/stone-geary": {
    "ko": "스톤-기어리 수요",
@@ -680,7 +817,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/income-elasticity": {
    "ko": "소득탄력성",
@@ -688,7 +827,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/slutsky-matrix": {
    "ko": "슬러츠키 행렬",
@@ -696,7 +837,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:method/09-duel-fly": {
    "ko": "로이 항등식 −W_p/W_m",
@@ -720,7 +863,9 @@
    "page": "09_demand",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/supernumerary-income": {
    "ko": "여유소득",
@@ -728,7 +873,9 @@
    "page": "09_demand",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/engel-curve": {
    "ko": "엥겔 곡선",
@@ -736,7 +883,9 @@
    "page": "09_demand",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/non-homothetic": {
    "ko": "비동조성",
@@ -744,7 +893,9 @@
    "page": "09_demand",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/roy-identity": {
    "ko": "로이 항등식",
@@ -752,7 +903,9 @@
    "page": "09_demand",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/nsd": {
    "ko": "음의 준정부호",
@@ -760,7 +913,9 @@
    "page": "09_demand",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:concept/compensating-variation": {
    "ko": "보상변화",
@@ -768,7 +923,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:concept/consumer-surplus": {
    "ko": "소비자잉여",
@@ -776,7 +933,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:concept/hicks-decomposition": {
    "ko": "힉스 분해",
@@ -784,7 +943,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:method/10-duel-fly": {
    "ko": "지출함수로 CV 계산",
@@ -808,7 +969,9 @@
    "page": "10_consumer_surplus",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:term/quasilinear": {
    "ko": "준선형 선호",
@@ -816,7 +979,9 @@
    "page": "10_consumer_surplus",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/substitution-effect": {
    "ko": "대체효과",
@@ -824,7 +989,9 @@
    "page": "10_consumer_surplus",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/income-effect": {
    "ko": "소득효과",
@@ -832,7 +999,9 @@
    "page": "10_consumer_surplus",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:term/compensated-bundle": {
    "ko": "보상선택",
@@ -840,7 +1009,9 @@
    "page": "10_consumer_surplus",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/certainty-equivalent": {
    "ko": "확실성등가",
@@ -848,7 +1019,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D81",
+   "match": []
   },
   "lab:concept/risk-aversion": {
    "ko": "위험회피",
@@ -856,7 +1029,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D81",
+   "match": []
   },
   "lab:concept/insurance-demand": {
    "ko": "보험 수요",
@@ -864,7 +1039,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D81",
+   "match": []
   },
   "lab:method/11-duel-fly": {
    "ko": "효용 평균 후 되돌리기",
@@ -888,7 +1065,9 @@
    "page": "11_uncertainty",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D81",
+   "match": []
   },
   "lab:term/jensen": {
    "ko": "젠센 부등식",
@@ -896,7 +1075,9 @@
    "page": "11_uncertainty",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:concept/risk-premium": {
    "ko": "위험프리미엄",
@@ -904,7 +1085,9 @@
    "page": "11_uncertainty",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D81",
+   "match": []
   },
   "lab:term/fair-premium": {
    "ko": "공정 보험료",
@@ -912,7 +1095,9 @@
    "page": "11_uncertainty",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D81",
+   "match": []
   },
   "lab:term/loading": {
    "ko": "부하율",
@@ -920,7 +1105,9 @@
    "page": "11_uncertainty",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D81",
+   "match": []
   },
   "lab:concept/simultaneity": {
    "ko": "동시성",
@@ -928,7 +1115,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C13",
+   "match": []
   },
   "lab:concept/simultaneity-bias": {
    "ko": "동시성 편의",
@@ -936,7 +1125,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C13",
+   "match": []
   },
   "lab:concept/instrumental-variables": {
    "ko": "도구변수",
@@ -944,7 +1135,9 @@
    "page": "r2_consumer_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C13",
+   "match": []
   },
   "lab:method/12-duel-fly": {
    "ko": "OLS(가장 잘 맞는 직선)",
@@ -968,7 +1161,9 @@
    "page": "12_econometrics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C13",
+   "match": []
   },
   "lab:term/ols": {
    "ko": "최소제곱",
@@ -976,7 +1171,9 @@
    "page": "12_econometrics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C13",
+   "match": []
   },
   "lab:term/plim": {
    "ko": "확률극한",
@@ -984,7 +1181,9 @@
    "page": "12_econometrics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C13",
+   "match": []
   },
   "lab:term/exclusion-restriction": {
    "ko": "배제조건",
@@ -992,7 +1191,9 @@
    "page": "12_econometrics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C13",
+   "match": []
   },
   "lab:term/weak-instrument": {
    "ko": "약한 도구",
@@ -1000,7 +1201,9 @@
    "page": "12_econometrics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C13",
+   "match": []
   },
   "lab:concept/firm-supply": {
    "ko": "기업 공급곡선",
@@ -1008,7 +1211,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D41",
+   "match": []
   },
   "lab:concept/market-equilibrium": {
    "ko": "경쟁시장 균형",
@@ -1016,7 +1221,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D41",
+   "match": []
   },
   "lab:concept/long-run-equilibrium": {
    "ko": "장기 경쟁균형",
@@ -1024,7 +1231,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D41",
+   "match": []
   },
   "lab:method/13-duel-fly": {
    "ko": "P = MC 생산 (7.5)",
@@ -1048,7 +1257,9 @@
    "page": "13_competitive_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D41",
+   "match": []
   },
   "lab:concept/producer-surplus": {
    "ko": "생산자잉여",
@@ -1056,7 +1267,9 @@
    "page": "13_competitive_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D41",
+   "match": []
   },
   "lab:concept/market-supply": {
    "ko": "시장 공급",
@@ -1064,7 +1277,9 @@
    "page": "13_competitive_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D41",
+   "match": []
   },
   "lab:term/free-entry": {
    "ko": "자유진입",
@@ -1072,7 +1287,9 @@
    "page": "13_competitive_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D41",
+   "match": []
   },
   "lab:term/efficient-scale": {
    "ko": "효율적 규모",
@@ -1080,7 +1297,9 @@
    "page": "13_competitive_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:term/constant-cost": {
    "ko": "일정비용 산업",
@@ -1088,7 +1307,9 @@
    "page": "13_competitive_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "L11",
+   "match": []
   },
   "lab:concept/monopoly-pricing": {
    "ko": "독점 가격 결정",
@@ -1096,7 +1317,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D42",
+   "match": []
   },
   "lab:concept/price-ceiling-monopoly": {
    "ko": "독점과 가격상한",
@@ -1104,7 +1327,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D42",
+   "match": []
   },
   "lab:concept/price-discrimination": {
    "ko": "가격차별",
@@ -1112,7 +1337,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D42",
+   "match": []
   },
   "lab:method/14-duel-fly": {
    "ko": "MR = MC 수량",
@@ -1136,7 +1363,9 @@
    "page": "14_monopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D42",
+   "match": []
   },
   "lab:term/lerner-index": {
    "ko": "러너 지수",
@@ -1144,7 +1373,9 @@
    "page": "14_monopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D42",
+   "match": []
   },
   "lab:concept/price-elasticity": {
    "ko": "수요 탄력성",
@@ -1152,7 +1383,9 @@
    "page": "14_monopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D11",
+   "match": []
   },
   "lab:concept/deadweight-loss": {
    "ko": "사중손실",
@@ -1160,7 +1393,9 @@
    "page": "14_monopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:concept/total-surplus": {
    "ko": "총잉여",
@@ -1168,7 +1403,9 @@
    "page": "14_monopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:term/arbitrage": {
    "ko": "재판매",
@@ -1176,7 +1413,9 @@
    "page": "14_monopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D42",
+   "match": []
   },
   "lab:concept/best-response": {
    "ko": "최적반응",
@@ -1184,7 +1423,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C72",
+   "match": []
   },
   "lab:concept/mixed-strategy": {
    "ko": "혼합전략 균형",
@@ -1192,7 +1433,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C72",
+   "match": []
   },
   "lab:concept/subgame-perfection": {
    "ko": "부분게임완전성",
@@ -1200,7 +1443,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C73",
+   "match": []
   },
   "lab:method/15-duel-fly": {
    "ko": "최적반응 (순수 \"위\")",
@@ -1224,7 +1469,9 @@
    "page": "15_game_theory",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C72",
+   "match": []
   },
   "lab:concept/nash-equilibrium": {
    "ko": "내시균형",
@@ -1232,7 +1479,9 @@
    "page": "15_game_theory",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C72",
+   "match": []
   },
   "lab:term/dominant-strategy": {
    "ko": "지배전략",
@@ -1240,7 +1489,9 @@
    "page": "15_game_theory",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C72",
+   "match": []
   },
   "lab:term/indifference-principle": {
    "ko": "무차별 원리",
@@ -1248,7 +1499,9 @@
    "page": "15_game_theory",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C72",
+   "match": []
   },
   "lab:term/backward-induction": {
    "ko": "역진귀납",
@@ -1256,7 +1509,9 @@
    "page": "15_game_theory",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C73",
+   "match": []
   },
   "lab:concept/cournot": {
    "ko": "쿠르노 균형",
@@ -1264,7 +1519,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D43",
+   "match": []
   },
   "lab:concept/stackelberg": {
    "ko": "슈타켈베르크 균형",
@@ -1272,7 +1529,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D43",
+   "match": []
   },
   "lab:concept/repeated-game-collusion": {
    "ko": "반복게임과 담합",
@@ -1280,7 +1539,9 @@
    "page": "r3_market_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C73",
+   "match": []
   },
   "lab:method/16-duel-fly": {
    "ko": "계속 협조",
@@ -1304,7 +1565,9 @@
    "page": "16_oligopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D43",
+   "match": []
   },
   "lab:concept/bertrand": {
    "ko": "베르트랑 경쟁",
@@ -1312,7 +1575,9 @@
    "page": "16_oligopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D43",
+   "match": []
   },
   "lab:term/cartel": {
    "ko": "카르텔",
@@ -1320,7 +1585,9 @@
    "page": "16_oligopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D43",
+   "match": []
   },
   "lab:term/discount-factor": {
    "ko": "할인인자",
@@ -1328,7 +1595,9 @@
    "page": "16_oligopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C73",
+   "match": []
   },
   "lab:term/grim-trigger": {
    "ko": "방아쇠 전략",
@@ -1336,7 +1605,9 @@
    "page": "16_oligopoly",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C73",
+   "match": []
   },
   "lab:concept/endowment-demand": {
    "ko": "부존 수요",
@@ -1344,7 +1615,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:concept/walras-law": {
    "ko": "왈라스 법칙",
@@ -1352,7 +1625,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:concept/contract-curve": {
    "ko": "계약곡선",
@@ -1360,7 +1635,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:method/17-duel-fly": {
    "ko": "청산가격에서 교환",
@@ -1384,7 +1661,9 @@
    "page": "17_exchange",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:concept/exchange-economy": {
    "ko": "순수교환경제",
@@ -1392,7 +1671,9 @@
    "page": "17_exchange",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:term/edgeworth-box": {
    "ko": "에지워스 상자",
@@ -1400,7 +1681,9 @@
    "page": "17_exchange",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:concept/excess-demand": {
    "ko": "총초과수요",
@@ -1408,7 +1691,9 @@
    "page": "21_equilibrium_analysis",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:concept/general-equilibrium": {
    "ko": "일반균형",
@@ -1416,7 +1701,9 @@
    "page": "17_exchange",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:concept/pareto-efficiency": {
    "ko": "파레토 효율",
@@ -1424,7 +1711,9 @@
    "page": "17_exchange",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:concept/production-efficiency": {
    "ko": "생산효율",
@@ -1432,7 +1721,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:concept/ppf": {
    "ko": "생산가능경계",
@@ -1440,7 +1731,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:concept/mrs-mrt": {
    "ko": "산출 구성의 효율",
@@ -1448,7 +1741,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:method/18-duel-fly": {
    "ko": "자본을 같은 비율로 재배분",
@@ -1472,7 +1767,9 @@
    "page": "18_production",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:term/mrt": {
    "ko": "한계변환율",
@@ -1480,7 +1777,9 @@
    "page": "18_production",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D51",
+   "match": []
   },
   "lab:term/cauchy-schwarz": {
    "ko": "코시-슈바르츠 부등식",
@@ -1488,7 +1787,9 @@
    "page": "18_production",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:term/crs": {
    "ko": "규모수익불변",
@@ -1496,7 +1797,9 @@
    "page": "18_production",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D24",
+   "match": []
   },
   "lab:concept/npv": {
    "ko": "순현재가치",
@@ -1504,7 +1807,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D25",
+   "match": []
   },
   "lab:concept/fisher-separation": {
    "ko": "피셔 분리",
@@ -1512,7 +1817,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D25",
+   "match": []
   },
   "lab:concept/euler-bellman": {
    "ko": "오일러·벨만 방정식",
@@ -1520,7 +1827,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:method/19-duel-fly": {
    "ko": "NPV 최대 (할인)",
@@ -1544,7 +1853,9 @@
    "page": "19_time",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D15",
+   "match": []
   },
   "lab:term/discounting": {
    "ko": "할인",
@@ -1552,7 +1863,9 @@
    "page": "19_time",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D15",
+   "match": []
   },
   "lab:term/time-preference": {
    "ko": "시간선호",
@@ -1560,7 +1873,9 @@
    "page": "19_time",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D15",
+   "match": []
   },
   "lab:term/perfect-capital-market": {
    "ko": "완전자본시장",
@@ -1568,7 +1883,9 @@
    "page": "19_time",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D15",
+   "match": []
   },
   "lab:term/bellman": {
    "ko": "벨만 방정식",
@@ -1576,7 +1893,9 @@
    "page": "19_time",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:concept/state-prices": {
    "ko": "상태가격",
@@ -1584,7 +1903,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "G12",
+   "match": []
   },
   "lab:concept/replication": {
    "ko": "복제 포트폴리오",
@@ -1592,7 +1913,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "G12",
+   "match": []
   },
   "lab:concept/diversification": {
    "ko": "분산투자",
@@ -1600,7 +1923,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "G11",
+   "match": []
   },
   "lab:method/20-duel-fly": {
    "ko": "복제 비용",
@@ -1624,7 +1949,9 @@
    "page": "20_asset_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "G12",
+   "match": []
   },
   "lab:term/complete-market": {
    "ko": "완비시장",
@@ -1632,7 +1959,9 @@
    "page": "20_asset_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D52",
+   "match": []
   },
   "lab:term/risk-neutral": {
    "ko": "위험중립 확률",
@@ -1640,7 +1969,9 @@
    "page": "20_asset_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "G12",
+   "match": []
   },
   "lab:term/incomplete-market": {
    "ko": "불완비시장",
@@ -1648,7 +1979,9 @@
    "page": "20_asset_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D52",
+   "match": []
   },
   "lab:term/capm": {
    "ko": "CAPM",
@@ -1656,7 +1989,9 @@
    "page": "20_asset_markets",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "G12",
+   "match": []
   },
   "lab:concept/existence-uniqueness": {
    "ko": "균형의 존재와 유일성",
@@ -1664,7 +1999,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C62",
+   "match": []
   },
   "lab:concept/comparative-statics": {
    "ko": "비교정학",
@@ -1672,7 +2009,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C62",
+   "match": []
   },
   "lab:concept/tatonnement-stability": {
    "ko": "가격조정의 안정성",
@@ -1680,7 +2019,9 @@
    "page": "r4_equilibrium_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C62",
+   "match": []
   },
   "lab:method/21-duel-fly": {
    "ko": "λ = 0.5 유지",
@@ -1704,7 +2045,9 @@
    "page": "21_equilibrium_analysis",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C62",
+   "match": []
   },
   "lab:term/implicit-function": {
    "ko": "암묵함수정리",
@@ -1712,7 +2055,9 @@
    "page": "21_equilibrium_analysis",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:term/local-stability": {
    "ko": "국소 안정성",
@@ -1720,7 +2065,9 @@
    "page": "21_equilibrium_analysis",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C62",
+   "match": []
   },
   "lab:term/linearization": {
    "ko": "선형화",
@@ -1728,7 +2075,9 @@
    "page": "21_equilibrium_analysis",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C62",
+   "match": []
   },
   "lab:concept/social-welfare-function": {
    "ko": "사회후생함수",
@@ -1736,7 +2085,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D63",
+   "match": []
   },
   "lab:concept/maximin": {
    "ko": "최소극대 기준",
@@ -1744,7 +2095,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D63",
+   "match": []
   },
   "lab:concept/welfare-theorems": {
    "ko": "후생정리",
@@ -1752,7 +2105,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:method/22-duel-fly": {
    "ko": "최소극대 (q = 20)",
@@ -1776,7 +2131,9 @@
    "page": "22_welfare",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:term/upf": {
    "ko": "효용가능경계",
@@ -1784,7 +2141,9 @@
    "page": "22_welfare",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:term/utilitarianism": {
    "ko": "공리주의",
@@ -1792,7 +2151,9 @@
    "page": "22_welfare",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D63",
+   "match": []
   },
   "lab:term/second-welfare": {
    "ko": "제2후생정리",
@@ -1800,7 +2161,9 @@
    "page": "22_welfare",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D61",
+   "match": []
   },
   "lab:term/arrow": {
    "ko": "애로 불가능성 정리",
@@ -1808,7 +2171,9 @@
    "page": "22_welfare",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D71",
+   "match": []
   },
   "lab:concept/samuelson-condition": {
    "ko": "사무엘슨 조건",
@@ -1816,7 +2181,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "H41",
+   "match": []
   },
   "lab:concept/free-riding": {
    "ko": "무임승차",
@@ -1824,7 +2191,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "H41",
+   "match": []
   },
   "lab:concept/vcg-mechanism": {
    "ko": "VCG 메커니즘",
@@ -1832,7 +2201,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D82",
+   "match": []
   },
   "lab:method/23-duel-fly": {
    "ko": "사무엘슨 조건 G* = 5",
@@ -1856,7 +2227,9 @@
    "page": "23_public_goods",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "H41",
+   "match": []
   },
   "lab:term/non-rivalry": {
    "ko": "비경합성",
@@ -1864,7 +2237,9 @@
    "page": "23_public_goods",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "H41",
+   "match": []
   },
   "lab:term/non-excludability": {
    "ko": "비배제성",
@@ -1872,7 +2247,9 @@
    "page": "23_public_goods",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "H41",
+   "match": []
   },
   "lab:term/lindahl": {
    "ko": "린달 가격",
@@ -1880,7 +2257,9 @@
    "page": "23_public_goods",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "H41",
+   "match": []
   },
   "lab:term/incentive-compatibility": {
    "ko": "유인적합 조건",
@@ -1888,7 +2267,9 @@
    "page": "25_information",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D82",
+   "match": []
   },
   "lab:concept/externality": {
    "ko": "외부성",
@@ -1896,7 +2277,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D62",
+   "match": []
   },
   "lab:concept/pigouvian-tax": {
    "ko": "피구세",
@@ -1904,7 +2287,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "H23",
+   "match": []
   },
   "lab:concept/coase-theorem": {
    "ko": "코즈 정리",
@@ -1912,7 +2297,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D23",
+   "match": []
   },
   "lab:method/24-duel-fly": {
    "ko": "효율 수량 6.4",
@@ -1936,7 +2323,9 @@
    "page": "24_externalities",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D62",
+   "match": []
   },
   "lab:term/msc": {
    "ko": "사회적 한계비용",
@@ -1944,7 +2333,9 @@
    "page": "24_externalities",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D62",
+   "match": []
   },
   "lab:term/internalization": {
    "ko": "내부화",
@@ -1952,7 +2343,9 @@
    "page": "24_externalities",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D62",
+   "match": []
   },
   "lab:term/permits": {
    "ko": "거래 가능한 허가권",
@@ -1960,7 +2353,9 @@
    "page": "24_externalities",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "H23",
+   "match": []
   },
   "lab:term/transaction-cost": {
    "ko": "거래비용",
@@ -1968,7 +2363,9 @@
    "page": "24_externalities",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D23",
+   "match": []
   },
   "lab:concept/value-of-information": {
    "ko": "정보의 가치",
@@ -1976,7 +2373,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D83",
+   "match": []
   },
   "lab:concept/search": {
    "ko": "탐색 이론",
@@ -1984,7 +2383,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D83",
+   "match": []
   },
   "lab:concept/moral-hazard": {
    "ko": "도덕적 해이",
@@ -1992,7 +2393,9 @@
    "page": "r5_welfare_review",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D82",
+   "match": []
   },
   "lab:method/25-duel-fly": {
    "ko": "정보 없이 늘 예방",
@@ -2016,7 +2419,9 @@
    "page": "25_information",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D83",
+   "match": []
   },
   "lab:term/evpi": {
    "ko": "EVPI",
@@ -2024,7 +2429,9 @@
    "page": "25_information",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D83",
+   "match": []
   },
   "lab:term/adverse-selection": {
    "ko": "역선택",
@@ -2032,7 +2439,9 @@
    "page": "25_information",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D82",
+   "match": []
   },
   "lab:term/signaling": {
    "ko": "신호",
@@ -2040,15 +2449,20 @@
    "page": "25_information",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "D82",
+   "match": []
   },
   "lab:concept/gradient": {
    "ko": "기울기",
    "en": "gradient",
    "page": "26_mathematics",
    "domain": [
-    "econ"
-   ]
+    "econ",
+    "math"
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:concept/hessian-definiteness": {
    "ko": "헤시안의 정부호성",
@@ -2056,7 +2470,9 @@
    "page": "26_mathematics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:concept/implicit-function-theorem": {
    "ko": "암묵함수 정리",
@@ -2064,7 +2480,9 @@
    "page": "26_mathematics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:method/26-duel-fly": {
    "ko": "모든 방향을 돌려 최소",
@@ -2088,7 +2506,9 @@
    "page": "26_mathematics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:term/euler-theorem": {
    "ko": "오일러 정리",
@@ -2096,7 +2516,9 @@
    "page": "26_mathematics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:term/eigenvalue": {
    "ko": "고유값",
@@ -2104,7 +2526,9 @@
    "page": "26_mathematics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:term/saddle-point": {
    "ko": "안장점",
@@ -2112,7 +2536,9 @@
    "page": "26_mathematics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:term/quasiconcave": {
    "ko": "준오목",
@@ -2120,7 +2546,9 @@
    "page": "26_mathematics",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C65",
+   "match": []
   },
   "lab:concept/constrained-optimization": {
    "ko": "제약 최적화",
@@ -2128,15 +2556,20 @@
    "page": "27_optimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:concept/kkt": {
    "ko": "KKT 조건",
    "en": "Karush-Kuhn-Tucker conditions",
    "page": "27_optimization",
    "domain": [
-    "econ"
-   ]
+    "econ",
+    "math"
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:concept/envelope-shadow-price": {
    "ko": "그림자가격",
@@ -2144,7 +2577,9 @@
    "page": "27_optimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:method/27-duel-fly": {
    "ko": "KKT로 다시 풀기",
@@ -2168,15 +2603,20 @@
    "page": "27_optimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:term/lagrangian": {
    "ko": "라그랑지안",
    "en": "Lagrangian",
    "page": "27_optimization",
    "domain": [
-    "econ"
-   ]
+    "econ",
+    "math"
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:term/complementary-slackness": {
    "ko": "상보성",
@@ -2184,7 +2624,9 @@
    "page": "27_optimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C61",
+   "match": []
   },
   "lab:term/constraint-qualification": {
    "ko": "제약자격조건",
@@ -2192,7 +2634,310 @@
    "page": "27_optimization",
    "domain": [
     "econ"
-   ]
+   ],
+   "jel": "C61",
+   "match": []
   }
+ },
+ "schemes": {
+  "jel": {
+   "name": "JEL Classification System (American Economic Association)",
+   "source": "https://www.aeaweb.org/econlit/jelCodes.php?view=jel",
+   "codes": {
+    "C13": {
+     "en": "Estimation: General",
+     "ko": "추정 일반"
+    },
+    "C18": {
+     "en": "Methodological Issues: General",
+     "ko": "계량 방법론 일반"
+    },
+    "C61": {
+     "en": "Optimization Techniques • Programming Models • Dynamic Analysis",
+     "ko": "최적화 기법·계획 모형·동태 분석"
+    },
+    "C62": {
+     "en": "Existence and Stability Conditions of Equilibrium",
+     "ko": "균형의 존재와 안정 조건"
+    },
+    "C65": {
+     "en": "Miscellaneous Mathematical Tools",
+     "ko": "기타 수학 도구"
+    },
+    "C72": {
+     "en": "Noncooperative Games",
+     "ko": "비협조 게임"
+    },
+    "C73": {
+     "en": "Stochastic and Dynamic Games • Evolutionary Games • Repeated Games",
+     "ko": "동태·반복 게임"
+    },
+    "D11": {
+     "en": "Consumer Economics: Theory",
+     "ko": "소비자 이론"
+    },
+    "D12": {
+     "en": "Consumer Economics: Empirical Analysis",
+     "ko": "소비자 실증 분석"
+    },
+    "D15": {
+     "en": "Intertemporal Household Choice • Life Cycle Models and Saving",
+     "ko": "가계의 기간 간 선택·생애주기와 저축"
+    },
+    "D21": {
+     "en": "Firm Behavior: Theory",
+     "ko": "기업 행동 이론"
+    },
+    "D23": {
+     "en": "Organizational Behavior • Transaction Costs • Property Rights",
+     "ko": "조직 행동·거래비용·재산권"
+    },
+    "D24": {
+     "en": "Production • Cost • Capital • Capital, Total Factor, and Multifactor Productivity • Capacity",
+     "ko": "생산·비용·자본·생산성"
+    },
+    "D25": {
+     "en": "Intertemporal Firm Choice: Investment, Capacity, and Financing",
+     "ko": "기업의 기간 간 선택: 투자·설비·자금조달"
+    },
+    "D33": {
+     "en": "Factor Income Distribution",
+     "ko": "요소소득 분배"
+    },
+    "D41": {
+     "en": "Perfect Competition",
+     "ko": "완전경쟁"
+    },
+    "D42": {
+     "en": "Monopoly",
+     "ko": "독점"
+    },
+    "D43": {
+     "en": "Oligopoly and Other Forms of Market Imperfection",
+     "ko": "과점과 불완전경쟁"
+    },
+    "D51": {
+     "en": "Exchange and Production Economies",
+     "ko": "교환경제와 생산경제"
+    },
+    "D52": {
+     "en": "Incomplete Markets",
+     "ko": "불완비 시장"
+    },
+    "D53": {
+     "en": "Financial Markets",
+     "ko": "금융시장(일반균형)"
+    },
+    "D61": {
+     "en": "Allocative Efficiency • Cost–Benefit Analysis",
+     "ko": "배분 효율·비용편익 분석"
+    },
+    "D62": {
+     "en": "Externalities",
+     "ko": "외부성"
+    },
+    "D63": {
+     "en": "Equity, Justice, Inequality, and Other Normative Criteria and Measurement",
+     "ko": "형평·정의·불평등과 규범 기준"
+    },
+    "D71": {
+     "en": "Social Choice • Clubs • Committees • Associations",
+     "ko": "사회선택"
+    },
+    "D81": {
+     "en": "Criteria for Decision-Making under Risk and Uncertainty",
+     "ko": "위험·불확실성 아래 의사결정 기준"
+    },
+    "D82": {
+     "en": "Asymmetric and Private Information • Mechanism Design",
+     "ko": "비대칭 정보·메커니즘 설계"
+    },
+    "D83": {
+     "en": "Search • Learning • Information and Knowledge • Communication • Belief • Unawareness",
+     "ko": "탐색·학습·정보와 지식"
+    },
+    "G11": {
+     "en": "Portfolio Choice • Investment Decisions",
+     "ko": "포트폴리오 선택·투자 결정"
+    },
+    "G12": {
+     "en": "Asset Pricing • Trading Volume • Bond Interest Rates",
+     "ko": "자산가격 결정"
+    },
+    "H23": {
+     "en": "Externalities • Redistributive Effects • Environmental Taxes and Subsidies",
+     "ko": "외부성·환경세와 보조금"
+    },
+    "H41": {
+     "en": "Public Goods",
+     "ko": "공공재"
+    },
+    "L11": {
+     "en": "Production, Pricing, and Market Structure • Size Distribution of Firms",
+     "ko": "생산·가격 결정과 시장구조"
+    },
+    "L12": {
+     "en": "Monopoly • Monopolization Strategies",
+     "ko": "독점·독점화 전략"
+    },
+    "L13": {
+     "en": "Oligopoly and Other Imperfect Markets",
+     "ko": "과점과 불완전 시장"
+    }
+   }
+  }
+ },
+ "pages": {
+  "01_technology": [
+   "D24"
+  ],
+  "02_profit_maximization": [
+   "D21",
+   "D24"
+  ],
+  "03_profit_function": [
+   "D21",
+   "C61"
+  ],
+  "04_cost_minimization": [
+   "D24",
+   "C61",
+   "D33"
+  ],
+  "05_cost_function": [
+   "D24",
+   "C65"
+  ],
+  "06_duality": [
+   "D24",
+   "C65"
+  ],
+  "07_utility_maximization": [
+   "D11"
+  ],
+  "08_choice": [
+   "D11"
+  ],
+  "09_demand": [
+   "D11",
+   "D12"
+  ],
+  "10_consumer_surplus": [
+   "D11",
+   "D61"
+  ],
+  "11_uncertainty": [
+   "D81",
+   "C65"
+  ],
+  "12_econometrics": [
+   "C13",
+   "C18"
+  ],
+  "13_competitive_markets": [
+   "D41",
+   "L11"
+  ],
+  "14_monopoly": [
+   "D42",
+   "L12",
+   "D61"
+  ],
+  "15_game_theory": [
+   "C72",
+   "C73"
+  ],
+  "16_oligopoly": [
+   "D43",
+   "L13",
+   "C73"
+  ],
+  "17_exchange": [
+   "D51",
+   "D61"
+  ],
+  "18_production": [
+   "D51",
+   "D24",
+   "D61"
+  ],
+  "19_time": [
+   "D15",
+   "D25",
+   "C61"
+  ],
+  "20_asset_markets": [
+   "G12",
+   "D52",
+   "D53",
+   "G11"
+  ],
+  "21_equilibrium_analysis": [
+   "C62",
+   "D51",
+   "C65"
+  ],
+  "22_welfare": [
+   "D63",
+   "D61",
+   "D71"
+  ],
+  "23_public_goods": [
+   "H41",
+   "D82"
+  ],
+  "24_externalities": [
+   "D62",
+   "H23",
+   "D23"
+  ],
+  "25_information": [
+   "D82",
+   "D83",
+   "D81"
+  ],
+  "26_mathematics": [
+   "C65"
+  ],
+  "27_optimization": [
+   "C61"
+  ],
+  "r1_producer_review": [
+   "D24",
+   "D21",
+   "C65"
+  ],
+  "r2_consumer_review": [
+   "D11",
+   "D61",
+   "D81",
+   "C13"
+  ],
+  "r3_market_review": [
+   "D41",
+   "D42",
+   "D43",
+   "C72",
+   "C73"
+  ],
+  "r4_equilibrium_review": [
+   "D51",
+   "D61",
+   "D25",
+   "G12",
+   "G11",
+   "C62",
+   "C61"
+  ],
+  "r5_welfare_review": [
+   "D63",
+   "D61",
+   "H41",
+   "D82",
+   "D62",
+   "H23",
+   "D23",
+   "D83"
+  ]
  }
 }

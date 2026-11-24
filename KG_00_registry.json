@@ -119,7 +119,8 @@
    "en": "Karush–Kuhn–Tucker conditions",
    "page": "00_economic_models",
    "domain": [
-    "econ"
+    "econ",
+    "math"
    ]
   },
   "lab:concept/marginal-rate-of-substitution": {

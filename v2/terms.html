@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="미시경제학 연구실 2권의 개념·용어 219개를 미국경제학회 JEL 분류 코드로 묶은 색인어 목록. 한·영 이름, JEL 코드, 설명 쪽 링크.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2권 경제학 색인어 — JEL 분류로 찾아보기">
+<meta property="og:description" content="미시경제학 연구실 2권의 개념·용어 219개를 미국경제학회 JEL 분류 코드로 묶은 색인어 목록. 한·영 이름, JEL 코드, 설명 쪽 링크.">
+<meta property="og:image" content="https://adminmrobo.github.io/micro_economics/v2/assets/og/cover_idx.jpg">
+<meta property="og:url" content="https://adminmrobo.github.io/micro_economics/v2/terms.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 0l7 4v8l-7 4-7-4V4z' fill='%239ab0d0'/%3E%3C/svg%3E">
+<title>경제학 색인어</title>
+<meta name="citation_title" content="2권 경제학 색인어 — JEL 분류로 찾아보기">
+<meta name="citation_author" content="안상선">
+<meta name="citation_publication_date" content="2026/11/21">
+<meta name="dc.title" content="2권 경제학 색인어 — JEL 분류로 찾아보기"><meta name="dc.creator" content="안상선"><meta name="dc.date" content="2026-11-21"><meta name="dc.language" content="ko">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* 흰 연구실(밝은 테마) (ai-lab-explainer 디자인 시스템, 어두운 단일 테마). 주제 강조색: 시퀀스 #3f5fa8 */
+:root{
+  --bg:#ffffff; --panel:#f6f7fb; --panel2:#eceef5; --rule:#dde1ec;
+  --text:#1d2030; --muted:#5d6278;
+  --stain:#a8329f; --gfp:#138a52; --eye:#d23f2c; --amber:#b77800; --info:#2563c9; --seq:#3f5fa8;
+  --c-doc:#7a45d6; --c-asst:#d0457f; --c-fly:#cc3434; --c-robo:#14899a; --c-sia:#3d4a63; --c-moa:#a2672b; --c-x:#5d6278;
+  --a0:#d23f2c; --a1:#2563c9; --a2:#138a52; --a3:#a8329f;
+  --font:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.7;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+h1,h2,h3,h4,p,li,td,th{word-break:keep-all}
+h1,h2,h3{text-wrap:balance;line-height:1.3;margin:0}
+h1{font-size:clamp(32px,5vw,56px);font-weight:700}
+h2{font-size:clamp(24px,3vw,34px);font-weight:700}
+h3{font-size:19px;font-weight:700}
+p{margin:0}
+a{color:var(--info)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.stack{display:flex;flex-direction:column;gap:22px}
+.muted{color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+
+/* 진행 막대, 내비 */
+#prog{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:3px;background:var(--gfp);width:0;z-index:70}
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;height:54px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+nav.top .wrap{display:flex;align-items:center;gap:16px;height:54px}
+nav.top .logo{font-weight:700;white-space:nowrap;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}
+nav.top .logo i{display:inline-block;width:14px;height:14px;background:var(--seq);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+nav.top .links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;min-width:0}
+nav.top .links::-webkit-scrollbar{display:none}
+nav.top .links a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:6px;white-space:nowrap}
+nav.top .links a:hover{color:var(--text);background:var(--panel)}
+
+/* 히어로 */
+header.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule)}
+header.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle at 1px 1px,rgba(63,95,168,.16) 1.2px,transparent 1.4px);background-size:14px 12px;
+  -webkit-mask-image:radial-gradient(circle at 90% 0%,#000 0,transparent 55%);mask-image:radial-gradient(circle at 90% 0%,#000 0,transparent 55%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:center;padding-block:48px 36px;position:relative}
+.hero-text{display:flex;flex-direction:column;gap:16px;min-width:0}
+.eyebrow{font-size:13px;letter-spacing:.08em;color:var(--seq);font-weight:700}
+.q{font-size:20px;color:var(--amber);font-weight:500}
+.pixelart{position:relative;min-width:0}
+.scene-img{width:100%;display:block;border:1px solid var(--rule);border-radius:10px}
+figure.scene{margin:0}
+figure.scene img{width:100%;max-width:820px;display:block;border-radius:12px;border:1px solid var(--rule)}
+.concept4>div .lvtag{align-self:flex-start;margin-top:auto}
+.pixelart canvas{width:100%;display:block;image-rendering:pixelated;border:1px solid var(--rule);border-radius:10px;background:var(--panel)}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+
+.kpis{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.kpi{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:10px 12px;min-width:0}
+.kpi b{display:block;font-size:22px;font-variant-numeric:tabular-nums}
+.kpi span{font-size:12px;color:var(--muted)}
+.kpi.g b{color:var(--gfp)}.kpi.m b{color:var(--stain)}.kpi.r b{color:var(--eye)}.kpi.a b{color:var(--amber)}.kpi.i b{color:var(--info)}
+.kpis.k4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.kpis.k3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:860px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:460px){.kpis,.kpis.k4,.kpis.k3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.dialog{display:flex;flex-direction:column;gap:8px}
+
+/* 섹션 */
+section.level{padding-block:56px;border-bottom:1px solid var(--rule)}
+.lvhead{display:flex;flex-direction:column;gap:10px}
+.hexrow{display:flex;align-items:center;gap:14px}
+.hexno{width:52px;height:58px;flex:none;background:var(--panel2);border:0;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:var(--seq);line-height:1}
+.hexno small{font-size:10px;color:var(--muted);font-weight:500;margin-top:3px}
+.sub{display:flex;flex-wrap:wrap;gap:8px}
+.lvtag{font-size:13px;border:1px solid var(--rule);border-radius:99px;padding:2px 10px;color:var(--muted)}
+.lvtag.g{color:var(--gfp);border-color:rgba(19,138,82,.4)}
+.lead{color:var(--muted);max-width:68ch}
+
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.steps>div{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.steps b{color:var(--seq)}
+.steps.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:860px){.steps,.steps.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.steps,.steps.four{grid-template-columns:1fr}}
+
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pair>div{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.tag{font-size:12px;font-weight:700;letter-spacing:.04em}
+.tag.fly{color:var(--eye)}.tag.nn{color:var(--stain)}
+@media (max-width:760px){.pair{grid-template-columns:1fr}}
+
+.panel{background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.panel h3{font-size:16px;color:var(--info)}
+.cwrap{overflow-x:auto;border-radius:8px;background:var(--bg);border:1px solid var(--rule)}
+.cwrap canvas{display:block;width:100%}
+.cwrap canvas.wide{min-width:640px}
+.ctrl{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.group{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.glabel{font-size:13px;color:var(--muted);margin-right:4px}
+.bt{font:inherit;font-size:14px;background:var(--panel2);color:var(--text);border:1px solid var(--rule);border-radius:7px;padding:6px 12px;cursor:pointer}
+.bt:hover{border-color:var(--muted)}
+.bt[aria-pressed="true"],.bt.on{background:rgba(19,138,82,.16);border-color:var(--gfp);color:var(--gfp)}
+.bt.primary{background:var(--gfp);color:#ffffff;border-color:var(--gfp);font-weight:700}
+.val{font-variant-numeric:tabular-nums;color:var(--amber);font-weight:700;min-width:4ch}
+input[type=range]{accent-color:var(--gfp);width:200px;max-width:100%}
+.eq{font-variant-numeric:tabular-nums;background:var(--bg);border:1px dashed var(--rule);border-radius:8px;padding:10px 12px;overflow-x:auto;white-space:nowrap}
+.eq b{color:var(--gfp)}.eq em{color:var(--stain);font-style:normal}.eq i{color:var(--amber);font-style:normal}
+.insight{display:flex;flex-direction:column;gap:6px}
+.insight p{padding-left:12px;border-left:3px solid var(--rule)}
+.insight p.g{border-color:var(--gfp)}.insight p.m{border-color:var(--stain)}.insight p.r{border-color:var(--eye)}.insight p.a{border-color:var(--amber)}
+
+.explain{background:rgba(183,120,0,.08);border:1px solid rgba(183,120,0,.35);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.explain h4{margin:0;color:var(--amber);font-size:16px}
+.explain ol,.explain ul{margin:0;padding-left:20px}
+.explain .limit{color:var(--eye)}
+details.math{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:12px 16px}
+details.math summary{cursor:pointer;color:var(--info);font-weight:500}
+details.math>div{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+.bridge{border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;border:1px solid}
+.bridge h4{margin:0;font-size:15px}
+.bridge.gen{background:rgba(37,99,201,.07);border-color:rgba(37,99,201,.4)}.bridge.gen h4{color:var(--info)}
+.bridge.field{background:rgba(210,63,44,.07);border-color:rgba(210,63,44,.4)}.bridge.field h4{color:var(--eye)}
+.bridge .lim{font-size:14px;color:var(--muted)}
+.bridges{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:760px){.bridges{grid-template-columns:1fr}}
+
+/* 말풍선 */
+.say{display:flex;gap:12px;align-items:flex-start}
+.say img.who{width:64px;height:64px;flex:none;object-fit:contain;background:var(--panel2);border-radius:10px;border:2px solid var(--rule)}
+.say>div{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:10px 14px;min-width:0;flex:1}
+.say .name{font-size:13px;display:block}
+.say[data-who=doc] img.who,.say[data-who=doc]>div{border-color:var(--c-doc)}.say[data-who=doc] .name{color:var(--c-doc)}
+.say[data-who=asst] img.who,.say[data-who=asst]>div{border-color:var(--c-asst)}.say[data-who=asst] .name{color:var(--c-asst)}
+.say[data-who=fly] img.who,.say[data-who=fly]>div{border-color:var(--c-fly)}.say[data-who=fly] .name{color:var(--c-fly)}
+.say[data-who=robo] img.who,.say[data-who=robo]>div{border-color:var(--c-robo)}.say[data-who=robo] .name{color:var(--c-robo)}
+@media (max-width:520px){.say img.who{width:52px;height:52px}}
+
+.cast{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cast>div{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:6px;align-items:flex-start;min-width:0}
+.cast img{width:72px;height:72px;object-fit:contain}
+@media (max-width:860px){.cast{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* 행동 칩 */
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:13px;border-radius:6px;padding:1px 8px;font-weight:700;color:#ffffff}
+.chip.a0{background:var(--a0)}.chip.a1{background:var(--a1)}.chip.a2{background:var(--a2)}.chip.a3{background:var(--a3)}
+
+/* 표 */
+.tw{overflow-x:auto}
+table.tb{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+.tb th,.tb td{border-bottom:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+.tb th{color:var(--muted);font-weight:500;font-size:13px}
+.tb td.n{font-variant-numeric:tabular-nums;text-align:right}
+
+/* 대결 */
+.duel{display:flex;flex-direction:column;gap:16px}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center}
+.vs .side{background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center;min-width:0}
+.vs .side.fly{border-color:var(--c-fly)}.vs .side.robo{border-color:var(--c-robo)}
+.vs .side img{width:96px;height:96px;object-fit:contain}
+.vs .side.fly img{transform:scaleX(-1)} /* 팩의 초파리 그림은 왼쪽을 본다 → 대결 왼쪽 자리에서 오른쪽을 보게 (C5: 초파리 뒤집기 허용) */
+.vs .mid{font-weight:700;font-size:28px;color:var(--amber)}
+.guess{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.bars{display:flex;flex-direction:column;gap:10px}
+.barrow{display:grid;grid-template-columns:120px 1fr 70px;gap:10px;align-items:center}
+.barrow .track{height:22px;background:var(--bg);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.barrow .fill{height:100%;transition:width .6s}
+@media (prefers-reduced-motion:reduce){.barrow .fill{transition:none}}
+.duel .result{display:none;flex-direction:column;gap:12px}
+.duel.open .result{display:flex}
+.score{display:flex;gap:10px;flex-wrap:wrap}
+.score span{background:var(--panel2);border-radius:6px;padding:4px 10px;font-size:14px}
+@media (max-width:520px){.vs{grid-template-columns:1fr}.vs .mid{text-align:center}.barrow{grid-template-columns:112px 1fr 50px;font-size:14px}}
+
+/* 퀴즈 */
+.quiz{display:flex;flex-direction:column;gap:12px}
+.qi{background:rgba(37,99,201,.06);border:1px solid rgba(37,99,201,.35);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.qi .qh{color:var(--info);font-size:13px;font-weight:700}
+.qi .opts{display:flex;flex-wrap:wrap;gap:6px}
+.qi .fb{font-size:14px}
+.qi .fb.ok{color:var(--gfp)}.qi .fb.no{color:var(--amber)}
+
+/* 용어 */
+.jt{border-bottom:1px dashed var(--amber);cursor:help}
+#tip{position:fixed;z-index:80;max-width:300px;background:var(--panel2);border:1px solid var(--amber);border-radius:8px;padding:10px 12px;font-size:14px;display:none;box-shadow:0 8px 24px rgba(30,35,60,.14)}
+#tip b{color:var(--amber)}#tip small{color:var(--muted);margin-left:6px}
+#study{position:fixed;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:55;background:var(--panel2);border:1px solid var(--rule);border-radius:99px;padding:6px 8px 6px 14px;display:flex;gap:10px;align-items:center;font-size:13px}
+#study .bt{padding:3px 10px;font-size:12px}
+@media (max-width:520px){#study{left:calc(10px + env(safe-area-inset-left,0px));right:calc(10px + env(safe-area-inset-right,0px));justify-content:space-between;border-radius:12px}}
+
+/* 색인·꾸러미 */
+.searchrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+input.search{font:inherit;background:var(--bg);color:var(--text);border:1px solid var(--rule);border-radius:8px;padding:8px 12px;flex:1;min-width:0}
+.kgl{display:flex;flex-direction:column;gap:6px;max-height:420px;overflow-y:auto}
+.kgl details{background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:8px 12px}
+.kgl summary{cursor:pointer;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.kgl .ty{font-size:11px;border-radius:4px;padding:1px 6px;background:var(--panel2);color:var(--muted)}
+.kgl p{font-size:14px;margin-top:6px}
+.flowchips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.flowchips span{background:var(--panel2);border-radius:6px;padding:3px 10px;font-size:14px}
+.flowchips span.lim{color:var(--eye)}
+.flowchips i{color:var(--muted);font-style:normal}
+pre.out{background:var(--bg);border:1px solid var(--rule);border-radius:8px;padding:12px;max-height:280px;overflow:auto;font-size:12px;white-space:pre;margin:0}
+.badge{font-size:11px;border-radius:4px;padding:1px 6px;margin-left:4px}
+.badge.ok{background:rgba(19,138,82,.18);color:var(--gfp)}.badge.no{background:rgba(183,120,0,.18);color:var(--amber)}
+.reflist{display:flex;flex-direction:column;gap:10px;padding-left:20px;margin:0}
+.reflist li{font-size:15px}
+.stampnote{display:inline-block;font-size:12px;color:var(--amber);border:1px solid rgba(183,120,0,.6);background:rgba(183,120,0,.12);border-radius:99px;padding:1px 10px}
+footer{padding-block:40px 120px;color:var(--muted);font-size:14px}
+footer h3{color:var(--text);font-size:16px;margin-bottom:8px}
+footer .stack{gap:28px}
+
+/* ai-lab-explainer-plain 추가 규격: 3줄 상자, 왜/조수 수식, 단계 대화, 코드 접기, 표지, 화면 밀도 */
+:root{--stat:#3f5fa8;--seq:#3f5fa8}
+body{line-height:1.8}
+section.level{padding-block:88px}
+@media (max-width:760px){section.level{padding-block:64px}}
+.stack{gap:24px}
+.explain ol li+li,.explain ul li+li{margin-top:10px}
+.panel,.explain,.pair>div,.steps>div{padding:20px}
+.cover{position:relative;margin:0;background:linear-gradient(160deg,#eef2fb,#ffffff);overflow:hidden;border-bottom:1px solid var(--rule)}
+.cover img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.cover.hasimg{aspect-ratio:16/9;max-height:min(72vh,760px);width:100%;background:#f6f7fb}
+.cover.hasimg img{width:100%;height:100%}
+.cover.fallback{max-height:48vh;min-height:220px;display:flex;align-items:flex-end;justify-content:center}
+.cover.fallback::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,rgba(63,95,168,.18) 1.2px,transparent 1.4px);background-size:14px 12px;-webkit-mask-image:radial-gradient(circle at 70% 20%,#000 0,transparent 70%);mask-image:radial-gradient(circle at 70% 20%,#000 0,transparent 70%)}
+.cover .line{position:relative;display:flex;gap:clamp(8px,3vw,36px);align-items:flex-end;padding:28px 16px 34px}
+.cover .line img{width:clamp(64px,13vw,132px);height:auto;object-fit:contain;filter:drop-shadow(0 6px 14px rgba(30,35,60,.18))}
+.cover .line img.fly{width:clamp(44px,8vw,84px)}
+.cover .glow{position:absolute;left:50%;top:18%;width:min(560px,80vw);height:180px;transform:translateX(-50%);background:radial-gradient(ellipse at center,rgba(63,95,168,.22),transparent 70%)}
+.cover-chip{position:absolute;left:16px;bottom:14px;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.85);color:var(--text);font-size:13px}
+.three{background:linear-gradient(180deg,rgba(19,138,82,.07),rgba(19,138,82,.02));border:1px solid rgba(19,138,82,.4);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.three h2{font-size:clamp(20px,2.4vw,26px)}
+.three ol{margin:0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.three li{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:start}
+.three li b{color:var(--gfp);font-size:14px;padding-top:2px}
+.three .ok{color:var(--amber);font-weight:500}
+details.abbr{border-top:1px dashed var(--rule);padding-top:10px}
+details.abbr summary{cursor:pointer;color:var(--info);font-size:14px}
+details.abbr dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:10px 0 0;font-size:14px}
+details.abbr dt{color:var(--amber);font-weight:700}details.abbr dd{margin:0;color:var(--muted)}
+@media (max-width:520px){.three li{grid-template-columns:1fr;gap:2px}}
+.whymath{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+@media (max-width:860px){.whymath{grid-template-columns:1fr}}
+.whybox,.mathbox{border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.whybox{background:rgba(168,50,159,.07);border:1px solid rgba(168,50,159,.4)}
+.whybox h4{margin:0;color:var(--stain);font-size:16px}
+.whybox .row{display:grid;grid-template-columns:76px 1fr;gap:10px}
+.whybox .row b{font-size:13px;color:var(--muted);padding-top:3px}
+.whybox .easy{background:var(--bg);border-radius:8px;padding:10px 12px;border-left:3px solid var(--stain)}
+.mathbox{background:rgba(208,69,127,.06);border:1px solid rgba(208,69,127,.45)}
+.mathbox h4{margin:0;color:var(--c-asst);font-size:16px}
+.mathbox .who{display:flex;gap:10px;align-items:flex-start}
+.mathbox .who img{width:52px;height:52px;flex:none;border-radius:10px;border:2px solid var(--c-asst);background:var(--panel2);object-fit:contain}
+.mathbox .who p{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:8px 12px;flex:1;min-width:0}
+.mathbox .school{font-size:14px;color:var(--muted)}.mathbox .school b{color:var(--amber)}
+.mathbox .fx{font-variant-numeric:tabular-nums;background:var(--bg);border:1px dashed var(--rule);border-radius:8px;padding:10px 12px;overflow-x:auto;white-space:normal;word-break:keep-all;font-size:17px;line-height:1.6}
+.mathbox table{border-collapse:collapse;width:100%;font-size:14px}
+.mathbox td{border-bottom:1px solid var(--rule);padding:6px 8px;vertical-align:top}
+.mathbox td:first-child{white-space:nowrap;color:var(--amber);font-weight:700;width:1%}
+.mathbox .try{background:var(--bg);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;font-variant-numeric:tabular-nums}
+.mathbox .try b{color:var(--gfp)}
+.talk{display:flex;flex-direction:column;gap:10px;border-left:3px solid var(--rule);padding-left:14px}
+.talk .say img.who{width:52px;height:52px}
+details.code{background:var(--panel);border:1px dashed var(--rule);border-radius:10px;padding:12px 16px}
+details.code summary{cursor:pointer;color:var(--muted);font-size:14px}
+details.code table{border-collapse:collapse;width:100%;margin-top:10px;font-size:14px}
+details.code td{border-bottom:1px solid var(--rule);padding:8px;vertical-align:top}
+details.code code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;color:var(--gfp);white-space:pre-wrap;word-break:break-all}
+.changes{background:rgba(210,63,44,.06);border:1px solid rgba(210,63,44,.35);border-radius:10px;padding:16px 18px}
+.changes h4{margin:0 0 8px;color:var(--eye);font-size:15px}
+.changes li+li{margin-top:6px}
+.notice{font-size:14px;color:var(--amber)}
+.series{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.series a{display:flex;flex-direction:column;gap:6px;background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:16px;color:var(--text);text-decoration:none;min-width:0}
+.series a:hover{border-color:var(--stat)}
+.series a small{color:var(--muted)}
+.series a b{color:var(--stat);font-size:13px}
+.series a.review{border-color:rgba(183,120,0,.55);background:rgba(183,120,0,.06)}
+.series a.review b{color:var(--amber)}
+@media (max-width:860px){.series{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.series{grid-template-columns:1fr}}
+.pnav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.pnav a{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:10px 14px;text-decoration:none;color:var(--text);font-size:14px}
+.prac{background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.prac h4{margin:0;font-size:16px;color:var(--info)}
+.prac .inrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.prac input{font:inherit;background:var(--bg);color:var(--text);border:1px solid var(--rule);border-radius:8px;padding:6px 10px;width:140px}
+.prac .sol{display:none;flex-direction:column;gap:8px;border-top:1px dashed var(--rule);padding-top:10px}
+.prac.open .sol{display:flex}
+.prac .sol ol{margin:0;padding-left:20px}
+.prac .miss{color:var(--c-fly);font-size:14px}
+.scoreboard{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.scoreboard div{background:var(--panel);border:1px solid var(--rule);border-radius:8px;padding:8px 10px;font-size:14px;display:flex;flex-direction:column}
+.scoreboard div b{font-size:18px;font-variant-numeric:tabular-nums}
+.scoreboard div.low b{color:var(--amber)}.scoreboard div.good b{color:var(--gfp)}
+.sumcard{background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.sumcard h3{font-size:17px}.sumcard h3 a{color:var(--text)}
+.sumcard ul{margin:0;padding-left:18px}
+.sumgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:760px){.sumgrid{grid-template-columns:1fr}}
+.sliderow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+canvas.sim{display:block;width:100%}
+
+/* 동적 대시보드 */
+.dash{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--seq)}
+.dhead{display:flex;flex-wrap:wrap;gap:12px 20px;justify-content:space-between;align-items:flex-start}
+.dhead h3{font-size:21px;margin-top:4px}
+.dbtns{display:flex;flex-wrap:wrap;gap:8px}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.dgrid .cwrap{background:#fff;border:1px solid var(--rule);border-radius:8px;padding:6px;min-width:0}
+.dash .kpis.k4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.dash .ctrl .group{min-width:min(100%,230px);flex:1 1 230px}
+.dash .ctrl input[type=range]{flex:1 1 120px;min-width:0}
+.dtabs{display:flex;flex-wrap:wrap;gap:6px}
+.dtabs .bt[aria-pressed=true]{background:var(--seq);border-color:var(--seq);color:#fff}
+@media (max-width:760px){.dash .kpi b{font-size:18px;overflow-wrap:anywhere}.dgrid{grid-template-columns:1fr}.dash .kpis.k4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* 초보자 읽기 개정(ai-lab-extend) */
+body{line-height:1.8}
+.level>.wrap.stack{gap:36px}
+.pair{gap:20px}.pair>div{padding:20px 22px}
+.panel{padding:22px;gap:18px}
+.explain{padding:22px 24px;gap:12px}
+.explain ol,.explain ul{display:flex;flex-direction:column;gap:10px;padding-left:22px}
+.whymath{grid-template-columns:1fr;gap:12px}
+.keyline{display:flex;flex-direction:column;gap:6px;background:#fff;border:2px solid var(--seq);border-radius:14px;padding:18px 22px;box-shadow:0 2px 0 rgba(63,95,168,.12)}
+.keyline .kl-tag{font-size:13px;font-weight:700;color:var(--seq);letter-spacing:.02em}
+.keyline p{font-size:clamp(18px,2.2vw,21px);font-weight:700;line-height:1.6;color:var(--text);margin:0}
+details.more{background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:12px 16px}
+details.more>summary{cursor:pointer;font-weight:600;color:var(--seq);list-style:none;display:flex;gap:8px;align-items:center}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::before{content:"＋";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--seq);color:#fff;font-size:14px;flex:none}
+details.more[open]>summary::before{content:"－"}
+details.more[open]>summary{margin-bottom:12px}
+details.mathmore .mathbox{border:0;padding:4px 0 0;background:transparent}
+.explain details.more{background:transparent;border:0;padding:0}
+.three .route{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;background:#fff;border:1px dashed rgba(19,138,82,.5);border-radius:10px;padding:12px 16px}
+.three .route p{margin:0;flex:1 1 320px}
+@media (max-width:700px){section.level{padding-block:64px}.level>.wrap.stack{gap:28px}.keyline{padding:16px 18px}}
+.whybox .row{grid-template-columns:7.5em 1fr}
+.whybox .row b{white-space:nowrap}
+@media (max-width:560px){.whybox .row{grid-template-columns:1fr;gap:2px}}
+
+.keyline.small{padding:12px 16px;border-width:1.5px;box-shadow:none}
+.keyline.small ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px;line-height:1.6}
+.sumcard details.more{padding:10px 14px}
+
+/* 목차 머리(표지 모자이크)와 썸네일 */
+.ihero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:28px;align-items:center}
+.ihero .wrap+.wrap{margin-top:22px}
+.mosaic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.mosaic .mt{position:relative;display:block;aspect-ratio:16/9;border-radius:8px;background-size:cover;background-position:center;border:1px solid var(--rule);box-shadow:0 2px 6px rgba(30,35,60,.10);transition:transform .15s,box-shadow .15s;overflow:hidden}
+.mosaic .mt:hover,.mosaic .mt:focus-visible{transform:translateY(-2px);box-shadow:0 6px 14px rgba(30,35,60,.18)}
+.mosaic .mt span{position:absolute;left:5px;top:5px;background:rgba(255,255,255,.92);color:var(--text);font:700 11px/1 system-ui,sans-serif;padding:4px 6px;border-radius:5px}
+.mosaic .mt .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.series a .ct{display:block;aspect-ratio:16/9;margin:-16px -16px 10px;border-radius:10px 10px 0 0;background-size:cover;background-position:center;border-bottom:1px solid var(--rule)}
+.kgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.kcard{background:#fff;border:1px solid var(--rule);border-left:4px solid var(--seq);border-radius:10px;padding:14px 16px}
+.kcard a{font-weight:700;color:var(--text);text-decoration:none}.kcard a b{color:var(--seq)}
+.kcard ol{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px;line-height:1.6}
+@media (max-width:900px){.ihero-grid{grid-template-columns:1fr}.mosaic{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.mosaic .mt span{font-size:10px;padding:3px 4px}}
+@media (max-width:420px){.mosaic{grid-template-columns:repeat(3,minmax(0,1fr))}.kgrid{grid-template-columns:1fr}}
+
+/* 인턴 심판·방청석 */
+.say[data-who=sia] img.who,.say[data-who=sia]>div{border-color:var(--c-sia)}.say[data-who=sia] .name{color:var(--c-sia)}
+.say[data-who=moa] img.who,.say[data-who=moa]>div{border-color:var(--c-moa)}.say[data-who=moa] .name{color:var(--c-moa)}
+.say[data-who=x1] img.who,.say[data-who=x1]>div,.say[data-who=x2] img.who,.say[data-who=x2]>div,.say[data-who=x3] img.who,.say[data-who=x3]>div{border-color:var(--c-x);border-style:dashed}.say[data-who=x1] .name,.say[data-who=x2] .name,.say[data-who=x3] .name{color:var(--c-x)}
+.duel .referee{max-width:720px;margin:0 auto 6px;width:100%}
+.duel .audience{display:flex;align-items:flex-end;justify-content:center;gap:10px;flex-wrap:wrap;padding:8px 12px;border-top:1px dashed var(--rule);border-bottom:1px dashed var(--rule)}
+.duel .audience img.aud{width:52px;height:52px;object-fit:contain;filter:saturate(.9)}
+.duel .audience span{font-size:13px;flex-basis:100%;text-align:center}
+
+/* 연구실 식구 — 아홉 식구 같은 크기 */
+.crew{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;align-items:stretch}
+.crewcard{background:var(--panel);border:1px solid var(--rule);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:6px;align-items:flex-start;min-width:0}
+.crewcard .ctag{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.02em}
+.crewcard img,.crewcard .lkimg{width:72px;height:72px;object-fit:contain;flex:none}
+.crewcard p{font-size:14px;margin:0}
+.crewcard.locked{background:repeating-linear-gradient(135deg,var(--panel) 0 10px,#fff 10px 20px)}
+.crewcard .lkimg{position:relative;display:grid;place-items:center;border-radius:10px;background:#e9ebf2}
+.crewcard .lkimg .q{font:800 30px/1 system-ui,sans-serif;color:#9aa0b4}
+.crewcard .lkimg.open{background:transparent}.crewcard .lkimg.open .q{display:none}
+.crewcard .lk{position:absolute;inset:0}.crewcard .lk[hidden]{display:none}
+.crewcard .lockbtn{margin-top:auto;width:100%;font-size:13px;padding:6px 8px}
+@media (max-width:1100px){.crew{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.crew{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* 썸네일이 없을 때의 자리 */
+.mosaic .mt:not([class*=th-]),.mosaic .mt{background-color:#eef2f8}
+.chapx a .ct{background-color:#eef2f8}
+/* 그래프로 검증 · 생성 AI 프롬프트 */
+.panel.verify{border-left:4px solid var(--c-g,#138a52)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.pcard{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.pcard .phead{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.pcard pre{white-space:pre-wrap;word-break:keep-all;font-size:13.5px;line-height:1.55;background:#f6f8fb;border-radius:8px;padding:10px 12px;margin:0;max-height:300px;overflow:auto}
+
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<div id="tip" role="tooltip"></div>
+<nav class="top" aria-label="섹션 바로가기"><div class="wrap"><a class="logo" href="index.html"><i></i>미시경제학 연구실 2</a><div class="links"><a href="index.html">목차</a><a href="#list">색인어</a><a href="KG_terms_index.csv">CSV</a></div></div></nav><style>.tq{width:100%;border-collapse:collapse;font-size:15px;table-layout:fixed}.tq td,.tq th{overflow-wrap:anywhere;word-break:keep-all}.tq th:nth-child(3),.tq td:nth-child(3){width:30%}@media(max-width:600px){.tq{font-size:13px}}.tq th,.tq td{border-bottom:1px solid #e3e6ef;padding:7px 8px;text-align:left;vertical-align:top}.tq th{background:#f6f7fb}.jh{margin:26px 0 6px;font-size:18px}.jh code{background:#eef2ff;border-radius:6px;padding:2px 7px;margin-right:6px}.jsub{color:#5d6278;font-size:14px;margin:0 0 6px}.jtoc{display:flex;flex-wrap:wrap;gap:6px}.jtoc a{border:1px solid #d9dceb;border-radius:999px;padding:3px 10px;font-size:14px;text-decoration:none}</style><header class="hero" id="hero"><div class="wrap stack"><span class="eyebrow">2권 · 경제학 색인어</span><h1>2권 경제학 색인어 — JEL 분류로 찾아보기</h1><p class="lead2">2권의 개념·용어 <b>220개</b>를 경제학 표준 분류인 <b>JEL 코드</b>(미국경제학회)로 묶었어요. 개념마다 대표 코드 하나를 붙였고, 각 장의 지식 색인과 온톨로지 꾸러미(JSON-LD·Turtle)에도 같은 코드가 <code>dct:subject</code>로 들어가 있어요. 외부 시소러스(위키데이터·STW) 연결은 확인된 것만 싣습니다 — 현재 <b>0개</b>.</p><div class="jtoc"><a href="#jel-C13"><b>C13</b> 추정 일반 (8)</a><a href="#jel-C61"><b>C61</b> 최적화 기법·계획 모형·동태 분석 (12)</a><a href="#jel-C62"><b>C62</b> 균형의 존재와 안정 조건 (6)</a><a href="#jel-C65"><b>C65</b> 기타 수학 도구 (16)</a><a href="#jel-C72"><b>C72</b> 비협조 게임 (6)</a><a href="#jel-C73"><b>C73</b> 동태·반복 게임 (5)</a><a href="#jel-D11"><b>D11</b> 소비자 이론 (32)</a><a href="#jel-D15"><b>D15</b> 가계의 기간 간 선택·생애주기와 저축 (4)</a><a href="#jel-D21"><b>D21</b> 기업 행동 이론 (13)</a><a href="#jel-D23"><b>D23</b> 조직 행동·거래비용·재산권 (2)</a><a href="#jel-D24"><b>D24</b> 생산·비용·자본·생산성 (30)</a><a href="#jel-D25"><b>D25</b> 기업의 기간 간 선택: 투자·설비·자금조달 (2)</a><a href="#jel-D33"><b>D33</b> 요소소득 분배 (1)</a><a href="#jel-D41"><b>D41</b> 완전경쟁 (8)</a><a href="#jel-D42"><b>D42</b> 독점 (6)</a><a href="#jel-D43"><b>D43</b> 과점과 불완전경쟁 (5)</a><a href="#jel-D51"><b>D51</b> 교환경제와 생산경제 (11)</a><a href="#jel-D52"><b>D52</b> 불완비 시장 (2)</a><a href="#jel-D61"><b>D61</b> 배분 효율·비용편익 분석 (12)</a><a href="#jel-D62"><b>D62</b> 외부성 (4)</a><a href="#jel-D63"><b>D63</b> 형평·정의·불평등과 규범 기준 (3)</a><a href="#jel-D71"><b>D71</b> 사회선택 (1)</a><a href="#jel-D81"><b>D81</b> 위험·불확실성 아래 의사결정 기준 (7)</a><a href="#jel-D82"><b>D82</b> 비대칭 정보·메커니즘 설계 (5)</a><a href="#jel-D83"><b>D83</b> 탐색·학습·정보와 지식 (4)</a><a href="#jel-G11"><b>G11</b> 포트폴리오 선택·투자 결정 (1)</a><a href="#jel-G12"><b>G12</b> 자산가격 결정 (5)</a><a href="#jel-H23"><b>H23</b> 외부성·환경세와 보조금 (2)</a><a href="#jel-H41"><b>H41</b> 공공재 (6)</a><a href="#jel-L11"><b>L11</b> 생산·가격 결정과 시장구조 (1)</a></div></div></header><section class="level" id="list"><div class="wrap stack"><h2 class="jh" id="jel-C13"><code>C13</code>추정 일반</h2><p class="jsub">Estimation: General</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>내생변수</b></td><td>endogenous variable</td><td><a href="12_econometrics.html#kg">12_econometrics</a></td></tr><tr><td><b>도구변수</b></td><td>instrumental variable</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>동시성</b></td><td>simultaneity</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>동시성 편의</b></td><td>simultaneity bias</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>배제조건</b></td><td>exclusion restriction</td><td><a href="12_econometrics.html#kg">12_econometrics</a></td></tr><tr><td><b>약한 도구</b></td><td>weak instrument</td><td><a href="12_econometrics.html#kg">12_econometrics</a></td></tr><tr><td><b>최소제곱</b></td><td>ordinary least squares</td><td><a href="12_econometrics.html#kg">12_econometrics</a></td></tr><tr><td><b>확률극한</b></td><td>probability limit</td><td><a href="12_econometrics.html#kg">12_econometrics</a></td></tr></tbody></table><h2 class="jh" id="jel-C61"><code>C61</code>최적화 기법·계획 모형·동태 분석</h2><p class="jsub">Optimization Techniques • Programming Models • Dynamic Analysis</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>KKT 조건</b></td><td>Karush-Kuhn-Tucker conditions</td><td><a href="27_optimization.html#kg">27_optimization</a></td></tr><tr><td><b>가능집합</b></td><td>feasible set</td><td><a href="27_optimization.html#kg">27_optimization</a></td></tr><tr><td><b>가치함수</b></td><td>value function</td><td><a href="03_profit_function.html#kg">03_profit_function</a></td></tr><tr><td><b>그림자가격</b></td><td>shadow price</td><td><a href="27_optimization.html#kg">27_optimization</a></td></tr><tr><td><b>라그랑주 승수</b></td><td>Lagrange multiplier</td><td><a href="04_cost_minimization.html#kg">04_cost_minimization</a></td></tr><tr><td><b>라그랑지안</b></td><td>Lagrangian</td><td><a href="27_optimization.html#kg">27_optimization</a></td></tr><tr><td><b>벨만 방정식</b></td><td>Bellman equation</td><td><a href="19_time.html#kg">19_time</a></td></tr><tr><td><b>상보성</b></td><td>complementary slackness</td><td><a href="27_optimization.html#kg">27_optimization</a></td></tr><tr><td><b>오일러·벨만 방정식</b></td><td>Euler and Bellman equations</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>제약 최적화</b></td><td>constrained optimization</td><td><a href="27_optimization.html#kg">27_optimization</a></td></tr><tr><td><b>제약자격조건</b></td><td>constraint qualification</td><td><a href="27_optimization.html#kg">27_optimization</a></td></tr><tr><td><b>포락정리</b></td><td>envelope theorem</td><td><a href="27_optimization.html#kg">27_optimization</a></td></tr></tbody></table><h2 class="jh" id="jel-C62"><code>C62</code>균형의 존재와 안정 조건</h2><p class="jsub">Existence and Stability Conditions of Equilibrium</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>가격조정의 안정성</b></td><td>tâtonnement stability</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>고정점 정리</b></td><td>fixed point theorem</td><td><a href="21_equilibrium_analysis.html#kg">21_equilibrium_analysis</a></td></tr><tr><td><b>국소 안정성</b></td><td>local stability</td><td><a href="21_equilibrium_analysis.html#kg">21_equilibrium_analysis</a></td></tr><tr><td><b>균형의 존재와 유일성</b></td><td>existence and uniqueness of equilibrium</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>비교정학</b></td><td>comparative statics</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>선형화</b></td><td>linearization</td><td><a href="21_equilibrium_analysis.html#kg">21_equilibrium_analysis</a></td></tr></tbody></table><h2 class="jh" id="jel-C65"><code>C65</code>기타 수학 도구</h2><p class="jsub">Miscellaneous Mathematical Tools</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>고유값</b></td><td>eigenvalue</td><td><a href="26_mathematics.html#kg">26_mathematics</a></td></tr><tr><td><b>기울기</b></td><td>gradient</td><td><a href="26_mathematics.html#kg">26_mathematics</a></td></tr><tr><td><b>동차함수</b></td><td>homogeneous function</td><td><a href="01_technology.html#kg">01_technology</a></td></tr><tr><td><b>방향 미분</b></td><td>directional derivative</td><td><a href="26_mathematics.html#kg">26_mathematics</a></td></tr><tr><td><b>볼록포</b></td><td>convex hull</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>볼록함수</b></td><td>convex function</td><td><a href="03_profit_function.html#kg">03_profit_function</a></td></tr><tr><td><b>안장점</b></td><td>saddle point</td><td><a href="26_mathematics.html#kg">26_mathematics</a></td></tr><tr><td><b>암묵함수 정리</b></td><td>implicit function theorem</td><td><a href="26_mathematics.html#kg">26_mathematics</a></td></tr><tr><td><b>암묵함수정리</b></td><td>implicit function theorem</td><td><a href="21_equilibrium_analysis.html#kg">21_equilibrium_analysis</a></td></tr><tr><td><b>오목함수</b></td><td>concave function</td><td><a href="05_cost_function.html#kg">05_cost_function</a></td></tr><tr><td><b>오일러 정리</b></td><td>Euler&#x27;s homogeneous function theorem</td><td><a href="26_mathematics.html#kg">26_mathematics</a></td></tr><tr><td><b>음의 준정부호</b></td><td>negative semidefinite</td><td><a href="09_demand.html#kg">09_demand</a></td></tr><tr><td><b>젠센 부등식</b></td><td>Jensen&#x27;s inequality</td><td><a href="11_uncertainty.html#kg">11_uncertainty</a></td></tr><tr><td><b>준오목</b></td><td>quasiconcave</td><td><a href="26_mathematics.html#kg">26_mathematics</a></td></tr><tr><td><b>코시-슈바르츠 부등식</b></td><td>Cauchy-Schwarz inequality</td><td><a href="18_production.html#kg">18_production</a></td></tr><tr><td><b>헤시안의 정부호성</b></td><td>definiteness of the Hessian</td><td><a href="26_mathematics.html#kg">26_mathematics</a></td></tr></tbody></table><h2 class="jh" id="jel-C72"><code>C72</code>비협조 게임</h2><p class="jsub">Noncooperative Games</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>내시균형</b></td><td>Nash equilibrium</td><td><a href="15_game_theory.html#kg">15_game_theory</a></td></tr><tr><td><b>무차별 원리</b></td><td>indifference principle</td><td><a href="15_game_theory.html#kg">15_game_theory</a></td></tr><tr><td><b>전략</b></td><td>strategy</td><td><a href="15_game_theory.html#kg">15_game_theory</a></td></tr><tr><td><b>지배전략</b></td><td>dominant strategy</td><td><a href="15_game_theory.html#kg">15_game_theory</a></td></tr><tr><td><b>최적반응</b></td><td>best response</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>혼합전략 균형</b></td><td>mixed strategy equilibrium</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr></tbody></table><h2 class="jh" id="jel-C73"><code>C73</code>동태·반복 게임</h2><p class="jsub">Stochastic and Dynamic Games • Evolutionary Games • Repeated Games</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>반복게임과 담합</b></td><td>collusion in repeated games</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>방아쇠 전략</b></td><td>grim trigger strategy</td><td><a href="16_oligopoly.html#kg">16_oligopoly</a></td></tr><tr><td><b>부분게임완전성</b></td><td>subgame perfection</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>역진귀납</b></td><td>backward induction</td><td><a href="15_game_theory.html#kg">15_game_theory</a></td></tr><tr><td><b>할인인자</b></td><td>discount factor</td><td><a href="16_oligopoly.html#kg">16_oligopoly</a></td></tr></tbody></table><h2 class="jh" id="jel-D11"><code>D11</code>소비자 이론</h2><p class="jsub">Consumer Economics: Theory</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>GARP</b></td><td>generalized axiom of revealed preference</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>간접효용함수</b></td><td>indirect utility function</td><td><a href="07_utility_maximization.html#kg">07_utility_maximization</a></td></tr><tr><td><b>경계해</b></td><td>corner solution</td><td><a href="07_utility_maximization.html#kg">07_utility_maximization</a></td></tr><tr><td><b>국소 비포화</b></td><td>local nonsatiation</td><td><a href="08_choice.html#kg">08_choice</a></td></tr><tr><td><b>대체효과</b></td><td>substitution effect</td><td><a href="10_consumer_surplus.html#kg">10_consumer_surplus</a></td></tr><tr><td><b>로이 항등식</b></td><td>Roy&#x27;s identity</td><td><a href="09_demand.html#kg">09_demand</a></td></tr><tr><td><b>보상선택</b></td><td>compensated bundle</td><td><a href="10_consumer_surplus.html#kg">10_consumer_surplus</a></td></tr><tr><td><b>보상수요</b></td><td>Hicksian demand</td><td><a href="07_utility_maximization.html#kg">07_utility_maximization</a></td></tr><tr><td><b>비동조성</b></td><td>non-homotheticity</td><td><a href="09_demand.html#kg">09_demand</a></td></tr><tr><td><b>생계 소비</b></td><td>subsistence quantity</td><td><a href="09_demand.html#kg">09_demand</a></td></tr><tr><td><b>서수적 효용</b></td><td>ordinal utility</td><td><a href="07_utility_maximization.html#kg">07_utility_maximization</a></td></tr><tr><td><b>소득탄력성</b></td><td>income elasticity</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>소득효과</b></td><td>income effect</td><td><a href="10_consumer_surplus.html#kg">10_consumer_surplus</a></td></tr><tr><td><b>수요 탄력성</b></td><td>price elasticity of demand</td><td><a href="14_monopoly.html#kg">14_monopoly</a></td></tr><tr><td><b>스톤-기어리 수요</b></td><td>Stone-Geary demand</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>슬러츠키 행렬</b></td><td>Slutsky matrix</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>식별</b></td><td>identification</td><td><a href="08_choice.html#kg">08_choice</a></td></tr><tr><td><b>아프리아트 정리</b></td><td>Afriat&#x27;s theorem</td><td><a href="08_choice.html#kg">08_choice</a></td></tr><tr><td><b>엥겔 곡선</b></td><td>Engel curve</td><td><a href="09_demand.html#kg">09_demand</a></td></tr><tr><td><b>여유소득</b></td><td>supernumerary income</td><td><a href="09_demand.html#kg">09_demand</a></td></tr><tr><td><b>예산집합</b></td><td>budget set</td><td><a href="07_utility_maximization.html#kg">07_utility_maximization</a></td></tr><tr><td><b>완비성</b></td><td>completeness</td><td><a href="08_choice.html#kg">08_choice</a></td></tr><tr><td><b>이행성</b></td><td>transitivity</td><td><a href="08_choice.html#kg">08_choice</a></td></tr><tr><td><b>준선형 선호</b></td><td>quasilinear preferences</td><td><a href="10_consumer_surplus.html#kg">10_consumer_surplus</a></td></tr><tr><td><b>지출함수</b></td><td>expenditure function</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>지출행렬</b></td><td>expenditure matrix</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>직접 현시선호</b></td><td>directly revealed preferred</td><td><a href="08_choice.html#kg">08_choice</a></td></tr><tr><td><b>한계대체율</b></td><td>marginal rate of substitution</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>현시선호의 식별 한계</b></td><td>limits of revealed preference</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>효용극대화</b></td><td>utility maximization</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>효용함수</b></td><td>utility function</td><td><a href="07_utility_maximization.html#kg">07_utility_maximization</a></td></tr><tr><td><b>힉스 분해</b></td><td>Hicksian decomposition</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr></tbody></table><h2 class="jh" id="jel-D15"><code>D15</code>가계의 기간 간 선택·생애주기와 저축</h2><p class="jsub">Intertemporal Household Choice • Life Cycle Models and Saving</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>시간선호</b></td><td>time preference</td><td><a href="19_time.html#kg">19_time</a></td></tr><tr><td><b>완전자본시장</b></td><td>perfect capital market</td><td><a href="19_time.html#kg">19_time</a></td></tr><tr><td><b>할인</b></td><td>discounting</td><td><a href="19_time.html#kg">19_time</a></td></tr><tr><td><b>현재가치</b></td><td>present value</td><td><a href="19_time.html#kg">19_time</a></td></tr></tbody></table><h2 class="jh" id="jel-D21"><code>D21</code>기업 행동 이론</h2><p class="jsub">Firm Behavior: Theory</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>공급함수</b></td><td>supply function</td><td><a href="03_profit_function.html#kg">03_profit_function</a></td></tr><tr><td><b>공헌이익</b></td><td>contribution margin</td><td><a href="02_profit_maximization.html#kg">02_profit_maximization</a></td></tr><tr><td><b>내부해</b></td><td>interior solution</td><td><a href="02_profit_maximization.html#kg">02_profit_maximization</a></td></tr><tr><td><b>동차성</b></td><td>homogeneity</td><td><a href="03_profit_function.html#kg">03_profit_function</a></td></tr><tr><td><b>매몰비용</b></td><td>sunk cost</td><td><a href="02_profit_maximization.html#kg">02_profit_maximization</a></td></tr><tr><td><b>상대가격</b></td><td>relative price</td><td><a href="03_profit_function.html#kg">03_profit_function</a></td></tr><tr><td><b>요소수요</b></td><td>factor demand</td><td><a href="03_profit_function.html#kg">03_profit_function</a></td></tr><tr><td><b>이윤극대화</b></td><td>profit maximization</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>이윤함수</b></td><td>profit function</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>조업중단 판단</b></td><td>shutdown decision</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>한계생산가치</b></td><td>value of marginal product</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>호텔링 보조정리</b></td><td>Hotelling&#x27;s lemma</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>회피 가능한 고정비</b></td><td>avoidable fixed cost</td><td><a href="02_profit_maximization.html#kg">02_profit_maximization</a></td></tr></tbody></table><h2 class="jh" id="jel-D23"><code>D23</code>조직 행동·거래비용·재산권</h2><p class="jsub">Organizational Behavior • Transaction Costs • Property Rights</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>거래비용</b></td><td>transaction cost</td><td><a href="24_externalities.html#kg">24_externalities</a></td></tr><tr><td><b>코즈 정리</b></td><td>Coase theorem</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr></tbody></table><h2 class="jh" id="jel-D24"><code>D24</code>생산·비용·자본·생산성</h2><p class="jsub">Production • Cost • Capital • Capital, Total Factor, and Multifactor Productivity • Capacity</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>1차 동차</b></td><td>homogeneous of degree one</td><td><a href="05_cost_function.html#kg">05_cost_function</a></td></tr><tr><td><b>MRTS</b></td><td>marginal rate of technical substitution</td><td><a href="18_production.html#kg">18_production</a></td></tr><tr><td><b>규모수익</b></td><td>returns to scale</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>규모수익불변</b></td><td>constant returns to scale</td><td><a href="18_production.html#kg">18_production</a></td></tr><tr><td><b>단기비용</b></td><td>short-run cost</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>등량곡선</b></td><td>isoquant</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>등비용선</b></td><td>isocost line</td><td><a href="04_cost_minimization.html#kg">04_cost_minimization</a></td></tr><tr><td><b>등이윤선</b></td><td>isoprofit line (supporting line)</td><td><a href="06_duality.html#kg">06_duality</a></td></tr><tr><td><b>르 샤틀리에 원리</b></td><td>Le Chatelier principle</td><td><a href="05_cost_function.html#kg">05_cost_function</a></td></tr><tr><td><b>분할 가능성</b></td><td>divisibility</td><td><a href="06_duality.html#kg">06_duality</a></td></tr><tr><td><b>비용최소화</b></td><td>cost minimization</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>비용함수</b></td><td>cost function</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>비용함수의 성질</b></td><td>properties of the cost function</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>산출탄력성</b></td><td>output elasticity</td><td><a href="01_technology.html#kg">01_technology</a></td></tr><tr><td><b>생산가능집합</b></td><td>production possibility set</td><td><a href="01_technology.html#kg">01_technology</a></td></tr><tr><td><b>생산의 쌍대성</b></td><td>duality in production</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>생산함수</b></td><td>production function</td><td><a href="01_technology.html#kg">01_technology</a></td></tr><tr><td><b>셰퍼드 보조정리</b></td><td>Shephard&#x27;s lemma</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>수확 체감</b></td><td>diminishing returns</td><td><a href="01_technology.html#kg">01_technology</a></td></tr><tr><td><b>실질임금</b></td><td>real wage</td><td><a href="06_duality.html#kg">06_duality</a></td></tr><tr><td><b>이산 공정 기술</b></td><td>activity analysis</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>이윤함수의 1차 동차성</b></td><td>homogeneity of degree one</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>자유처분</b></td><td>free disposal</td><td><a href="01_technology.html#kg">01_technology</a></td></tr><tr><td><b>장기비용</b></td><td>long-run cost</td><td><a href="05_cost_function.html#kg">05_cost_function</a></td></tr><tr><td><b>전환 가격</b></td><td>switching price</td><td><a href="06_duality.html#kg">06_duality</a></td></tr><tr><td><b>조건부 요소수요</b></td><td>conditional factor demand</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>평균비용</b></td><td>average cost</td><td><a href="04_cost_minimization.html#kg">04_cost_minimization</a></td></tr><tr><td><b>한계비용</b></td><td>marginal cost</td><td><a href="04_cost_minimization.html#kg">04_cost_minimization</a></td></tr><tr><td><b>한계생산</b></td><td>marginal product</td><td><a href="r1_producer_review.html#kg">r1_producer_review</a></td></tr><tr><td><b>효율적 규모</b></td><td>efficient scale</td><td><a href="13_competitive_markets.html#kg">13_competitive_markets</a></td></tr></tbody></table><h2 class="jh" id="jel-D25"><code>D25</code>기업의 기간 간 선택: 투자·설비·자금조달</h2><p class="jsub">Intertemporal Firm Choice: Investment, Capacity, and Financing</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>순현재가치</b></td><td>net present value</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>피셔 분리</b></td><td>Fisher separation</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr></tbody></table><h2 class="jh" id="jel-D33"><code>D33</code>요소소득 분배</h2><p class="jsub">Factor Income Distribution</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>노동 몫 비율</b></td><td>labor share of output</td><td><a href="04_cost_minimization.html#kg">04_cost_minimization</a></td></tr></tbody></table><h2 class="jh" id="jel-D41"><code>D41</code>완전경쟁</h2><p class="jsub">Perfect Competition</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>가격수용자</b></td><td>price taker</td><td><a href="13_competitive_markets.html#kg">13_competitive_markets</a></td></tr><tr><td><b>경쟁시장 균형</b></td><td>competitive equilibrium</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>기업 공급곡선</b></td><td>firm supply curve</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>생산자잉여</b></td><td>producer surplus</td><td><a href="13_competitive_markets.html#kg">13_competitive_markets</a></td></tr><tr><td><b>시장 공급</b></td><td>market supply</td><td><a href="13_competitive_markets.html#kg">13_competitive_markets</a></td></tr><tr><td><b>자유진입</b></td><td>free entry</td><td><a href="13_competitive_markets.html#kg">13_competitive_markets</a></td></tr><tr><td><b>장기 경쟁균형</b></td><td>long-run competitive equilibrium</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>평균가변비용</b></td><td>average variable cost</td><td><a href="13_competitive_markets.html#kg">13_competitive_markets</a></td></tr></tbody></table><h2 class="jh" id="jel-D42"><code>D42</code>독점</h2><p class="jsub">Monopoly</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>가격차별</b></td><td>price discrimination</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>독점 가격 결정</b></td><td>monopoly pricing</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>독점과 가격상한</b></td><td>price ceiling under monopoly</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>러너 지수</b></td><td>Lerner index</td><td><a href="14_monopoly.html#kg">14_monopoly</a></td></tr><tr><td><b>재판매</b></td><td>resale (arbitrage)</td><td><a href="14_monopoly.html#kg">14_monopoly</a></td></tr><tr><td><b>한계수입</b></td><td>marginal revenue</td><td><a href="14_monopoly.html#kg">14_monopoly</a></td></tr></tbody></table><h2 class="jh" id="jel-D43"><code>D43</code>과점과 불완전경쟁</h2><p class="jsub">Oligopoly and Other Forms of Market Imperfection</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>과점</b></td><td>oligopoly</td><td><a href="16_oligopoly.html#kg">16_oligopoly</a></td></tr><tr><td><b>베르트랑 경쟁</b></td><td>Bertrand competition</td><td><a href="16_oligopoly.html#kg">16_oligopoly</a></td></tr><tr><td><b>슈타켈베르크 균형</b></td><td>Stackelberg equilibrium</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr><tr><td><b>카르텔</b></td><td>cartel</td><td><a href="16_oligopoly.html#kg">16_oligopoly</a></td></tr><tr><td><b>쿠르노 균형</b></td><td>Cournot equilibrium</td><td><a href="r3_market_review.html#kg">r3_market_review</a></td></tr></tbody></table><h2 class="jh" id="jel-D51"><code>D51</code>교환경제와 생산경제</h2><p class="jsub">Exchange and Production Economies</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>계약곡선</b></td><td>contract curve</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>부존</b></td><td>endowment</td><td><a href="17_exchange.html#kg">17_exchange</a></td></tr><tr><td><b>부존 수요</b></td><td>demand with endowments</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>생산가능경계</b></td><td>production possibility frontier</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>순수교환경제</b></td><td>pure exchange economy</td><td><a href="17_exchange.html#kg">17_exchange</a></td></tr><tr><td><b>에지워스 상자</b></td><td>Edgeworth box</td><td><a href="17_exchange.html#kg">17_exchange</a></td></tr><tr><td><b>왈라스 법칙</b></td><td>Walras&#x27; law</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>요소상자</b></td><td>factor box</td><td><a href="18_production.html#kg">18_production</a></td></tr><tr><td><b>일반균형</b></td><td>general equilibrium</td><td><a href="17_exchange.html#kg">17_exchange</a></td></tr><tr><td><b>총초과수요</b></td><td>aggregate excess demand</td><td><a href="21_equilibrium_analysis.html#kg">21_equilibrium_analysis</a></td></tr><tr><td><b>한계변환율</b></td><td>marginal rate of transformation</td><td><a href="18_production.html#kg">18_production</a></td></tr></tbody></table><h2 class="jh" id="jel-D52"><code>D52</code>불완비 시장</h2><p class="jsub">Incomplete Markets</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>불완비시장</b></td><td>incomplete market</td><td><a href="20_asset_markets.html#kg">20_asset_markets</a></td></tr><tr><td><b>완비시장</b></td><td>complete market</td><td><a href="20_asset_markets.html#kg">20_asset_markets</a></td></tr></tbody></table><h2 class="jh" id="jel-D61"><code>D61</code>배분 효율·비용편익 분석</h2><p class="jsub">Allocative Efficiency • Cost–Benefit Analysis</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>동등변화</b></td><td>equivalent variation</td><td><a href="10_consumer_surplus.html#kg">10_consumer_surplus</a></td></tr><tr><td><b>보상변화</b></td><td>compensating variation</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>사중손실</b></td><td>deadweight loss</td><td><a href="14_monopoly.html#kg">14_monopoly</a></td></tr><tr><td><b>산출 구성의 효율</b></td><td>product-mix efficiency</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>생산효율</b></td><td>production efficiency</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>소비자잉여</b></td><td>consumer surplus</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>제2후생정리</b></td><td>second welfare theorem</td><td><a href="22_welfare.html#kg">22_welfare</a></td></tr><tr><td><b>총잉여</b></td><td>total surplus</td><td><a href="14_monopoly.html#kg">14_monopoly</a></td></tr><tr><td><b>파레토 개선</b></td><td>Pareto improvement</td><td><a href="22_welfare.html#kg">22_welfare</a></td></tr><tr><td><b>파레토 효율</b></td><td>Pareto efficiency</td><td><a href="17_exchange.html#kg">17_exchange</a></td></tr><tr><td><b>효용가능경계</b></td><td>utility possibility frontier</td><td><a href="22_welfare.html#kg">22_welfare</a></td></tr><tr><td><b>후생정리</b></td><td>fundamental welfare theorems</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr></tbody></table><h2 class="jh" id="jel-D62"><code>D62</code>외부성</h2><p class="jsub">Externalities</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>금전적 외부성</b></td><td>pecuniary externality</td><td><a href="24_externalities.html#kg">24_externalities</a></td></tr><tr><td><b>내부화</b></td><td>internalization</td><td><a href="24_externalities.html#kg">24_externalities</a></td></tr><tr><td><b>사회적 한계비용</b></td><td>marginal social cost</td><td><a href="24_externalities.html#kg">24_externalities</a></td></tr><tr><td><b>외부성</b></td><td>externality</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr></tbody></table><h2 class="jh" id="jel-D63"><code>D63</code>형평·정의·불평등과 규범 기준</h2><p class="jsub">Equity, Justice, Inequality, and Other Normative Criteria and Measurement</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>공리주의</b></td><td>utilitarianism</td><td><a href="22_welfare.html#kg">22_welfare</a></td></tr><tr><td><b>사회후생함수</b></td><td>social welfare function</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr><tr><td><b>최소극대 기준</b></td><td>maximin (Rawlsian) criterion</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr></tbody></table><h2 class="jh" id="jel-D71"><code>D71</code>사회선택</h2><p class="jsub">Social Choice • Clubs • Committees • Associations</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>애로 불가능성 정리</b></td><td>Arrow&#x27;s impossibility theorem</td><td><a href="22_welfare.html#kg">22_welfare</a></td></tr></tbody></table><h2 class="jh" id="jel-D81"><code>D81</code>위험·불확실성 아래 의사결정 기준</h2><p class="jsub">Criteria for Decision-Making under Risk and Uncertainty</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>공정 보험료</b></td><td>actuarially fair premium</td><td><a href="11_uncertainty.html#kg">11_uncertainty</a></td></tr><tr><td><b>기대효용</b></td><td>expected utility</td><td><a href="11_uncertainty.html#kg">11_uncertainty</a></td></tr><tr><td><b>보험 수요</b></td><td>insurance demand</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>부하율</b></td><td>loading factor</td><td><a href="11_uncertainty.html#kg">11_uncertainty</a></td></tr><tr><td><b>위험프리미엄</b></td><td>risk premium</td><td><a href="11_uncertainty.html#kg">11_uncertainty</a></td></tr><tr><td><b>위험회피</b></td><td>risk aversion</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr><tr><td><b>확실성등가</b></td><td>certainty equivalent</td><td><a href="r2_consumer_review.html#kg">r2_consumer_review</a></td></tr></tbody></table><h2 class="jh" id="jel-D82"><code>D82</code>비대칭 정보·메커니즘 설계</h2><p class="jsub">Asymmetric and Private Information • Mechanism Design</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>VCG 메커니즘</b></td><td>VCG (Clarke) mechanism</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr><tr><td><b>도덕적 해이</b></td><td>moral hazard</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr><tr><td><b>신호</b></td><td>signaling</td><td><a href="25_information.html#kg">25_information</a></td></tr><tr><td><b>역선택</b></td><td>adverse selection</td><td><a href="25_information.html#kg">25_information</a></td></tr><tr><td><b>유인적합 조건</b></td><td>incentive compatibility constraint</td><td><a href="25_information.html#kg">25_information</a></td></tr></tbody></table><h2 class="jh" id="jel-D83"><code>D83</code>탐색·학습·정보와 지식</h2><p class="jsub">Search • Learning • Information and Knowledge • Communication • Belief • Unawareness</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>EVPI</b></td><td>expected value of perfect information</td><td><a href="25_information.html#kg">25_information</a></td></tr><tr><td><b>베이즈 갱신</b></td><td>Bayesian updating</td><td><a href="25_information.html#kg">25_information</a></td></tr><tr><td><b>정보의 가치</b></td><td>value of information</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr><tr><td><b>탐색 이론</b></td><td>search theory</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr></tbody></table><h2 class="jh" id="jel-G11"><code>G11</code>포트폴리오 선택·투자 결정</h2><p class="jsub">Portfolio Choice • Investment Decisions</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>분산투자</b></td><td>diversification</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr></tbody></table><h2 class="jh" id="jel-G12"><code>G12</code>자산가격 결정</h2><p class="jsub">Asset Pricing • Trading Volume • Bond Interest Rates</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>CAPM</b></td><td>capital asset pricing model</td><td><a href="20_asset_markets.html#kg">20_asset_markets</a></td></tr><tr><td><b>무차익</b></td><td>no arbitrage</td><td><a href="20_asset_markets.html#kg">20_asset_markets</a></td></tr><tr><td><b>복제 포트폴리오</b></td><td>replicating portfolio</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>상태가격</b></td><td>state prices</td><td><a href="r4_equilibrium_review.html#kg">r4_equilibrium_review</a></td></tr><tr><td><b>위험중립 확률</b></td><td>risk-neutral probability</td><td><a href="20_asset_markets.html#kg">20_asset_markets</a></td></tr></tbody></table><h2 class="jh" id="jel-H23"><code>H23</code>외부성·환경세와 보조금</h2><p class="jsub">Externalities • Redistributive Effects • Environmental Taxes and Subsidies</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>거래 가능한 허가권</b></td><td>tradable permits</td><td><a href="24_externalities.html#kg">24_externalities</a></td></tr><tr><td><b>피구세</b></td><td>Pigouvian tax</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr></tbody></table><h2 class="jh" id="jel-H41"><code>H41</code>공공재</h2><p class="jsub">Public Goods</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>공공재</b></td><td>public good</td><td><a href="23_public_goods.html#kg">23_public_goods</a></td></tr><tr><td><b>린달 가격</b></td><td>Lindahl price</td><td><a href="23_public_goods.html#kg">23_public_goods</a></td></tr><tr><td><b>무임승차</b></td><td>free riding</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr><tr><td><b>비경합성</b></td><td>non-rivalry</td><td><a href="23_public_goods.html#kg">23_public_goods</a></td></tr><tr><td><b>비배제성</b></td><td>non-excludability</td><td><a href="23_public_goods.html#kg">23_public_goods</a></td></tr><tr><td><b>사무엘슨 조건</b></td><td>Samuelson condition</td><td><a href="r5_welfare_review.html#kg">r5_welfare_review</a></td></tr></tbody></table><h2 class="jh" id="jel-L11"><code>L11</code>생산·가격 결정과 시장구조</h2><p class="jsub">Production, Pricing, and Market Structure • Size Distribution of Firms</p><table class="tq"><thead><tr><th>색인어</th><th>영문</th><th>설명 쪽</th></tr></thead><tbody><tr><td><b>일정비용 산업</b></td><td>constant-cost industry</td><td><a href="13_competitive_markets.html#kg">13_competitive_markets</a></td></tr></tbody></table></div></section><footer id="footer"><div class="wrap stack">
+<div class="pnav"><a href="index.html">← 2권 목차</a><a href="index.html">목차</a><span></span></div>
+<div><h3>출처</h3><ol style="margin:0;padding-left:20px;list-style:none"><li>[1] JEL 분류: American Economic Association, <a href="https://www.aeaweb.org/econlit/jelCodes.php?view=jel">JEL Classification System</a> (2026-11-25 확인). 한국어 분류 이름은 이 시리즈가 옮겼습니다.</li></ol></div>
+<div><h3>예시값·설명용 모형인 것</h3><ul style="margin:0;padding-left:20px"></ul></div>
+<p><a href="KG_00_registry.json">등록부(JSON)</a> · <a href="KG_terms_index.csv">색인어 CSV</a></p>
+<p>글 · 안상선 (<a href="https://www.ahnboat.xyz" target="_blank" rel="noopener">www.ahnboat.xyz</a>) · (주)M-Robo 대표<br>미시경제학 연구실 2 — 교과서판 강의노트(Varian) idx · v2.0 · 2026-11-21<br>캐릭터: 박사 · 조수(하루) · 초파리 연구원 · 주판봇 · 시아(인턴1) · 모아(인턴2) · 미공개 X1~X3 — 캐릭터 이름·설정·그림의 저작권은 안상선(개인)에게 있으며 허락 없이 쓸 수 없습니다. 그림: 캐릭터 팩 1.3 (fruitfly-lab-expressions @ 5269662), 인턴·미공개 식구 (@ 86d04ac).</p>
+</div></footer>
+<div id="study" aria-live="polite"><span id="stRead">읽은 곳 0%</span><span id="stQuiz">퀴즈 0/0</span><button class="bt" type="button" id="stGloss">밑줄: 핵심</button></div>
+</body></html>
